@@ -167,6 +167,13 @@ a.link {
   margin-bottom: 15px;
   font-weight: 600;
 }
+.case-study .case-title-alt {
+  font-size: 28px;
+  line-height: 54px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
 .case-study .case-sub-title {
   font-size: 21px;
   font-weight: 600;
