@@ -197,6 +197,11 @@ a.link {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.case-study .info-img-small {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .case-study .mobile-img {
   max-height: 100vh;
   border-radius: 20px;
