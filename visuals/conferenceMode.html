@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/css/template.css">
+    <link rel="stylesheet" href="../styles/scss/template.css">
     <link rel="stylesheet" href="../styles/plugins/lightbox/ekko-lightbox.css">
 
     <title>Lekha Deshmukh</title>
@@ -17,6 +18,7 @@
             font-style: italic;
 
         }
+
         @font-face {
             font-family: 'PT Sans';
             src: url('../assets/fonts/PTSans-Bold.woff') format('woff');
@@ -24,6 +26,7 @@
             font-style: normal;
             font-weight: 500;
         }
+
         @font-face {
             font-family: 'PT Sans';
             src: url('../assets/fonts/PTSans-Regular.woff') format('woff');
@@ -31,88 +34,108 @@
             font-style: normal;
             font-weight: 400;
         }
-        
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navigation">
         <a class="" href="../index.html">Home</a>
-        <a class="" href="../about.html">About</a>
         <a class="" href="../work.html">Work</a>
-        <a class="" href="../visuals.html">Visuals</a>
+        <a class="active" href="../visuals.html">Experiments</a>
+        <a class="" href="../about.html">About</a>
     </nav>
+    <div class="logo"> <a href="../index.html">ld.in.design</a></div>
     <div class="container">
         <!-- <div class="row"> -->
         <div class="sidebar">
-              <a href="../index.html"><div class="menu-item">Home</div> </a>
-              <a href="../about.html"><div class="menu-item">About</div> </a>
-                <a href="../work.html"><div class="menu-item">Work</div> </a>
-                    <a href="../visuals.html"><div class="menu-item">Visuals</div>  </a>        
+
+            <a href="../index.html">
+                <div class="menu-item ">Home</div>
+            </a>
+            <a href="../work.html">
+                <div class="menu-item">Work</div>
+            </a>
+            <a href="../visuals.html">
+                <div class="menu-item active">Experiments</div>
+            </a>
+            <a href="../about.html">
+                <div class="menu-item">About</div>
+            </a>
         </div>
         <div class="content">
             <div class="row">
-                
+
                 <div class="col-md-11">
-                    
+
                     <div class="case-study">
                         <div class="case-name">
-                          Interaction Design for conference mode scenario for students
+                            Interaction Design for conference mode scenario for students
                         </div>
-                        
+
                         <div class="case-content mt-5">
-                          
-                         </div>
-                        
-                       
-                         <div class="case-content">
-                           The purpose of this design was to create the conference mode module in LearniCo Student Mobile App. The student can listen to the teacher and see thier audio/video. 
-                           <br/>If student likes a specific topic/ presentation slide, student can like it, If student has question, student can ask doubt in the online class to the teacher.
-                           <br/> There is provision for class chat where in students can classmates can interact with the teacher and amongst themselves. 
-                          </div>
-                         <div class="case-content mb-5">
-                           I created 3 variations of the design, the 2nd design was implemented as it provided a clean interface and no distractions for the student.
-                          </div>
-                         
+
+                        </div>
+
+
+                        <div class="case-content">
+                            The purpose of this design was to create the conference mode module in LearniCo Student
+                            Mobile App. The student can listen to the teacher and see thier audio/video.
+                            <br />If student likes a specific topic/ presentation slide, student can like it, If student
+                            has question, student can ask doubt in the online class to the teacher.
+                            <br /> There is provision for class chat where in students can classmates can interact with
+                            the teacher and amongst themselves.
+                        </div>
+                        <div class="case-content mb-5">
+                            I created 3 variations of the design, the 2nd design was implemented as it provided a clean
+                            interface and no distractions for the student.
+                        </div>
+
                         <!-- <a href="../assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif" data-toggle="lightbox">
                             <img  class="info-img" src="../assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif" /></a> -->
-                            <div class="case-sub-title ">Design 1</div>
-                            <div class="case-content ">
-                                
-                               The goal of this design was to show student about ongoing chat in the classroom.
-                               </div>
-                            <div class="video-block"> <video  controls>
-                                <source src="../assets/images/visualsImg/conferenceMode/LiveVideo-SuperLearner3- 1st Input.mp4" type="video/mp4">
-                             </video>
-                            </div>
-                            <!-- <video  controls>
+                        <div class="case-sub-title ">Design 1</div>
+                        <div class="case-content ">
+
+                            The goal of this design was to show student about ongoing chat in the classroom.
+                        </div>
+                        <div class="video-block"> <video controls>
+                                <source
+                                    src="../assets/images/visualsImg/conferenceMode/LiveVideo-SuperLearner3- 1st Input.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <!-- <video  controls>
                                 <source src="../assets/images/visualsImg/conferenceMode/LiveVideo-SuperLearner3.mp4" type="video/mp4">
                              </video> -->
-                             <div class="case-sub-title ">Design 2</div>
-                            <div class="case-content ">
-                                
-                             Here the student can click on like, question and chat. On clicking chat icon, student is redirected to new page where they can see the class chat. 
-                               </div>
-                               
-                            <div class="video-block">
-                            <video  controls>
-                                <source src="../assets/images/visualsImg/conferenceMode/LiveVideo-SuperLearner2-alt.mp4" type="video/mp4">
-                             </video>
-                            </div>
-                            <div class="case-sub-title ">Design 3</div>
-                            <div class="case-content ">
-                               This approach was inspired by youtube. But it did not follow hicks law, it was distracting. The main focus was going on the chat which was not required.  </div>
-                            <div class="video-block">
-                            <video  controls>
-                                <source src="../assets/images/visualsImg/conferenceMode/LiveVideo-SuperLearner.mp4" type="video/mp4">
-                             </video>
-                            </div>
+                        <div class="case-sub-title ">Design 2</div>
+                        <div class="case-content ">
 
-                            
+                            Here the student can click on like, question and chat. On clicking chat icon, student is
+                            redirected to new page where they can see the class chat.
+                        </div>
+
+                        <div class="video-block">
+                            <video controls>
+                                <source src="../assets/images/visualsImg/conferenceMode/LiveVideo-SuperLearner2-alt.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="case-sub-title ">Design 3</div>
+                        <div class="case-content ">
+                            This approach was inspired by youtube. But it did not follow hicks law, it was distracting.
+                            The main focus was going on the chat which was not required. </div>
+                        <div class="video-block">
+                            <video controls>
+                                <source src="../assets/images/visualsImg/conferenceMode/LiveVideo-SuperLearner.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+
+
                     </div>
 
                 </div>
             </div>
-            
+
             <div class="row next-prev">
                 <!-- <div class="col-md-5 text-left">
                     <div class="next-prev-label">
@@ -133,14 +156,15 @@
 
             </div>
         </div>
-      
+
     </div>
-    <script src="../styles/plugins/lightbox/ekko-lightbox.min.js"/>
+    <script src="../styles/plugins/lightbox/ekko-lightbox.min.js" />
     <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
     </script>
-  </body>
+</body>
+
 </html>
