@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/css/template.css">
+    <link rel="stylesheet" href="../styles/scss/template.css">
     <link rel="stylesheet" href="../styles/plugins/lightbox/ekko-lightbox.css">
 
     <title>Lekha Deshmukh</title>
@@ -17,6 +18,7 @@
             font-style: italic;
 
         }
+
         @font-face {
             font-family: 'PT Sans';
             src: url('../assets/fonts/PTSans-Bold.woff') format('woff');
@@ -24,6 +26,7 @@
             font-style: normal;
             font-weight: 500;
         }
+
         @font-face {
             font-family: 'PT Sans';
             src: url('../assets/fonts/PTSans-Regular.woff') format('woff');
@@ -31,62 +34,79 @@
             font-style: normal;
             font-weight: 400;
         }
-        
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navigation">
         <a class="" href="../index.html">Home</a>
-        <a class="" href="../about.html">About</a>
         <a class="" href="../work.html">Work</a>
-        <a class="" href="../visuals.html">Visuals</a>
+        <a class="active" href="../visuals.html">Experiments</a>
+        <a class="" href="../about.html">About</a>
     </nav>
+    <div class="logo"> <a href="../index.html">ld.in.design</a></div>
     <div class="container">
         <!-- <div class="row"> -->
         <div class="sidebar">
-              <a href="../index.html"><div class="menu-item">Home</div> </a>
-              <a href="../about.html"><div class="menu-item">About</div> </a>
-                <a href="../work.html"><div class="menu-item">Work</div> </a>
-                    <a href="../visuals.html"><div class="menu-item">Visuals</div>  </a>        
+
+            <a href="../index.html">
+                <div class="menu-item ">Home</div>
+            </a>
+            <a href="../work.html">
+                <div class="menu-item">Work</div>
+            </a>
+            <a href="../visuals.html">
+                <div class="menu-item active">Experiments</div>
+            </a>
+            <a href="../about.html">
+                <div class="menu-item">About</div>
+            </a>
         </div>
         <div class="content">
             <div class="row">
-                
+
                 <div class="col-md-11">
-                    
+
                     <div class="case-study">
                         <div class="case-name">
-                          Creating design for the Highlights & Statistics in LearniCo
+                            Creating design for the Highlights & Statistics in LearniCo
                         </div>
-                        
+
                         <div class="case-content mt-5">
-                        The idea is to show highlights in classroom similar to the highlights you see after completing a game. 
-                            
-                         </div>
+                            The idea is to show highlights in classroom similar to the highlights you see after
+                            completing a game.
+
+                        </div>
                         <div class="case-content-strong">
                             P.S. Providing viewers with a quick glimpse of the summary
                         </div>
-                       
-                      
-                         
-                        <a href="../assets/images/visualsImg/LearniCo Projector mode/Summary2.png" data-toggle="lightbox">
-                            <img  class="info-img" src="../assets/images/visualsImg/LearniCo Projector mode/Summary2.png" /></a>
-                            <div class="video-block "> <video  controls class="col-md-12 p-0">
-                                <source src="../assets/images/visualsImg/LearniCo Projector mode/Summary phase 1.mp4" type="video/mp4">
-                             </video>
-                            </div>
-                            <div class="case-title">
-                                Statistics in LearniCo
-                            </div>
-                            <div class="case-content">
-                               Statistics appears on the projector after everyone is the class has solved the question posted by teacher. </div>
-                            <a href="../assets/images/visualsImg/LearniCo Projector mode/MCQ stats.png" data-toggle="lightbox">
-                                <img  class="info-img" src="../assets/images/visualsImg/LearniCo Projector mode/MCQ stats.png" /></a>
+
+
+
+                        <a href="../assets/images/visualsImg/LearniCo Projector mode/Summary2.png"
+                            data-toggle="lightbox">
+                            <img class="info-img"
+                                src="../assets/images/visualsImg/LearniCo Projector mode/Summary2.png" /></a>
+                        <div class="video-block "> <video controls class="col-md-12 p-0">
+                                <source src="../assets/images/visualsImg/LearniCo Projector mode/Summary phase 1.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="case-title">
+                            Statistics in LearniCo
+                        </div>
+                        <div class="case-content">
+                            Statistics appears on the projector after everyone is the class has solved the question
+                            posted by teacher. </div>
+                        <a href="../assets/images/visualsImg/LearniCo Projector mode/MCQ stats.png"
+                            data-toggle="lightbox">
+                            <img class="info-img"
+                                src="../assets/images/visualsImg/LearniCo Projector mode/MCQ stats.png" /></a>
                     </div>
 
                 </div>
             </div>
-            
+
             <div class="row next-prev">
                 <div class="col-md-5 text-left">
                     <div class="next-prev-label">
@@ -107,14 +127,15 @@
 
             </div>
         </div>
-      
+
     </div>
-    <script src="../styles/plugins/lightbox/ekko-lightbox.min.js"/>
+    <script src="../styles/plugins/lightbox/ekko-lightbox.min.js" />
     <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
     </script>
-  </body>
+</body>
+
 </html>

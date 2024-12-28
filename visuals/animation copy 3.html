@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/css/template.css">
+    <link rel="stylesheet" href="../styles/scss/template.css">
     <link rel="stylesheet" href="../styles/plugins/lightbox/ekko-lightbox.css">
 
     <title>Lekha Deshmukh</title>
@@ -17,6 +18,7 @@
             font-style: italic;
 
         }
+
         @font-face {
             font-family: 'PT Sans';
             src: url('../assets/fonts/PTSans-Bold.woff') format('woff');
@@ -24,6 +26,7 @@
             font-style: normal;
             font-weight: 500;
         }
+
         @font-face {
             font-family: 'PT Sans';
             src: url('../assets/fonts/PTSans-Regular.woff') format('woff');
@@ -31,52 +34,65 @@
             font-style: normal;
             font-weight: 400;
         }
-        
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navigation">
         <a class="" href="../index.html">Home</a>
-        <a class="" href="../about.html">About</a>
         <a class="" href="../work.html">Work</a>
-        <a class="" href="../visuals.html">Visuals</a>
+        <a class="active" href="../visuals.html">Experiments</a>
+        <a class="" href="../about.html">About</a>
     </nav>
+    <div class="logo"> <a href="../index.html">ld.in.design</a></div>
     <div class="container">
         <!-- <div class="row"> -->
         <div class="sidebar">
-              <a href="../index.html"><div class="menu-item">Home</div> </a>
-              <a href="../about.html"><div class="menu-item">About</div> </a>
-                <a href="../work.html"><div class="menu-item">Work</div> </a>
-                    <a href="../visuals.html"><div class="menu-item">Visuals</div>  </a>        
+
+            <a href="../index.html">
+                <div class="menu-item ">Home</div>
+            </a>
+            <a href="../work.html">
+                <div class="menu-item">Work</div>
+            </a>
+            <a href="../visuals.html">
+                <div class="menu-item active">Experiments</div>
+            </a>
+            <a href="../about.html">
+                <div class="menu-item">About</div>
+            </a>
         </div>
         <div class="content">
             <div class="row">
-                
+
                 <div class="col-md-11">
-                    
+
                     <div class="case-study">
                         <div class="case-name">
-                         Objectives and Key Results
+                            Objectives and Key Results
                         </div>
-                        
-                        <div class="case-content mt-5">
-                           I created the below animation using CSS Sprite :D 
-                         </div>
-                        
-                       
-                         <div class="case-content">
-                            The ideation behind this animation was that of team members completing tasks to meet the deadline 
-                          </div>
-                         
-                        <a href="../assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif" data-toggle="lightbox">
-                            <img  class="info-img" src="../assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif" /></a>
 
-                            
+                        <div class="case-content mt-5">
+                            I created the below animation using CSS Sprite :D
+                        </div>
+
+
+                        <div class="case-content">
+                            The ideation behind this animation was that of team members completing tasks to meet the
+                            deadline
+                        </div>
+
+                        <a href="../assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif"
+                            data-toggle="lightbox">
+                            <img class="info-img"
+                                src="../assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif" /></a>
+
+
                     </div>
 
                 </div>
             </div>
-            
+
             <div class="row next-prev">
                 <div class="col-md-5 text-left">
                     <div class="next-prev-label">
@@ -97,14 +113,15 @@
 
             </div>
         </div>
-      
+
     </div>
-    <script src="../styles/plugins/lightbox/ekko-lightbox.min.js"/>
+    <script src="../styles/plugins/lightbox/ekko-lightbox.min.js" />
     <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
     </script>
-  </body>
+</body>
+
 </html>
