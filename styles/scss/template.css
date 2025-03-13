@@ -14,7 +14,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   -webkit-transition: all ease 200ms;
   transition: all ease 200ms;
 }
@@ -23,7 +23,18 @@ a.link {
   font-size: 16px;
 }
 
-.company-logo > img {
+.footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+.company-logo>img {
   width: 100%;
   /* height:100%; */
 }
@@ -47,14 +58,14 @@ a.link {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   width: 200px;
   top: 10px;
 }
@@ -77,14 +88,14 @@ a.link {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .sidebar .menu-item {
@@ -143,7 +154,7 @@ a.link {
 .hover-card:hover {
   cursor: pointer;
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   -webkit-transition: all ease 200ms;
   transition: all ease 200ms;
 }
@@ -188,7 +199,7 @@ a.link {
 .ob-fit {
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .bg-black {
@@ -295,8 +306,8 @@ a.link {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .next-prev .next-prev-name {
@@ -317,23 +328,23 @@ a.link {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   position: fixed;
   text-align: left;
   top: 0;
   z-index: 100;
   max-width: 100vw;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navigation.col-2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding: 0;
   width: 100%;
 }
@@ -353,10 +364,12 @@ a.link {
 }
 
 @media screen and (max-width: 1000px) {
+
   .sidebar,
   .logo {
     display: none;
   }
+
   .content {
     margin-left: 0;
     margin-top: 110px;
@@ -368,4 +381,5 @@ a.link {
     display: none;
   }
 }
+
 /*# sourceMappingURL=template.css.map */
