@@ -4,267 +4,395 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scss/template.css">
+    <!-- <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scss/template.css"> -->
     <link rel="stylesheet" href="styles/plugins/lightbox/ekko-lightbox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Lekha Deshmukh</title>
-    <style>
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Italic.woff') format('woff');
-            font-weight: normal;
-            font-weight: 400;
-            font-style: italic;
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Bold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 400;
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a class="active" href="work.html">Work</a>
-        <a href="visuals.html">Experiments</a>
-        <a href="about.html">About</a>
-    </nav>
-    <div class="logo"> <a href="index.html">ld.in.design</a></div>
-    <div class="container">
-        <div class="sidebar">
-            <a href="index.html">
-                <div class="menu-item">Home</div>
-            </a>
-            <a href="work.html">
-                <div class="menu-item active">Work</div>
-            </a>
-            <a href="visuals.html">
-                <div class="menu-item">Experiments</div>
-            </a>
-            <a href="about.html">
-                <div class="menu-item">About</div>
-            </a>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="col-md-11">
-                    <div class="case-study">
+    <header id="ijkj" class="fixed top-0 left-0  backdrop-blur-xl w-full px-8 text-gray-700  body-font">
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <a href="index.html"
+                class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black">Lekha
+                Deshmukh</a>
+            <nav
+                class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+                <a href="index.html"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Home</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#about" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">About</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#casestudies" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Case Studies</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <!-- <a href="#_" x-data="{ hover: false }" x-on:mouseenter="hover = true" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Visual Design</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a> -->
+            </nav>
+            <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+                <a href="assets/images/lekhaleadUXcv.pdf"
+                    class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 gap-2 focus:outline-none focus:shadow-none">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="Download--Streamline-Radix" height="20" width="20">
+                        <desc>Download Streamline Icon: https://streamlinehq.com</desc>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.000066666666665 1.3999866666666665c0.3313733333333333 0 0.6 0.2686266666666667 0.6 0.6v9.218133333333332l2.9758 -2.975733333333333c0.23426666666666665 -0.23432 0.6141333333333333 -0.23432 0.8483999999999999 0 0.2344 0.23432 0.2344 0.6142133333333333 0 0.8485333333333333l-3.9999333333333333 4c-0.23432 0.23430666666666666 -0.6142133333333333 0.23430666666666666 -0.8485333333333333 0l-4 -4c-0.23432 -0.23432 -0.23432 -0.6142133333333333 0 -0.8485333333333333 0.23432 -0.23432 0.6142133333333333 -0.23432 0.8485333333333333 0l2.975733333333333 2.975733333333333v-9.218133333333332c0 -0.3313733333333333 0.2686266666666667 -0.6 0.6 -0.6ZM3.333333333333333 13.333333333333332c0.36818666666666666 0 0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 0.7385333333333333 0.5942 1.3333333333333333 1.3284666666666665 1.3333333333333333h9.3398c0.7355999999999999 0 1.3317333333333332 -0.5962666666666666 1.3317333333333332 -1.3333333333333333v-2c0 -0.3681333333333333 0.2985333333333333 -0.6666666666666666 0.6666666666666666 -0.6666666666666666s0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 1.4721333333333333 -1.1917333333333333 2.6666666666666665 -2.6650666666666663 2.6666666666666665H5.3284666666666665C3.8535866666666667 18.666666666666664 2.6666666666666665 17.470666666666666 2.6666666666666665 16v-2c0 -0.3681333333333333 0.29847999999999997 -0.6666666666666666 0.6666666666666666 -0.6666666666666666Z"
+                            fill="#a2a2a2" stroke-width="1.3333"></path>
+                    </svg> Download Resume
+                </a>
 
-                        <!-- CASE STUDY CONTENT STARTS HERE -->
-                        <div class="case-name">
+            </div>
+        </div>
+    </header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 my-28 lg:px-8">
+        <div class="ml-42 mt-16 p-5">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-11/12">
+                    <div class="space-y-12">
+
+                        <!-- Case Study Title -->
+                        <div class="text-4xl font-bold leading-tight">
                             Designing a Dashboard App for Inaiways Customers that Reduced Customer Support Time by 95%
                         </div>
-                        <br />
-                        <div class="row">
 
-                            <div class="col-md-12 text-center mt-4">
-                                <img class="info-img-small border mt-4" src="assets/images/dashboard/2.png"
-                                    alt="Before" />
-                                <caption>Dashboard App</caption>
-                            </div>
+                        <!-- Dashboard App Image -->
+                        <div class="text-center mt-10">
+                            <img class="rounded-lg border mt-4" src="assets/images/dashboard/2.png" alt="Dashboard App">
+                            <div class="text-gray-500 mt-2">Dashboard App</div>
                         </div>
+
                         <!-- Context & Business Problem -->
-                        <div class="case-sub-title">
-                            Context & Business Problem
-                        </div>
-                        <div class="case-content">
-                            <p>To execute AI-powered Google Ads for our clients, we initially ran ads through Inaiways’
-                                Google Ads account on behalf of the clients. This posed a limitation, as we could not
-                                directly integrate the API into the clients’ Google Ads accounts. Consequently,
-                                providing campaign performance updates to clients required significant time from our
-                                customer support team.</p>
-                            <p>The primary goals of the dashboard app were:</p>
-                            <ul>
-                                <li>To provide clients with real-time insights into their campaigns.</li>
-                                <li>To significantly reduce customer support time.</li>
-                            </ul>
-                            <p>This app was developed after serving our first 5–10 clients and was a crucial step in
-                                scaling our operations rapidly.</p>
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Context & Business Problem</h2>
+                            <div class="text-gray-600 mt-4 space-y-4">
+                                <p>Initially, ads were run through Inaiways' Google Ads account, limiting API access.
+                                    Updating clients manually consumed a lot of customer support time.</p>
+                                <p>The dashboard app aimed to:</p>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Provide real-time campaign insights to clients.</li>
+                                    <li>Significantly reduce customer support workload.</li>
+                                </ul>
+                                <p>It was a critical step after onboarding our first 5–10 clients to enable scaling.</p>
+                            </div>
                         </div>
 
                         <!-- Pain Points -->
-                        <div class="case-sub-title">
-                            Pain Points
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>Customer Support Team:</strong> Overwhelmed with status update meetings and
-                                    constant client inquiries.</li>
-                                <li><strong>Clients (Based on Qualitative Analysis):</strong> Clients frequently needed
-                                    to follow up for campaign updates, leading to frustration and inefficiency.</li>
-                                <li>The increasing number of clients, combined with the limited capacity of our customer
-                                    support team, created a bottleneck, necessitating an automated solution.</li>
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Pain Points</h2>
+                            <ul class="list-disc pl-5 mt-4 text-gray-600 space-y-2">
+                                <li><strong>Customer Support:</strong> Overwhelmed with client status updates.</li>
+                                <li><strong>Clients:</strong> Needed constant follow-ups, causing frustration.</li>
+                                <li>Scaling was difficult due to manual support bottlenecks.</li>
                             </ul>
                         </div>
 
                         <!-- Research -->
-                        <div class="case-sub-title">
-                            Research
-                        </div>
-                        <div class="case-content">
-                            <p>To design the dashboard, I analyzed the most frequently asked questions from clients to
-                                the customer support team. The top queries were:</p>
-                            <ul>
-                                <li>How much money has been spent so far?</li>
-                                <li>When will the number of leads increase?</li>
-                                <li>How many conversions have happened so far?</li>
-                                <li>What should I do next for my business? (took this out of current scope)</li>
-
-                                <li>Which products/services were in the highest demand.</li>
-                                <li>Which regions showed the most searches for their offerings.</li>
-                                <li>The most commonly searched user intent.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Visual Identity & Data Representation -->
-                        <div class="case-sub-title">
-                            Ideation, Visual Identity & Data Representation
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>Dashboard Design:</strong> Since the data was an extension of Google Ads, I
-                                    adapted Google’s brand colors for the dashboard’s visual identity.</li>
-                                <li><strong>Data Presentation:</strong> Research showed that marketers typically use bar
-                                    graphs, pie charts, and tabular formats when reporting to CMOs and CEOs. These
-                                    formats were incorporated into the dashboard.</li>
-                            </ul>
-                        </div>
-                        <div class="row">
-
-                            <div class="col-md-12 text-center mt-4">
-                                <img class="info-img-small border mt-4" src="assets/images/dashboard/3.png"
-                                    alt="Before" />
-                                <caption>Dashboard App</caption>
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Research</h2>
+                            <div class="text-gray-600 mt-4">
+                                <p>Analyzed frequent client questions:</p>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>How much has been spent?</li>
+                                    <li>When will leads increase?</li>
+                                    <li>Number of conversions?</li>
+                                    <li>Which services/products are most demanded?</li>
+                                    <li>Which regions are most active?</li>
+                                    <li>Most common search intent?</li>
+                                </ul>
                             </div>
                         </div>
-                        <!-- Impact of Dashboard Implementation -->
-                        <div class="case-title case-content-strong">
+
+                        <!-- Ideation & Visual Identity -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Ideation, Visual Identity & Data Representation
+                            </h2>
+                            <ul class="list-disc pl-5 mt-4 text-gray-600 space-y-2">
+                                <li><strong>Visual Identity:</strong> Used Google's brand colors.</li>
+                                <li><strong>Data Formats:</strong> Incorporated bar graphs, pie charts, and tables —
+                                    familiar to CMOs and CEOs.</li>
+                            </ul>
+
+                            <!-- Dashboard App Second Image -->
+                            <div class="text-center mt-8">
+                                <img class="rounded-lg border mt-4" src="assets/images/dashboard/3.png"
+                                    alt="Dashboard Visuals">
+                                <div class="text-gray-500 mt-2">Dashboard App</div>
+                            </div>
+                        </div>
+
+                        <!-- Impact -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             Impact of the Dashboard Implementation
                         </div>
-                        <div class="case-content">
-                            <p>Once the dashboard app was deployed, the customer success (CS) team handed it over to
-                                clients. The results were immediate:</p>
-                            <ul>
-                                <li>Client support emails & calls reduced by <strong>60%</strong>.</li>
-                                <li>Common inquiries were now resolved via the dashboard.</li>
-                                <li>Clients only contacted the CS team for major concerns or account recharge
-                                    discussions.</li>
+                        <div class="text-gray-600">
+                            <p>Post-deployment, impact observed:</p>
+                            <ul class="list-disc pl-5 mt-4 space-y-2">
+                                <li>Client support emails and calls reduced by <strong>60%</strong>.</li>
+                                <li>Clients used dashboard for self-service updates.</li>
+                                <li>CS team focused only on major client concerns.</li>
                             </ul>
                         </div>
-                        <div class="row">
 
-                            <div class="col-md-12 text-center mt-4">
-                                <img class="info-img-small border mt-4" src="assets/images/dashboard/objective.png"
-                                    alt="Before" />
-                                <caption>Dashboard App</caption>
-                            </div>
-                        </div>
-                        <!-- Next Iteration -->
-                        <div class="case-sub-title">
-                            Next Iteration After 1.5 Months
-                        </div>
-                        <div class="case-content">
-                            <p>70% Customers would still have calls with CS team to discuss impact that ads are bringing
-                                to their business</p>
-                            <p>We realised our goal was not completely achieved as we had to make the data more
-                                informative for clients</p>
-
-
+                        <!-- Dashboard Objective Image -->
+                        <div class="text-center mt-8">
+                            <img class="rounded-lg border mt-4" src="assets/images/dashboard/objective.png"
+                                alt="Objective Dashboard">
+                            <div class="text-gray-500 mt-2">Dashboard App</div>
                         </div>
 
                         <!-- Next Iteration -->
-                        <div class="case-sub-title">
-                            Research
-                        </div>
-                        <div class="case-content">
-                            <p>Customer success team would get questions like </p>
-                            <ul>
-                                <li>How do I know the impact of my ads?</li>
-                                <li>What kind of business has been generated from my ads?</li>
-                                <li>The CTR is low and high but how do I know number of leads converted? </li>
-                            </ul>
-                            <p>We started working on making the data more informative for clients by collaborating
-                                cross-functional, we understood how sales team was explaing the logic of ads spends to
-                                clients before they closed the deals and used the same logic to explain the data to
-                                clients.</p>
-                        </div>
-
-                        <div class="case-sub-title">
-                            Ideation - The funnel approach
-                        </div>
-                        <div class="case-content">
-                            <p>After monitoring the ongoing customer interactions, we held a meeting with the CMO, CEO,
-                                and CS team. The CMO informed us about the technique they used - funnel-based approach
-                                to clearly demonstrate
-                                ROI.</p>
-                            <p><strong>This was a one of the breakthrough moment:</strong> We realized that providing a
-                                funnel view
-                                of ROI would bridge the gap in client understanding and highlight the impact of
-                                AI-powered ads.</p>
-                            <p>Once we implemented the funnel visualization:</p>
-                            <ul>
-                                <li>Customer support calls reduced by <strong>95%</strong>.</li>
-                                <li>Clients fully understood the impact of their ad spend.</li>
-                                <li>Support calls were limited to discussions about next month’s ad budget.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Conclusion & Next Steps -->
-                        <div class="case-title case-content-strong">
-                            Conclusion & Next Steps
-                        </div>
-                        <div class="case-content">
-                            <p>The dashboard transformed our customer support workflow by minimizing the need for manual
-                                campaign updates. It enabled:</p>
-                            <ul>
-                                <li><strong>95% reduction in support calls.</strong></li>
-                                <li><strong>Greater client autonomy:</strong> Clients could independently track their ad
-                                    performance.</li>
-                                <li><strong>Efficient scaling:</strong> Freed-up CS team bandwidth allowed us to onboard
-                                    more clients seamlessly.</li>
-                            </ul>
-
-                        </div>
-                        <!-- CASE STUDY CONTENT ENDS HERE -->
-                        <div class="row next-prev">
-                            <div class="col-md-5 text-left">
-                                <div class="next-prev-label">
-                                    Previous
-                                </div>
-                                <div class="next-prev-name">
-                                    <a href="landingpages.html">Landing Page creation with AI Prompt</a>
-                                </div>
-                            </div>
-                            <div class="col-md-5 text-right">
-                                <div class="next-prev-label">
-                                    Next
-                                </div>
-                                <div class="next-prev-name">
-                                    <a href="adminconsole.html">Admin Console</a>
-                                </div>
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Next Iteration After 1.5 Months</h2>
+                            <div class="text-gray-600 mt-4">
+                                <p>70% clients still needed human conversations to discuss ad impact.</p>
+                                <p>Realization: Data needed to be even more informative, guiding clients better on
+                                    business
+                                    impact.</p>
                             </div>
                         </div>
+
+                        <!-- Research -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Research</h2>
+                            <div class="text-gray-600 mt-4">
+                                <p>Additional common client questions:</p>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>How to measure the real impact of ads?</li>
+                                    <li>What new business is being generated?</li>
+                                    <li>CTR data interpretation vs lead conversions?</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Funnel Approach -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Ideation - The Funnel Approach</h2>
+                            <div class="text-gray-600 mt-4">
+                                <p>Learned from the CMO's sales pitch: Funnel-based storytelling works best for
+                                    demonstrating ROI.</p>
+                                <p><strong>Breakthrough:</strong> Showing a funnel view improved client understanding of
+                                    ad
+                                    performance.</p>
+                                <p>Post-implementation:</p>
+                                <ul class="list-disc pl-5 mt-4 space-y-2">
+                                    <li>Customer support calls dropped by <strong>95%</strong>.</li>
+                                    <li>Clients understood ads ROI clearly.</li>
+                                    <li>CS team calls now only focused on planning next budgets.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
+                            Conclusion
+                        </div>
+                        <div class="text-gray-600">
+                            <p>Dashboard success outcomes:</p>
+                            <ul class="list-disc pl-5 mt-4 space-y-2">
+                                <li><strong>95% reduction</strong> in support calls.</li>
+                                <li>Clients independently tracked campaign performance.</li>
+                                <li>Freed-up CS team bandwidth enabled faster scaling and onboarding new clients.</li>
+                            </ul>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        Crafted and created by <strong>Lekha Deshmukh</strong>
-    </div>
+
+    <section id="i4i90k" class="w-full bg-blue-600">
+        <div class="px-8 py-12 mx-auto max-w-7xl">
+            <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+                <div class="col-span-3">
+                    <a href="index.html" class="text-xl font-black leading-none text-white select-none logo">Lekha
+                        Deshmukh</a>
+                    <p class="my-4 text-xs leading-normal text-blue-100">
+                        Designed with passion.
+                    </p>
+                </div>
+                <nav class="col-span-1 md:col-span-2 lg:col-span-6">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Case Studies
+                    </p>
+                    <a href="landingpages.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Creating
+                        AI Prompts - Google Ads Landing Pages</a>
+                    <a href="dashboard.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Customer
+                        Dashboard - Reduced support time by 95%
+                    </a>
+                    <a href="adminconsole.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Faster
+                        Insights - Enterprise Admins</a>
+                    <a href="mahalabharti.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Rural
+                        Users -
+                        Access
+                        to Government Schemes </a>
+
+                </nav>
+
+                <div class="col-span-3">
+                    <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-end">
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/lekha.deshmukh.5" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 
+                                    1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ld.in.design/?hl=en" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 
+                                    4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 
+                                    2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 
+                                    01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 
+                                    0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 
+                                    01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 
+                                    4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 
+                                    1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 
+                                    1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 
+                                    1.15-.137.353-.3.882-.344 1.857-.047 
+                                    1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 
+                                    3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 
+                                    1.15.35.35.683.566 1.15.748.353.137.882.3 
+                                    1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 
+                                    2.917-.01 3.96-.058.976-.045 1.505-.207 
+                                    1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 
+                                    3.097 0 00-.748-1.15 3.098 3.098 0 
+                                    00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 
+                                    6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 
+                                    010-10.27zm0 1.802a3.333 3.333 0 100 6.666 
+                                    3.333 3.333 0 000-6.666zm5.338-3.205a1.2 
+                                    1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/deshmukh_lekha" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 
+                                    0-.178 0-.355-.012-.53A8.348 8.348 0 0022 
+                                    5.92a8.19 8.19 0 01-2.357.646 
+                                    4.118 4.118 0 001.804-2.27 
+                                    8.224 8.224 0 01-2.605.996 
+                                    4.107 4.107 0 00-6.993 3.743 
+                                    11.65 11.65 0 01-8.457-4.287 
+                                    4.106 4.106 0 001.27 5.477 
+                                    4.072 4.072 0 01-1.86-.514v.052 
+                                    a4.105 4.105 0 003.292 4.022 
+                                    4.095 4.095 0 01-1.853.07 
+                                    4.108 4.108 0 003.834 2.85 
+                                    A8.233 8.233 0 012 18.407 
+                                    a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/lekhadeshmukh" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">GitHub</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 
+                                    4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 
+                                    0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 
+                                    1.003.07 1.531 1.032 1.531 1.032.892 
+                                    1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 
+                                    0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 
+                                    0 0 .84-.27 2.75 1.026A9.564 9.564 0 
+                                    0112 6.844c.85.004 1.705.115 2.504.337 
+                                    1.909-1.296 2.747-1.027 2.747-1.027.546 
+                                    1.379.202 2.398.1 2.651.64.7 
+                                    1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 
+                                    4.943.359.309.678.92.678 1.855 
+                                    0 1.338-.012 2.419-.012 2.747 0 
+                                    .268.18.58.688.482A10.019 10.019 0 0022 
+                                    12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Dribbble -->
+                        <a href="https://dribbble.com/lekhad" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Dribbble</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 
+                                    10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 
+                                    2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 
+                                    25.416 0 00-.564-1.236c3.145-1.28 
+                                    4.577-3.124 4.761-3.362zM12 
+                                    3.475c2.17 0 4.154.813 5.662 
+                                    2.148-.152.216-1.443 1.941-4.48 
+                                    3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 
+                                    8.687 0 0112 3.475zm-3.633.803a53.896 
+                                    53.896 0 013.167 4.935c-3.992 
+                                    1.063-7.517 1.04-7.896 1.04a8.581 
+                                    8.581 0 014.729-5.975zM3.453 
+                                    12.01v-.26c.37.01 4.512.065 
+                                    8.775-1.215.25.477.477.965.694 
+                                    1.453-.109.033-.228.065-.336.098-4.404 
+                                    1.42-6.747 5.303-6.942 
+                                    5.629a8.522 8.522 0 01-2.19-5.705zM12 
+                                    20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 
+                                    1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 
+                                    35.318 0 011.823 6.475 
+                                    8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 
+                                    2.679-.423 5.022.271 5.314.369a8.468 
+                                    8.468 0 01-3.655 5.715z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                    </span>
+
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-blue-500 md:flex-row md:items-center">
+                <p class="mb-6 text-sm text-left text-blue-200 md:mb-0"> 2015-2025 Lekha Deshmukh. All Rights
+                    Reserved.
+                </p>
+                <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+                    <a href="terms.html" class="text-sm text-blue-200 transition hover:text-white">Terms</a>
+                    <a href="privacy.html" class="text-sm text-blue-200 transition hover:text-white">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

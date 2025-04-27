@@ -1,928 +1,1218 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scss/template.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LD</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Lekha Deshmukh</title>
-    <style>
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Italic.woff') format('woff');
-            font-weight: normal;
-            font-weight: 400;
-            font-style: italic;
-
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Bold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 400;
-        }
-    </style>
 </head>
 
 <body>
 
-    <nav class="navigation">
-        <a class="active" href="index.html">Home</a>
-        <a class="" href="work.html">Work</a>
-        <a class="" href="visuals.html">Experiments</a>
-        <a class="" href="about.html">About</a>
-    </nav>
-    <div class="logo"> <a href="index.html">ld.in.design</a></div>
-    <div class="container">
-        <!-- <div class="row"> -->
-        <div class="sidebar">
+    <section id="ijkj" class="relative w-full px-8 text-gray-700 bg-white body-font">
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <a href="index.html"
+                class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black">Lekha
+                Deshmukh</a>
+            <nav
+                class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+                <a href="index.html"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Home</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="#about" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">About</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="#casestudies" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Case Studies</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <!-- <a href="#_" x-data="{ hover: false }" x-on:mouseenter="hover = true" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Visual Design</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a> -->
+            </nav>
+            <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+                <a href="assets/images/lekhaleadUXcv.pdf"
+                    class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 gap-2 focus:outline-none focus:shadow-none">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="Download--Streamline-Radix" height="20" width="20">
+                        <desc>Download Streamline Icon: https://streamlinehq.com</desc>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.000066666666665 1.3999866666666665c0.3313733333333333 0 0.6 0.2686266666666667 0.6 0.6v9.218133333333332l2.9758 -2.975733333333333c0.23426666666666665 -0.23432 0.6141333333333333 -0.23432 0.8483999999999999 0 0.2344 0.23432 0.2344 0.6142133333333333 0 0.8485333333333333l-3.9999333333333333 4c-0.23432 0.23430666666666666 -0.6142133333333333 0.23430666666666666 -0.8485333333333333 0l-4 -4c-0.23432 -0.23432 -0.23432 -0.6142133333333333 0 -0.8485333333333333 0.23432 -0.23432 0.6142133333333333 -0.23432 0.8485333333333333 0l2.975733333333333 2.975733333333333v-9.218133333333332c0 -0.3313733333333333 0.2686266666666667 -0.6 0.6 -0.6ZM3.333333333333333 13.333333333333332c0.36818666666666666 0 0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 0.7385333333333333 0.5942 1.3333333333333333 1.3284666666666665 1.3333333333333333h9.3398c0.7355999999999999 0 1.3317333333333332 -0.5962666666666666 1.3317333333333332 -1.3333333333333333v-2c0 -0.3681333333333333 0.2985333333333333 -0.6666666666666666 0.6666666666666666 -0.6666666666666666s0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 1.4721333333333333 -1.1917333333333333 2.6666666666666665 -2.6650666666666663 2.6666666666666665H5.3284666666666665C3.8535866666666667 18.666666666666664 2.6666666666666665 17.470666666666666 2.6666666666666665 16v-2c0 -0.3681333333333333 0.29847999999999997 -0.6666666666666666 0.6666666666666666 -0.6666666666666666Z"
+                            fill="#a2a2a2" stroke-width="1.3333"></path>
+                    </svg> Download Resume
+                </a>
 
-            <a href="index.html">
-                <div class="menu-item active">Home</div>
-            </a>
-            <a href="work.html">
-                <div class="menu-item">Work</div>
-            </a>
-            <a href="visuals.html">
-                <div class="menu-item">Experiments</div>
-            </a>
-            <a href="about.html">
-                <div class="menu-item">About</div>
-            </a>
+            </div>
         </div>
-        <div class="content">
-            <div class="project-info row align-items-center">
-
-                <div class="col-md-12">
-
-                    <div class="project-title">
-                        <h1>Lekha Deshmukh</h1>
-                    </div>
-
-                    <div class="">
-                        Co-Founder & Principal UX Designer @ Inaiways Technology <br />
-                        <hr />
-                        <br />
-                        <!-- 9.9 Years of UX Experience in SAAS, DAAS, AI Marketing-tech, Ed-tech, Fin-tech &
-                        Front-end
-                        development -->
-                        <!-- <div class="font-sm">
-                            <span class="project-subtitle my-5">I Can Help You In - </span> <br />
-                            ✅ <span class="font-bold">UX Scaling</span> – Building and launching products from scratch
-                            with
-                            a strong UX foundation.
-                            <br /> ✅<span class="font-bold"> Data-Driven Iterations </span>– Refining designs based on
-                            real
-                            user insights and analytics.
-                            <br />✅ <span class="font-bold">AI-Powered UX </span> – Creating seamless conversational and
-                            AI-driven experiences.
-                            <br /> ✅ <span class="font-bold">Market Research & Testing </span> – Conducting user
-                            research,
-                            usability testing, and rapid
-                            experimentation for Market and Digital Products.
-                            <br /> ✅ <span class="font-bold">Leading UX Teams </span> – Managing and mentoring teams to
-                            deliver high-impact, scalable design
-                            solutions.
-                            <br />
-                            ✅ <span class="font-bold">Design Systems & Front-End Development </span>– Building scalable
-                            design systems and bridging UX with development.
-                        </div> -->
+    </section>
+    <section class="flex flex-col w-full overflow-hidden bg-white lg:flex-row sm:mx-auto">
+        <div class="flex justify-end p-8 bg-white lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
+            <div class="flex flex-col items-start justify-center w-full lg:max-w-lg">
+                <p
+                    class="inline-block px-2 py-1 mb-5 font-medium tracking-wider text-gray-900 uppercase bg-gray-200 rounded-full text-xxs">
+                    UX Leader • Enterprise • AI • Impact
 
 
-                        <div class="row p-3 rounded-4">
-                            <div class="col-md-12">
-                                <span class=" my-5 font-white">I Can Help You In - </span>
-                            </div>
-                            <div class="col-md-4  vertical-card">
-                                <div class="m-2">
-
-                                    <div class="font-bold ">UX Scaling 0->1</div>
-                                    <div class="vertical-card-content"> Building and launching products from
-                                        scratch
-                                        with
-                                        a confident UX foundation.</div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4  vertical-card">
-                                <div class="m-2">
-
-                                    <div class="font-bold">Data-Driven Iterations</div>
-                                    <div class="vertical-card-content"> Refining designs based on
-                                        real
-                                        user insights and analytics.</div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-4  vertical-card">
-                                <div class="m-2">
-
-                                    <div class="font-bold">AI-Powered UX </div>
-                                    <div class="vertical-card-content"> Creating seamless conversational and
-                                        AI-driven experiences.</div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4  vertical-card">
-                                <div class="m-2">
-
-                                    <div class="font-bold">Leading UX Teams </div>
-                                    <div class="vertical-card-content"> Managing and mentoring teams to
-                                        deliver high-impact, scalable design
-                                        solutions.</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4  vertical-card">
-                                <div class="m-2">
-
-                                    <div class="font-bold">Design Systems & Front-End Development </div>
-                                    <div class="vertical-card-content"> Building scalable
-                                        design systems and bridging UX with development.</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4  vertical-card">
-                                <div class="m-2">
-
-                                    <div class="font-bold">Market Research & Testing </div>
-                                    <div class="vertical-card-content"> Conducting user
-                                        research,
-                                        usability testing, and rapid
-                                        experimentation for Market and Digital Products.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- I am passionate about building products that make
-                        a
-                        difference. I love when I see my work being used by people and making their lives easier. -->
-                        <!-- <ul class="small line-height-less">
-                            <li>
-                                9.9 Years of UX Experience in SAAS, DAAS, AI Marketing-tech, Ed-tech, Fin-tech &
-                                Front-end
-                                development</li>
-                            <br />
-                            <li> UX Certified - Interaction Design Foundation & LinkedIn Learning</li>
-                            <br />
-                            <li> Core skills include Design thinking, Web & Mobile UI | UX, Design Systems, HTML, CSS,
-                                Figma/Adobe XD</li>
-                            <br />
-                            <li> Self Learner, Design mentor at DNEXT - Trained 100+ freshers in HTML, CSS, Design
-                                Patterns</li>
-                            <br />
-                            <li>Collaborated with 100+ Enterprises for lead generation with Inaiways</li>
-                            <br />
-                            <li>Worked in 3 Statewide and National level projects, recognised by CM of Maharashtra,
-                                Bihar,
-                                Haryana</li>
-                        </ul> -->
-
-                    </div>
-
-                </div>
-
-                <!-- <div class="col-md-4">
-                    <div class="project-thumbnail">
-                        <img class="info-img" src="assets/images/IMG_8439.jpg" />
-                    </div>
-
-                </div> -->
-            </div>
-            <!-- <div class="row font-bold d-flex justify-content-center bg-gray-100 pointers">
-
-
-                Strategic Thinking &nbsp; . &nbsp; Customer Delight &nbsp; . &nbsp; Outcome Driven &nbsp; . &nbsp; User
-                Experience
-
-            </div> -->
-            <!-- <div class="project-info row align-items-center">
-
-                <div class="col-md-10  mb-3">
-
-
-                    <div class="project-title">
-
-                        Professional Experience
-                    </div>
-                    <div class="project-subtitle">
-                        <div class="row mt-4">
-                            <div class="col-md-2">
-                                <div class="company-logo">
-                                    <img src="assets/images/about/iaw.png" />
-                                </div>
-                            </div>
-                            <div class="col-md-10"> <small>Jan 2023 - Present</small><br /><strong> Co-Founder and
-                                    Principal UX Designer @ Inaiways Technology </strong><br /> Working on Conversation
-                                Design with AI Agents,
-                                Created platform for AI powered landing pages, Reduced landing page
-                                creation time from 25 days to 20 minutes in 3 iterations over 1.5 years. Worked on
-                                dashboard app
-                                that reduced customer support time by 95%. Hosted Inaiways Podcast with different CXOs.
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="company-logo">
-                                    <img src="assets/images/about/eq.png" />
-                                </div>
-                            </div>
-                            <div class="col-md-10"> <small>Aug 2021 - Dec 2022</small><br /> <strong>Sr. UX Designer @
-                                    eq
-                                    Technologic</strong> <br />
-                                Worked on complex
-                                enterprise products - Revamped eQube BI Admin Console 30–35% reduction in
-                                troubleshooting time,
-                                Revamped Scheduler Module, Built the Usability Initiative in UX Dept, Design System
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="company-logo">
-                                    <img src="assets/images/about/mkcl.jpg" />
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <small>Oct 2016 - Aug 2021</small><br /><strong>
-                                    Member of Technical Development Staff - UX @ sMKCL</strong> <br /> Led design and
-                                front-end development for MKCL Learnico, Mahalabharti, MKCL LiveDemy, and ERA LMS,
-                                impacting millions of users. Conducted user research, created UX/UI designs, prototypes,
-                                and implemented front-end solutions while collaborating with developers and
-                                stakeholders.
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="company-logo">
-                                    <img src="assets/images/about/cv.jpg" />
-                                </div>
-                            </div>
-                            <div class="col-md-9"> <small>June 2015 - Oct 2016 </small><br /> <strong>UX Developer @
-                                    CapitalVia
-                                </strong><br /> Worked on UX, UI and front end coding of 7 applications, in-house and
-                                customer
-                                facing. Collaborated with
-                                CEO and IT Head for developing new applications. </div>
-                        </div>
-
-
-
-
-                    </div><br />
-                    <div class="project-title">
-
-                        Education - Bachelor of Engineering in Computer Science, IIIT Pune
-
-                    </div>
-                    <div class="project-subtitle">
-                        I've completed my engineering in computer science domain from International Institute of
-                        Information Technology, located in Pune, Maharashtra, India.
-                    </div>
-
-                </div>
-            </div> -->
-            <!-- <hr /> -->
-
-            <div class="row">
-                <div class="project-thumbnail col-md-12 ">
-                    <img class="info-img  full-width" src="assets/images/about/meaevent.jpg" />
-                </div>
-                <div class="col-md-12 d-flex justify-content-center">
-                    <div class="text-center">This photograph was taken during the latest MEA Event where I introduced
-                        Inaiways
-                        AI Agents
-                        to potential clients & gathered business requirements
-                    </div>
-                </div>
-            </div><br />
-            <hr />
-            <hr />
-            <h1 class="mt-5">Testimonials from Linkedin</h1><br />
-            <div class="row full-width">
-                <div class="col-md-12 mb-4">
-                    <img class="full-width mb-4 " src="assets/images/about/t1.png" />
-                    <br />
-                </div>
-
-                <div class="col-md-12 mb-4">
-                    <img class="full-width mb-4" src="assets/images/about/t2.png" />
-                    <br />
-                </div>
-
-                <div class="col-md-12 mb-4">
-                    <img class="full-width mb-4" src="assets/images/about/t3.png" />
-                    <br />
-                </div>
-
-                <div class="col-md-12 mb-4">
-                    <img class="full-width mb-4" src="assets/images/about/t4.png" />
-                </div>
-            </div>
-
-
-            <hr />
-            <h1 class="my-5">UX Certifications</h1>
-
-            <div class="project-info row align-items-center">
-
-                <div class="col-md-9 mb-3">
-                    <a href="https://www.interaction-design.org/lekha-p-deshmukh/certificate/course/Ph6NFKj5X">
-                        <div class="project-title">
-                            Design Thinking: The Beginner’s Guide
-                        </div>
-                        <div class="project-subtitle">
-                            Top 10% Distinction
-                        </div>
+                </p>
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-6xl">
+                    Designing Systems for Scale
+                </h5>
+                <p class="py-5 mb-5 text-gray-600 lg:text-xl">
+                    With 10+ years in UX, I design data-informed, AI-powered experiences that scale. From dashboards
+                    to
+                    conversational interfaces, I craft systems that solve real problems and grow with your users.
+                </p>
+                <div class="flex items-center">
+                    <a href="mailto:deshmukh.lekha@gmail.com"
+                        class="inline-flex cursor-pointer items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 gap-2 rounded-lg hover:bg-black">
+                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="Envelope-Closed--Streamline-Radix" height="20" width="20">
+                            <desc>Envelope Closed Streamline Icon: https://streamlinehq.com</desc>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.3333333333333333 2.6666666666666665c-0.73638 0 -1.3333333333333333 0.5969599999999999 -1.3333333333333333 1.3333333333333333v12c0 0.7363999999999999 0.5969533333333332 1.3333333333333333 1.3333333333333333 1.3333333333333333h17.333333333333332c0.7363999999999999 0 1.3333333333333333 -0.5969333333333333 1.3333333333333333 -1.3333333333333333V4c0 -0.7363733333333333 -0.5969333333333333 -1.3333333333333333 -1.3333333333333333 -1.3333333333333333H1.3333333333333333Zm0 1.3333333333333333 17.333333333333332 0v1.2332533333333333c-0.11013333333333333 -0.00010666666666666667 -0.22159999999999996 0.030093333333333333 -0.3214666666666667 0.09348000000000001L10 10.622706666666666 1.6548266666666667 5.326733333333333C1.5549466666666665 5.263346666666666 1.4434666666666667 5.233146666666666 1.3333333333333333 5.233253333333333V4Zm0 2.5439599999999998V16h17.333333333333332V6.543959999999999L10.321493333333333 11.839933333333331c-0.19624 0.12453333333333333 -0.4467466666666667 0.12453333333333333 -0.6429866666666666 0L1.3333333333333333 6.543959999999999Z"
+                                fill="#f3f3f3" stroke-width="1.3333"></path>
+                        </svg>
+                        Get in touch
                     </a>
-
-                </div>
-
-                <div class="col-md-9 mb-3">
-                    <a
-                        href="https://www.interaction-design.org/members/lekha-p-deshmukh/certificate/course/e1d295d3-d6ee-49c9-b6d4-a2a718ccc0f4">
-                        <div class="project-title">
-                            Conducting Usability Testing
-                        </div>
-                        <div class="project-subtitle">
-                            Top 10% Distinction
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-9 mb-3">
-                    <a href="https://www.interaction-design.org/lekha-p-deshmukh/certificate/course/PD82jRW72">
-                        <div class="project-title">
-                            Mobile User Experience (UX) Design
-                        </div>
-                        <div class="project-subtitle">
-                            Top 10% Distinction
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-9 mb-3">
-                    <a href="https://www.interaction-design.org/lekha-p-deshmukh/certificate/course/PvSFgFht1">
-                        <div class="project-title">
-                            Become a UX Designer from Scratch
-                        </div>
-                        <div class="project-subtitle">
-                            Top 10% Distinction
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-9 mb-3">
-                    <a
-                        href="https://www.linkedin.com/learning/certificates/4493a272504e8c15ee04fa8cc58d820364bb189c0f23bbbca54b9e894d0d56b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8uzXYUXmSA%2BM6lxf88rwxQ%3D%3D">
-                        <div class="project-title">
-                            Marketing: Conversion Rate Optimization
-                        </div>
-                        <div class="project-subtitle">
-                            By Jim Huffman - CEO of Growth Hit
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-9 mb-3">
-                    <a
-                        href="https://www.linkedin.com/learning/certificates/a93299edc66f279a2372a8b6b4d1b57be63922390c4501c91581d348779668a4?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8uzXYUXmSA%2BM6lxf88rwxQ%3D%3D">
-                        <div class="project-title">
-                            Interaction Design: Deliverables
-                        </div>
-                        <div class="project-subtitle">
-                            By Diane Cronenwett
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-9 mb-3">
-                    <a
-                        href="https://www.interaction-design.org/members/lekha-p-deshmukh/certificate/masterclass/mcc_105e3c4af0ab4ef6a5afb0b6c1a9dfe6">
-                        <div class="project-title">
-                            Conversation Design: Practical Tips for AI Design
-                        </div>
-                        <div class="project-subtitle">
-                            Masterclass by Elaine Anzaldo, Meta
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- <div class="row">
-                <div class="project-thumbnail col-md-12 mt-3">
-                    <img class="info-img  full-width" src="assets/images/about/meaevent.jpg" />
-                </div>
-                <div class="col-md-12 d-flex justify-content-center">
-                    <div class="text-center">This pic was taken during the latest MEA Event where I spoke to customers
-                        about Inaiways AI Agents
-                        from sales perspective & gathered feedback about their experience
-                    </div>
-                </div>
-            </div><br />
-            <hr /> -->
-            <h1 class="mt-5">Work</h1>
-            <!-- <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="attendance.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/attendance/test2.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="attendance.html">
-                        <div class="project-title">
-                            Designing Attendance Module in LearniCo
-                        </div>
-                        <div class="project-subtitle">
-                            After successful MVP launch of LearniCo, it was time to develop the much needed Attendance
-                            module
-                        </div>
-                    </a>
-                </div>
-            </div> -->
-            <!-- <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="timetable.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/timetable/prototypes/home.png" />
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-7">
-                    <a href="timetable.html">
-                        <div class="project-title">
-                            Building the timetable feature
-                        </div>
-                        <div class="project-subtitle">
-                            Analysing the need and building the required feature
-                        </div>
-                    </a>
-                </div>
-            </div> -->
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="landingpages.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img teachermobile-bg" src="assets/images/landingpages/gads.jpg" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="landingpages.html">
-                        <div class="project-title">
-                            Creating AI prompts for Google Ads Landing Pages used by 100+ Premium Clients
-                        </div>
-                        <div class="project-subtitle">
-                            Crafting Scalable, Data-Driven Landing Pages to Power High-Conversion Google Ads Campaigns
-                            Across 20+ Industries
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="dashboard.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img teachermobile-bg" src="assets/images/dashboard/2.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="dashboard.html">
-                        <div class="project-title">
-                            Reducing customer support time by 95%
-                        </div>
-                        <div class="project-subtitle">
-                            Creating dashboard app for Inaiways Customer to help them be updated with ad status along
-                            with reducing the customer support time
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="adminconsole.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img teachermobile-bg" src="assets/images/adminconsole/afteradmin.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="adminconsole.html">
-                        <div class="project-title">
-                            Reimagining the Admin Dashboard for Faster Troubleshooting & Happier Admins
-                        </div>
-                        <div class="project-subtitle">
-                            6 months of streamlined workflows, reduced downtime, and consistent design.
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="inclassroom.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img teachermobile-bg" src="assets/images/inclassroom/mockup/1.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="inclassroom.html">
-                        <div class="project-title">
-                            Redefining the In-classroom experience
-                        </div>
-                        <div class="project-subtitle">
-                            Saving the cost for institutes and giving teachers the power to control the application
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="mahalabharti.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/mahalabharti/research/Navale.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="mahalabharti.html">
-                        <div class="project-title">
-                            Mahalabharti - Benefiting Half a Million people
-                        </div>
-                        <div class="project-subtitle">
-                            Providing Government scheme benefits to end users below poverty line
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <hr />
-
-            <h1 class="my-5">Podcast </h1>
-            <div class="row">
-                <div class="col-md-12">
-                    <iframe class="full-width" height="515"
-                        src="https://www.youtube.com/embed/UIWcn7i3w34?si=B4ta0jvri1TWIXBs" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="col-md-12">
-                    <iframe class="full-width" height="515"
-                        src="https://www.youtube.com/embed/S7NffQCVxAA?si=vSl-iKBPaeAnFXku" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="col-md-12 d-flex justify-content-center">
-                    <div class="text-center"> From Organising to hosting the Business Success Stories Podcast, Sponsored
-                        by Inaiways Technology.
-                    </div>
-                </div>
-            </div>
-            <br />
-            <hr />
-            <h1 class="my-5">Experiments </h1>
-            <div class="project-info row align-items-center ">
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/conferenceMode.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/conferenceMode/conf-mode.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/LearniCoGames.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img"
-                                src="assets/images/visualsImg/LearniCo Projector mode/Games in Learnico/Jeopardy.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/studentMobileTheme.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img text-center"
-                                src="assets/images/visualsImg/studentMobile/Lekha_Deshmukh_on_Behance-3.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/mcqResults.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/LearniCo Projector mode/Summary2.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/ecdodesign.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/ecdo/Extended LA OER.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/okr.html">
-                        <div class="project-thumbnail text-center info-big-mobile bg-eee">
-                            <img class=" info-img " src="assets/images/visualsImg/OKR/OKR Dashboard.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/superschool.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img ob-fit" src="assets/images/visualsImg/SuperSchool1.png" />
-                        </div>
-                    </a>
-                </div>
-                <!-- <div class="col-md-4 hover-card">
-                    <a href="visuals/livedemy.html">
-                        <div class="project-thumbnail text-center ">
-                            <img class=" info-img ob-fit" src="assets/images/visualsImg/Livedemy/thumbnail.png" />
-                        </div>
-                    </a>
-                </div> -->
-                <!-- <div class="col-md-4 hover-card">
-                    <a href="visuals/era.html">
-                        <div class="project-thumbnail text-center ">
-                            <img class=" info-img ob-fit p-2" src="assets/images/visualsImg/era/z8k9leCw.png" />
-                        </div>
-                    </a>
-                </div> -->
-                <div class="col-md-4 hover-card">
-                    <a href="visuals/animation.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-
-
-            <!-- <h1 class="my-5">UI Ideations</h1>
-            <div class="project-info row align-items-center ">
-                <div class="col-md-4">
-                    <a href="visuals/conferenceMode.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/conferenceMode/conf-mode.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7 mt-4">
-                    <a href="visuals/conferenceMode.html">
-                        <div class="project-title">
-                            Interaction Design implementing Hick's Law
-                        </div>
-                        <div class="project-subtitle">
-                            Creating 3 design variations to show various interactions in the conference mode of LearniCo
-                            Student Mobile App
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/LearniCoGames.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img"
-                                src="assets/images/visualsImg/LearniCo Projector mode/Games in Learnico/Jeopardy.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/LearniCoGames.html">
-                        <div class="project-title">
-                            Designing Learning Games for LearniCo
-                        </div>
-                        <div class="project-subtitle">
-                            Designed 5 learning games for LearniCo application that will encourage student learning and
-                            particiation in classroom
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/studentMobileTheme.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img text-center"
-                                src="assets/images/visualsImg/studentMobile/Lekha_Deshmukh_on_Behance-3.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/studentMobileTheme.html">
-                        <div class="project-title">
-                            The theme loved by more than 4,000 students
-                        </div>
-                        <div class="project-subtitle">
-                            Implementing an inviting theme for the students
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/mcqResults.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/LearniCo Projector mode/Summary2.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/mcqResults.html">
-                        <div class="project-title">
-                            The Design for Highlights & Statistics in LearniCo
-                        </div>
-                        <div class="project-subtitle">
-                            Creating desing that will look visually pleasing in classroom projectors.
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/ecdodesign.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/ecdo/Extended LA OER.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/ecdodesign.html">
-                        <div class="project-title">
-                            Design for helping teachers create presentations faster
-                        </div>
-                        <div class="project-subtitle">
-                            This design makes use of Online Education Resources to present relevant high-quality
-                            educational online content to teachers.
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/okr.html">
-                        <div class="project-thumbnail text-center info-big-mobile bg-eee">
-                            <img class=" info-img " src="assets/images/visualsImg/OKR/OKR Dashboard.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/okr.html">
-                        <div class="project-title">
-                            Mobile app for having Company goals & objectives on fingertips
-                        </div>
-                        <div class="project-subtitle">
-                            The latest desing that I've created for OKR mobile app
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/superschool.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img ob-fit" src="assets/images/visualsImg/SuperSchool1.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/superschool.html">
-                        <div class="project-title">
-                            Landing page for school classrooms
-                        </div>
-                        <div class="project-subtitle">
-                            My experiment with creating a dashboard for school classrooms
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/livedemy.html">
-                        <div class="project-thumbnail text-center ">
-                            <img class=" info-img ob-fit" src="assets/images/visualsImg/Livedemy/thumbnail.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/livedemy.html">
-                        <div class="project-title">
-                            Developing the design for Livedemy Application
-                        </div>
-                        <div class="project-subtitle">
-                            Helping people get their job done from experts and learn how its done.
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/era.html">
-                        <div class="project-thumbnail text-center ">
-                            <img class=" info-img ob-fit p-2" src="assets/images/visualsImg/era/z8k9leCw.png" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/era.html">
-                        <div class="project-title">
-                            Designing the course home page for ERA LMS Portal.
-                        </div>
-                        <div class="project-subtitle">
-                            The ERA LMS is used by more than 1.5 crore students in Maharashtra.
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-info row align-items-center">
-                <div class="col-md-4">
-                    <a href="visuals/animation.html">
-                        <div class="project-thumbnail">
-                            <img class="info-img" src="assets/images/visualsImg/animation/FINAL-TRACK-GAME-MODE.gif" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-7">
-                    <a href="visuals/animation.html">
-                        <div class="project-title">
-                            Sprite Animation
-                        </div>
-                        <div class="project-subtitle">
-                            My experiment with CSS Sprite animation
-                        </div>
-                    </a>
-                </div>
-            </div> -->
-            <a href="https://dribbble.com/lekhad" class="btn btn-primary">View more on Dribbble</a>
-            <a href="https://www.behance.net/lekhadeshmukh" class="btn btn-primary">Behance</a>
-            <br /><br />
-            <h1 class="my-5">Let's get in touch</h1>
-
-            <div class="project-info row align-items-center">
-
-                <div class="col-md-9 mb-4 contact-us-icon">
-                    <a href="https://dribbble.com/lekhad">
-                        <img src="assets/images/contact/dribbble.png">
-                    </a>
-
-                    <a href="https://in.linkedin.com/in/lekha-deshmukh-16668890">
-                        <img src="assets/images/contact/linkedin.png">
-                    </a>
-                    <a href="mailto:deshmukh.lekha@gmail.com">
-                        <img class="p-1" src="assets/images/contact/email.png">
-                    </a>
-                    <a href="https://www.behance.net/lekhadeshmukh">
-                        <img src="assets/images/contact/Behance.svg">
-                    </a>
-                    <a href="https://medium.com/@deshmukh.lekha">
-                        <img src="assets/images/contact/medium.png">
-                    </a>
-
-                    <a href="https://www.instagram.com/ld.in.design/?hl=en">
-                        <img src="assets/images/contact/insta.png">
-                    </a>
-                    <a href="https://www.facebook.com/lekha.deshmukh.5">
-                        <img src="assets/images/contact/fb.png">
-                    </a>
-
+                    <!-- <a href="/" aria-label=""
+                        class="inline-flex items-center text-lg text-gray-900 underline transition-colors duration-200">
+                        Download Resume
+                        <svg fill="currentColor" viewBox="0 0 12 12" class="inline-block w-2 ml-2">
+                            <path
+                                d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
+                            </path>
+                        </svg></a> -->
                 </div>
             </div>
         </div>
+        <div class="relative lg:w-1/2 m-1 px-2 sm:px-0">
+            <img src="assets/images/hero.webp" alt="Hero Image"
+                class="object-cover rounded-lg w-full lg:absolute h-80 lg:h-full" />
+        </div>
+    </section>
+    <section>
 
-        <!-- </div>   -->
-    </div>
 
-    <div class="footer">
-        Crafted and created by <strong>Lekha Deshmukh</strong>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+        <div class="grid grid-cols-2 md:grid-cols-4   px-1  gap-1">
+            <div class="grid gap-1">
+                <div>
+                    <img class="max-h-full max-w-full rounded-lg " src="assets/images/about/webinar.PNG" alt="">
+                </div>
+                <div>
+                    <img class=" max-w-full rounded-lg " src="assets/images/about/podcast.webp" alt="">
+                    <!-- <img class=" max-w-full rounded-lg  rounded-lg sm:rounded-l-none"
+                        src="assets/images/about/team.jpeg" alt=""> -->
+                </div>
+                <!-- <div class="flex gap-2">
+                    <div>
+                        <img class="h-48 max-w-full rounded-lg" src="assets/images/quotes/nailpolish.PNG" alt="">
+                    </div>
+                    
+                </div> -->
 
+                <div>
+                    <img class="h-auto max-w-full rounded-lg  " src="assets/images/about/kinabaluTrees.png" alt="">
+                </div>
+
+            </div>
+            <div class="grid gap-1">
+                <div>
+                    <img class="h-full max-w-full  rounded-lg" src="assets/images/about/meaevent.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-full max-w-full rounded-lg" src="assets/images/quotes/dc1.jpeg" alt="">
+                </div>
+                <div>
+                    <img class="h-full max-w-full object-cover rounded-lg   " src="assets/images/about/kinabaluTrek.png"
+                        alt="">
+                </div>
+                <!-- <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                </div> -->
+
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-full  rounded-lg" src="assets/images/about/sinhagad.PNG" alt="">
+                </div>
+                <div>
+                    <img class="max-h-full -mt-3  w-full object-cover rounded-lg"
+                        src="assets/images/about/gooddesign.png" alt="">
+                </div>
+                <div>
+                    <img class="h-full max-w-full rounded-lg" src="assets/images/quotes/dc2.jpeg" alt="">
+                </div>
+
+                <!-- <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                </div> -->
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-full max-w-full object-cover rounded-lg  " src="assets/images/quotes/desk.PNG" alt="">
+                </div>
+                <div>
+                    <img class="h-full -mt-3 max-w-full object-cover  rounded-lg " src="assets/images/about/oats.png"
+                        alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="p-1" id="about">
+        <div class="w-full bg-purple-900 rounded-lg">
+            <div class="flex flex-col px-12 py-20 mx-auto max-w-7xl lg:flex-row ">
+                <div
+                    class="relative w-full pr-12 mb-10 lg:text-left sm:text-center text-white lg:w-1/2 xl:w-6/12 lg:mb-0">
+
+                    <div
+                        class="flex items-center justify-center w-16 h-16 mb-5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            class="w-10 h-10 text-white">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="max-w-2xl mb-6">
+                        <div class="mb-6">
+                            <p
+                                class="inline font-sans text-5xl text-white font-bold tracking-tight sm:text-5xl sm:leading-none ">
+                                Human-First Design -
+                            </p>
+                            <p
+                                class="block font-sans text-5xl font-bold tracking-tight text-purple-300 sm:text-5xl sm:leading-none">
+                                My Work, My Passion
+                            </p>
+                        </div>
+                        <p class="text-base text-purple-200 md:text-lg">
+
+                        </p>
+                        <ul class="relative max-w-md mx-auto lg:mx-0 text-base text-purple-200 md:text-lg">
+                            <li class=" pl-6 mt-5">
+                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                    class="absolute left-0 w-5 h-5">
+                                    <path fillrule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        cliprule="evenodd">
+                                    </path>
+                                </svg>
+                                <span class="font-bold">Expertise - </span> I’m a UX designer + Frontend Developer,
+                                who’s
+                                shaped
+                                products across
+                                AI startups, enterprise tools, and large-scale public platforms.
+                            </li>
+                            <li class=" pl-6 mt-5">
+                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                    class="absolute left-0 w-5 h-5">
+                                    <path fillrule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        cliprule="evenodd">
+                                    </path>
+                                </svg>
+                                <span class="font-bold">Experience - </span> At Inaiways, EQ, and MKCL, I’ve
+                                designed experiences used by businesses, educators, and
+                                everyday citizens alike.
+                            </li>
+                            <li class="  pl-6 mt-5">
+                                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                    class="absolute left-0 w-5 h-5">
+                                    <path fillrule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        cliprule="evenodd">
+                                    </path>
+                                </svg>
+                                <span class="font-bold">Outcome Driven -</span> Setting UX KPIs while ensuring
+                                delivery of products that are intuitive, flexible, and
+                                human-first.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="relative flex flex-col items-center justify-center flex-shrink-0 w-full max-w-2xl py-16 mx-auto bg-gray-200 rounded-lg lg:w-1/2 lg:mx-0 xl:w-6/12">
+                    <h3 class="text-2xl font-bold text-gray-500">Work Experience
+                    </h3>
+                    <div class="w-1 h-6 my-3 bg-gray-300 rounded-full">
+                    </div>
+                    <!-- User Card -->
+                    <div class="w-64 bg-white rounded-lg shadow">
+                        <div class="flex items-center justify-between w-full p-6 space-x-6">
+                            <img src="assets/images/IMG_8439.jpg" alt=""
+                                class="flex-shrink-0 w-10 h-10 bg-gray-300 object-cover rounded-full" />
+                            <div class="flex-1 truncate">
+                                <div class="flex items-center space-x-3">
+                                    <h3 class="flex-shrink-0 text-sm font-medium text-gray-500">Lekha Deshmukh
+                                    </h3>
+
+                                    <!-- <span class="inline-block w-full h-2 bg-gray-100 rounded-full"></span> -->
+                                </div>
+                                <div class="flex-shrink-0 text-sm  text-gray-400">Principal UX
+                                </div>
+                                <!-- <div class="h-3 mt-3 text-gray-500 bg-gray-100 rounded-lg">
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1 h-6 mt-3 bg-gray-300 rounded-full">
+                    </div>
+                    <div class="w-64 h-1 bg-gray-300 rounded-full">
+                    </div>
+                    <div class="relative flex justify-between w-64 mb-3">
+                        <div class="w-1 h-6 -mt-1 bg-gray-300 rounded-full">
+                        </div>
+                        <div class="w-1 h-6 -mt-1 bg-gray-300 rounded-full">
+                        </div>
+                        <div class="w-1 h-6 -mt-1 bg-gray-300 rounded-full">
+                        </div>
+                    </div>
+                    <div class="flex justify-between w-full max-w-lg px-10 gap-4">
+
+                        <div
+                            class="right-0 flex flex-col  justify-center w-32 p-4 text-gray-500 bg-white rounded-lg shadow">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 mb-2">
+                                <path fillrule="evenodd"
+                                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                                    cliprule="evenodd">
+                                </path>
+                            </svg>
+                            <h4 class="text-xs font-medium mb-2 uppercase">AI-Powered UX
+                            </h4>
+                            <p class="text-xs text-gray-400">AI Agents Conversational UX, Landing Page AI Editor,
+                                Customer
+                                Support & Reporting App
+                            </p>
+                        </div>
+                        <div
+                            class="right-0 flex flex-col  justify-center w-32 p-4 text-gray-500 bg-white rounded-lg shadow">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                                id="Office-Worker--Streamline-Core" class="w-5 h-5 mb-2" height="14" width="14">
+                                <g id="office-worker--office-worker-human-resources">
+                                    <path id="Union" fill="#6a7282" fill-rule="evenodd"
+                                        d="M3.5 4a2 2 0 1 0 0 -4 2 2 0 0 0 0 4Zm2.045 6v-0.03c0 -0.99 0.547 -1.852 1.355 -2.302A3.5 3.5 0 0 0 0 8.5v1a0.5 0.5 0 0 0 0.5 0.5h1l0.445 3.562a0.5 0.5 0 0 0 0.496 0.438H4.56a0.5 0.5 0 0 0 0.496 -0.438L5.5 10h0.045Zm4.382 -2.313a0.25 0.25 0 0 0 -0.25 0.25v0.651h1.413v-0.65a0.25 0.25 0 0 0 -0.25 -0.25h-0.913Zm-1.75 0.25v0.651c-0.763 0 -1.382 0.62 -1.382 1.383v2.647c0 0.763 0.619 1.382 1.382 1.382h4.412c0.763 0 1.382 -0.619 1.382 -1.382V9.97c0 -0.763 -0.618 -1.382 -1.381 -1.382v-0.65a1.75 1.75 0 0 0 -1.75 -1.75h-0.913a1.75 1.75 0 0 0 -1.75 1.75Z"
+                                        clip-rule="evenodd" stroke-width="1"></path>
+                                </g>
+                            </svg>
+                            <h4 class="text-xs font-medium mb-2 uppercase">Enterprise Systems
+                            </h4>
+                            <p class="text-xs text-gray-400"> Design System, Admin Console - User
+                                Access, Queue etc, License Manager.
+                            </p>
+                        </div>
+                        <div
+                            class="right-0 flex flex-col  justify-center w-32 p-4 text-gray-500 bg-white rounded-lg shadow">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                                id="Class-Lesson--Streamline-Core" height="14" class="w-5 h-5 mb-2" width="14">
+                                <g id="class-lesson--class-lesson-education-teacher">
+                                    <path id="Union" fill="#6a7282" fill-rule="evenodd"
+                                        d="M12.402 8.976H7.259a2.278 2.278 0 0 0 -0.193 -4.547h-1.68A3.095 3.095 0 0 0 4.609 0h7.793a1.35 1.35 0 0 1 1.348 1.35v6.279c0 0.744 -0.604 1.348 -1.348 1.348ZM2.898 4.431a1.848 1.848 0 1 0 0 -3.695 1.848 1.848 0 0 0 0 3.695Zm5.195 2.276c0 -0.568 -0.46 -1.028 -1.027 -1.028H2.899a2.649 2.649 0 0 0 -2.65 2.65v1.205c0 0.532 0.432 0.963 0.964 0.963h0.172l0.282 2.61A1 1 0 0 0 2.66 14h0.502a1 1 0 0 0 0.99 -0.862l0.753 -5.404h2.16c0.567 0 1.027 -0.46 1.027 -1.027Z"
+                                        clip-rule="evenodd" stroke-width="1"></path>
+                                </g>
+                            </svg>
+                            <h4 class="text-xs font-medium mb-2 uppercase">Education & Public Impact
+                            </h4>
+                            <p class="text-xs text-gray-400">Large-scale edu-tech apps, Designing for Next billion
+                                users,
+                                Inclusive design
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="p-1">
+        <div id="inbda"
+            class="box-border overflow-hidden bg-blue-50 relative w-full bg-gray-100 font-sans leading-6  border-solid">
+            <div
+                class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
+                <div class="relative pb-10 space-y-5">
+                    <!-- <h5
+                    class="w-full mx-0 mt-0 mb-4 font-sans font-bold text-center text-purple-700 border-0 border-gray-200">
+                    Work Areas
+                </h5> -->
+
+                    <h2 class="text-4xl text-center font-bold sm:text-5xl "> What I Bring to the Table
+                    </h2>
+                    <p
+                        class="w-full max-w-xl   mx-auto  font-sans  text-center  lg:text-lg text-lg text-gray-600  sm:text-xl">
+                        A snapshot of the skills and practices I bring to every project
+                    </p>
+                </div>
+                <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
+                    <!-- Feature 1 -->
+                    <div class="col-span-3 font-sans text-gray-700 bg-white backdrop-blur-md rounded-lg">
+                        <div
+                            class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                            <div
+                                class="flex-shrink-0 p-3 font-sans bg-gradient-to-br from-fuchsia-100 to-indigo-100 text-gray-700 border border-gray-200 rounded-lg backdrop-blur-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokewidth="1.5"
+                                    stroke="#2c3e50" fill="none" strokelinecap="round" strokelinejoin="round"
+                                    class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7">
+                                    <path d="M0 0h24v24H0z" stroke="none">
+                                    </path>
+                                    <path
+                                        d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5M16 5.25l-8 4.5">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div
+                                class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                                <h6
+                                    class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                    Scale Design, Fast
+                                </h6>
+                                <p class="box-border mx-0 mt-1 mb-0 text-gray-500 border-solid sm:mt-4">
+                                    From MVP to maturity, I help teams go from 0→1—and beyond—with clarity and
+                                    speed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="col-span-3 font-sans text-gray-700 bg-white backdrop-blur-md rounded-lg">
+                        <div
+                            class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+
+                            <div
+                                class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-lg bg-gradient-to-br from-yellow-100 to-orange-100">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" strokewidth="0.3" fill="none"
+                                    viewBox="0 0 24 24" id="Ai-Spark-Generate-Voice--Streamline-Outlined-Expansion"
+                                    height="24" width="24">
+                                    <desc>Ai Spark Generate Voice Streamline Icon: https://streamlinehq.com</desc>
+                                    <g id="ai-spark-generate-voice">
+                                        <path id="Union" fill="#364153" fill-rule="evenodd"
+                                            d="M17 1.5c0 1.93296 -1.567 3.49991 -3.5 3.49991v2c1.933 0 3.5 1.56701 3.5 3.49999V10.5l1.0001 0 0.9999 0v-0.0001c0 -1.93298 1.567 -3.49999 3.5 -3.49999h0.0001v-2H22.5c-1.9329 0 -3.4999 -1.56695 -3.5 -3.49991h-2ZM7 6v12h2V6H7Zm4 3v13h2V9h-2Zm-8 1v4h2v-4H3Zm12 2.5V18h2v-5.5h-2Zm4 0V14h2v-1.5h-2Z"
+                                            clip-rule="evenodd" stroke-width="0.1"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div
+                                class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                                <h6
+                                    class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                    AI-Powered UX
+                                </h6>
+                                <p class="box-border mx-0 mt-1 mb-0 text-gray-500 border-solid sm:mt-4">
+                                    I can design human-centered AI experiences that feel intuitive and assistive.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="col-span-3 font-sans text-gray-700 bg-white backdrop-blur-md rounded-lg">
+                        <div
+                            class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                            <div
+                                class="flex-shrink-0 p-3 bg-gradient-to-br from-pink-100 to-purple-100 font-sans text-gray-700 border border-gray-200 rounded-lg">
+
+
+
+                                <svg id="App-Connectivity--Streamline-Carbon" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" height="24" stroke-width="0.03"
+                                    class="leading-6 text-center   align-middle  w-7 h-7" stroke="#596775FF" width="24">
+                                    <desc>App Connectivity Streamline Icon: https://streamlinehq.com</desc>
+                                    <defs></defs>
+                                    <title>app-connectivity</title>
+                                    <path stroke="thin"
+                                        d="M15 10.5h6a1.501725 1.501725 0 0 0 1.5 -1.5V3a1.501725 1.501725 0 0 0 -1.5 -1.5h-6a1.501725 1.501725 0 0 0 -1.5 1.5H6.75a1.501725 1.501725 0 0 0 -1.5 1.5v3H3a1.501725 1.501725 0 0 0 -1.5 1.5v6a1.501725 1.501725 0 0 0 1.5 1.5h1.5v3a1.501725 1.501725 0 0 0 1.5 1.5h7.5a1.501725 1.501725 0 0 0 1.5 1.5h6a1.501725 1.501725 0 0 0 1.5 -1.5v-6a1.501725 1.501725 0 0 0 -1.5 -1.5h-6a1.501725 1.501725 0 0 0 -1.5 1.5v4.5H6v-3h3a1.501725 1.501725 0 0 0 1.5 -1.5v-6a1.501725 1.501725 0 0 0 -1.5 -1.5H6.75V4.5h6.75v4.5a1.501725 1.501725 0 0 0 1.5 1.5Zm0 10.5v-3h6v3Zm6 -6 0 1.5h-6v-1.5ZM3 15v-3h6v3Zm6.000375 -4.5H3v-1.5h6ZM15 9V6h6v3Zm6 -6 0 1.5h-6V3Z"
+                                        fill="#2c3e50" stroke-width="0.02"></path>
+
+                                </svg>
+                            </div>
+                            <div
+                                class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                                <h6
+                                    class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                    Enterprise Experience
+                                </h6>
+                                <p class="box-border mx-0 mt-1 mb-0 text-gray-500 border-solid sm:mt-4">
+                                    I’ve redesigned admin tools, customer dashboards, and government platforms used
+                                    by
+                                    millions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="col-span-3 font-sans text-gray-700 bg-white backdrop-blur-md rounded-lg">
+                        <div
+                            class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                            <div
+                                class="flex-shrink-0 p-3 bg-gradient-to-br from-green-100 to-emerald-100 font-sans text-gray-700 border border-gray-200 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                                    strokewidth="1.5" stroke="#2c3e50" fill="none" strokelinecap="round"
+                                    strokelinejoin="round"
+                                    class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7">
+                                    <path d="M0 0h24v24H0z" stroke="none">
+                                    </path>
+                                    <path
+                                        d="M3 12h3M12 3v3M7.8 7.8L5.6 5.6M16.2 7.8l2.2-2.2M7.8 16.2l-2.2 2.2M12 12l9 3-4 2-2 4-3-9">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div
+                                class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                                <h6
+                                    class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                    Cross-Functional Collaboration
+                                </h6>
+                                <p class="box-border mx-0 mt-1 mb-0 text-gray-500 border-solid sm:mt-4">
+                                    I speak dev and business fluently, ensuring smooth handoffs and real-world
+                                    solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="col-span-3 font-sans text-gray-700 bg-white backdrop-blur-md rounded-lg">
+                        <div
+                            class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                            <div
+                                class="flex-shrink-0 p-3 bg-gradient-to-br from-orange-100 to-pink-100 font-sans text-gray-700 border border-gray-200 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                                    strokewidth="1.5" stroke="#2c3e50" fill="none" strokelinecap="round"
+                                    strokelinejoin="round"
+                                    class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7">
+                                    <path d="M0 0h24v24H0z" stroke="none">
+                                    </path>
+                                    <path d="M13 3v7h6l-8 11v-7H5l8-11">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div
+                                class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                                <h6
+                                    class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                    Design Systems
+                                </h6>
+                                <p class="box-border mx-0 mt-1 mb-0 text-gray-500 border-solid sm:mt-4">
+                                    I create scalable, documented systems that empower product teams across
+                                    functions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="col-span-3 font-sans text-gray-700 border-0  bg-white backdrop-blur-md rounded-lg">
+                        <div
+                            class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                            <div
+                                class="flex-shrink-0 p-3 bg-gradient-to-br from-cyan-100 to-purple-100 font-sans text-gray-700 border border-gray-200 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                                    strokewidth="1.5" stroke="#2c3e50" fill="none" strokelinecap="round"
+                                    strokelinejoin="round"
+                                    class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7">
+                                    <path d="M0 0h24v24H0z" stroke="none">
+                                    </path>
+                                    <rect x="3" y="4" width="18" height="8" rx="3">
+                                    </rect>
+                                    <rect x="3" y="12" width="18" height="8" rx="3">
+                                    </rect>
+                                    <path d="M7 8v.01M7 16v.01">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div
+                                class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                                <h6
+                                    class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                    Design Leadership
+                                </h6>
+                                <p class="box-border mx-0 mt-1 mb-0 text-gray-500 border-solid sm:mt-4">
+                                    Leading teams to deliver impactful design solutions.​
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="absolute top-24 left-0 -ml-64 opacity-25 w-96 h-64">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="Button-Stop--Streamline-Core" height="200"
+                width="200" class="w-full rounded-lg h-full bg-pink-500 opacity-50 fill-current">
+                <g id="button-stop--button-television-buttons-movies-stop-tv-video-controls">
+                </g>
+            </svg>
+            
+        </div>
+
+        <div class="absolute -top-2 right-0 -mb-56 opacity-25 w-96 h-64 -mr-72">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="Button-Stop--Streamline-Core" height="200"
+                width="200" class="w-full rounded-lg h-full bg-yellow-500 opacity-50 fill-current">
+                <g id="button-stop--button-television-buttons-movies-stop-tv-video-controls">
+                </g>
+            </svg>
+        </div>
+
+        <div class="absolute top-96 right-0 -mb-56 opacity-25 w-96 h-64 -mr-72">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" id="Button-Stop--Streamline-Core" height="200"
+                width="200" class="w-full rounded-lg h-full bg-purple-500 opacity-50 fill-current">
+                <g id="button-stop--button-television-buttons-movies-stop-tv-video-controls">
+                </g>
+            </svg>
+        </div> -->
+        </div>
+        <section class="w-full pb-24  bg-gray-100  relative">
+
+            <div
+                class="max-w-6xl relative mx-auto flex sm:px-0 px-10 flex-col items-start sm:items-center justify-center">
+
+                <h2 class="text-gray-900 text-3xl font-bold ">Certifications
+                </h2>
+                <!-- <p class="text-gray-600 text-lg text-left sm:text-center max-w-lg mt-5">Learn - Build - Ship - Iterate
+                </p> -->
+                <a href="#_" class="text-blue-500 font-bold text-sm  mt-3 flex items-center group"><span>View all on
+                        linkedin</span><svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 group-hover:ml-1 transition-all ease-out duration-200">
+                        <path fillrule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            cliprule="evenodd">
+                        </path>
+                    </svg></a>
+                <div class="flex   justify-center sm:grid sm:grid-cols-5  gap-12 mt-8">
+                    <div
+                        class="rounded-xs bg-transparent  hover:scale-125 transition-all ease-out cursor-pointer duration-200">
+                        <image class="h-auto flex justify-center hover:shadow-2xl border border-white border-4 "
+                            src="assets/images/certificates/interactiondesign.png" />
+                        <div class="mt-2 text-center text-sm text-gray-600">Interaction Design</div>
+                    </div>
+                    <div
+                        class="rounded-xs bg-transparent  hover:scale-125 transition-all ease-out cursor-pointer duration-200">
+                        <image class="h-auto flex justify-center hover:shadow-2xl border border-white border-4 "
+                            src="assets/images/certificates/abtest.jpeg" />
+                        <div class="mt-2 text-center text-sm text-gray-600">AB Testing</div>
+                    </div>
+                    <div
+                        class="rounded-xs bg-transparent flex justify-center items-center flex-col hover:scale-125 transition-all ease-out cursor-pointer duration-200">
+                        <image class="h-auto max-w-36 flex justify-center rounded-full hover:shadow-2xl "
+                            src="assets/images/certificates/practitioner.png" />
+                        <div class="mt-2 text-center text-sm text-gray-600">IBM Enterprise Design Practitioner</div>
+                    </div>
+                    <div
+                        class="rounded-xs bg-transparent hover:scale-125 transition-all ease-out cursor-pointer duration-200">
+                        <image class="h-auto flex justify-center hover:shadow-2xl border border-white border-4 "
+                            src="assets/images/certificates/cro.jpeg" />
+                        <div class="mt-2 text-center text-sm text-gray-600">Conversion Rate Optimization</div>
+                    </div>
+                    <div
+                        class="rounded-xs bg-transparent hover:scale-125 transition-all ease-out cursor-pointer duration-200">
+                        <image class="h-auto flex justify-center hover:shadow-2xl border border-white border-4 "
+                            src="assets/images/certificates/conversationdesign.jpeg" />
+                        <div class="mt-2 text-center text-sm text-gray-600">Conversation Design</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="p-1 rounded-lg" id="casestudies">
+        <div id="iucyrz" class="w-full py-20 bg-gray-50">
+            <div class="px-10 mx-auto max-w-7xl">
+                <div class="px-10 mb-8 space-y-5 lg:px-0 lg:text-center lg:mb-16">
+                    <h2 class="text-4xl font-bold sm:text-5xl">Case Studies
+                    </h2>
+                    <p class="text-lg text-gray-600 w-ful sm:text-xl"><a href="mailto:deshmukh.lekha@gmail.com"
+                            class="text-blue-500 hover:text-blue-700">Get in
+                            touch </a>to know the stories behind these
+                        screens
+                    </p>
+                </div>
+                <div class="grid overflow-hidden lg:rounded-lg">
+                    <div class="grid items-center lg:grid-cols-2">
+
+                        <div
+                            class="flex  flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl  ">Creating AI prompts for
+                                    Google Ads
+                                    Landing
+                                    Pages
+
+                                </h3>
+                                <a href="landingpages.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
+                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+
+                                <!-- <p class="text-sm text-gray-600 mb-4">Role: <span
+                                    class="font-medium text-gray-800">Co-Founder & UX Lead</span></p> -->
+
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Initial landing page creation took 20–25 days,
+                                        limiting
+                                        campaign scalability and lead generation.</p>
+                                </div>
+
+                                <!-- <div class="mb-4">
+                                <h4 class="font-semibold text-gray-800 mb-1">Approach:</h4>
+                                <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+                                    <li>Built 300+ reusable landing page templates across 20+ industries</li>
+                                    <li>Led UX strategy, process optimization, and cross-team collaboration</li>
+                                    <li>Introduced a scalable framework powered by AI and automation</li>
+                                </ul>
+                            </div> -->
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>⚡ Reduced build time from 25 days to 20 minutes</li>
+                                        <li>✅ 130+ pages delivered</li>
+                                        <li>📈 25,000+ leads generated</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="overflow-hidden bg-gray-100 h-96">
+                            <img src="assets/images/landingpages/gads.jpg" alt="" class="object-cover w-full h-full" />
+                        </div>
+
+                    </div>
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div class="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
+                            <img src="assets/images/dashboard/2.png" alt=""
+                                class="object-cover object-top w-full h-full" />
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl">Designing a self-serve dashboard, reduced
+                                    support time by 95%
+                                </h3>
+                                <a href="dashboard.html"
+                                    class="  inline-flex flex-none float-right cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
+                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Clients had no real-time visibility into ad
+                                        performance, overwhelming the support team with frequent status update
+                                        requests.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>📉 Reduced customer support time by 95%</li>
+                                        <li>🧠 Improved client understanding of ROI through funnel-based data
+                                            visualization
+                                        </li>
+                                        <li>🚀 Enabled scalable operations by freeing up support team bandwidth</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div
+                            class="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl">Faster Insights for Enterprise Admins
+
+                                </h3>
+                                <a href="adminconsole.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
+                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Inconsistent, inefficient admin tools were
+                                        increasing
+                                        issue resolution time and contributing to client dissatisfaction and
+                                        retention
+                                        risks.</p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-3">
+                                        <li>⚡ Reduced admin troubleshooting time by 30–35% through clear, real-time
+                                            system
+                                            summaries</li>
+                                        <li>🔍 Improved visibility into error states, enabling faster detection and
+                                            resolution</li>
+                                        <li>🧩 Unified design system across admin tools, reducing onboarding time
+                                            and
+                                            cognitive load</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bg-gray-100 h-96">
+                            <img src="assets/images/adminconsole/afteradmin.png" alt=""
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div class="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
+                            <img src="assets/images/mahalabharti/research/Navale.png" alt=""
+                                class="object-cover object-left  w-full h-full" />
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl ">Providing Access to Government Schemes
+                                    for
+                                    Rural
+                                    Citizens
+
+                                </h3>
+                                <a href="mahalabharti.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
+                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Low literacy, limited digital access, and lack
+                                        of
+                                        awareness prevented rural citizens from availing government welfare schemes.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>⚡ Enabled 500,000+ citizen registrations via offline-first, image-based
+                                            UX
+                                        </li>
+                                        <li>✅ 94% task success rate after usability improvements</li>
+                                        <li>📈 500+ success stories, adopted state-wide and noticed by other state
+                                            govts
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative block pt-20 pb-24 overflow-hidden text-left bg-white">
+        <div class="w-full px-20 mx-auto text-left md:px-10 max-w-7xl xl:px-16">
+            <div class="box-border flex flex-col flex-wrap justify-center -mx-4">
+                <div class="relative w-full mb-24 leading-6 text-left xl:flex-grow-0 space-y-5 xl:flex-shrink-0">
+                    <h2 class="text-4xl font-bold sm:text-5xl text-center ">
+                        Testimonials
+                    </h2>
+                    <p class="text-lg text-gray-600 w-full text-center">
+                        These kind words come from the people I’ve collaborated with, on work that made a real
+                        difference.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="box-border flex grid flex-wrap justify-center gap-10 -mx-4 text-center md:grid-cols-2 lg:gap-16 lg:justify-start lg:text-left">
+
+                <!-- Testimonial 1 -->
+                <div class="flex col-span-1">
+                    <div class="relative flex-shrink-0 w-20 h-20 text-left">
+                        <img src="assets/images/testimonials/bhakti.jpeg" class="w-20 h-20 rounded-full" />
+                    </div>
+                    <div class="relative px-4 mb-16 leading-6 text-left">
+                        <div class="box-border text-lg font-medium text-gray-600">
+                            Lekha Deshmukh is a powerhouse in UX design. Beyond her skills, Lekha is a collaborative
+                            team player who always seeks to uplift those around her. She brings both creativity and
+                            practicality to the table.
+                        </div>
+                        <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
+                            Bhakti Khandekar
+                        </div>
+                        <div class="box-border text-left text-gray-700">
+                            HOD Design @ eQ Technologic
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="flex col-span-1">
+                    <div class="relative flex-shrink-0 w-20 h-20 text-left">
+                        <img src="assets/images/testimonials/madhu.jpeg" class="w-20 h-20 rounded-full" />
+                    </div>
+                    <div class="relative px-4 mb-16 leading-6 text-left">
+                        <div class="box-border text-lg font-medium text-gray-600">
+                            As a Design Leader, Lekha has the capability to sift through mountains of data points,
+                            problem statements and find the paths that connect all of them elegantly. Her ability to
+                            focus on what the customer truly needs and design elements accordingly is something to
+                            be
+                            reckoned with.
+                        </div>
+                        <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
+                            Madhu Kumaar
+                        </div>
+                        <div class="box-border text-left text-gray-700">
+                            Senior System Engineer @ Cloudflare
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="flex col-span-1">
+                    <div class="relative flex-shrink-0 w-20 h-20 text-left">
+                        <img src="assets/images/testimonials/prajkt.jpeg" class="w-20 h-20 rounded-full" />
+                    </div>
+                    <div class="relative px-4 mb-5 leading-6 text-left">
+                        <div class="box-border text-lg font-medium text-gray-600">
+                            Her exceptional UX design skills consistently transform complex challenges into elegant,
+                            user-friendly solutions. What Lekha brings both amazing talent and great vibes to every
+                            project.
+                        </div>
+                        <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
+                            Prajkt Yeole
+                        </div>
+                        <div class="box-border text-left text-gray-700">
+                            AVP @ Citi Bank
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="flex col-span-1">
+                    <div class="relative flex-shrink-0 w-20 h-20 text-left">
+                        <img src="assets/images/testimonials/sid.jpeg" class="w-20 h-20 rounded-full" />
+
+                    </div>
+                    <div class="relative px-4 mb-5 leading-6 text-left">
+                        <div class="box-border text-lg font-medium text-gray-600">
+                            She has got an innate feel for compelling user experiences with psychological and
+                            scientific
+                            processes at heart. She constantly endeavours to understand user behavior and is highly
+                            insightful about the effectiveness of design.
+                        </div>
+                        <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
+                            Siddharth Sogani
+                        </div>
+                        <div class="box-border text-left text-gray-700">
+                            Freelance Consultant
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center">
+                <a href="https://www.linkedin.com/in/lekha-deshmukh/"
+                    class="inline-flex cursor-pointer items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 bg-blue-500 gap-2 rounded-lg hover:bg-blue-700">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="Linkedin-Logo--Streamline-Radix" height="24" width="24">
+                        <desc>Linkedin Logo Streamline Icon: https://streamlinehq.com</desc>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.2 1.6c-0.883648 0 -1.6 0.7163520000000001 -1.6 1.6v17.6c0 0.88368 0.7163520000000001 1.6 1.6 1.6h17.6c0.88368 0 1.6 -0.7163200000000001 1.6 -1.6V3.2c0 -0.883648 -0.7163200000000001 -1.6 -1.6 -1.6H3.2Zm1.6800000000000002 8h3.04v9.600000000000001h-3.04V9.600000000000001Zm3.24 -3.192c0 0.949936 -0.7700640000000001 1.72 -1.72 1.72 -0.9499200000000001 0 -1.72 -0.7700640000000001 -1.72 -1.72S5.45008 4.688000000000001 6.4 4.688000000000001c0.949936 0 1.72 0.7700640000000001 1.72 1.72ZM19.200000000000003 13.371408c0 -2.8880800000000004 -1.8665600000000002 -4.01088 -3.720816 -4.01088 -0.607152 -0.029920000000000002 -1.211648 0.097376 -1.7532 0.369184 -0.41123200000000004 0.20640000000000003 -0.8417439999999999 0.678656 -1.173728 1.499936h-0.08539200000000001V9.600704H9.600000000000001v9.606816000000002h3.049856V14.09792c-0.044096 -0.5233120000000001 0.123376 -1.199648 0.466 -1.6021280000000002 0.34264000000000006 -0.40248 0.8327680000000002 -0.49859200000000004 1.2043840000000001 -0.547408h0.11588799999999999c0.969856 0 1.689632 0.6004320000000001 1.689632 2.1135040000000003v5.145632h3.04976L19.200000000000003 13.371408Z"
+                            fill="#ffffff" stroke-width="1.6"></path>
+                    </svg> View on Linkedin</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section
+        class="flex items-center justify-center py-0 bg-white bg-gradient-to-br from-indigo-600 via-indigo-500 to-teal-400 min-w-screen">
+        <div
+            class="relative flex flex-col items-center w-full max-w-7xl px-4 py-8 mx-auto text-center lg:text-left lg:block sm:px-6 md:pb-0 md:pt-12 lg:px-8 lg:py-12">
+            <h2
+                class="my-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl   lg:my-0 xl:text-4xl sm:leading-tight">
+                Let’s Create Exceptional Experiences
+                <span class="block text-indigo-200 xl:inline"> Together</span>
+            </h2>
+            <p class="mt-1 mb-10 text-sm font-medium text-indigo-200 uppercase xl:text-base xl:tracking-wider lg:mb-0">
+                I'm always excited to collaborate, innovate, & design solutions that make a difference. <br /> Get
+                in
+                touch I'd love
+                to hear from you!
+            </p>
+            <div class="flex mb-8 lg:mt-6 lg:mb-0">
+                <div class="inline-flex">
+                    <a href="https://www.linkedin.com/in/lekha-deshmukh/"
+                        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-lg hover:text-indigo-600 hover:bg-indigo-50">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-0 right-0 mb-0 mr-3 lg:absolute lg:-mb-12">
+                <img src="assets/images/cta-1.png"
+                    class="max-w-xs mb-4 opacity-75 md:max-w-2xl lg:max-w-lg xl:mb-0 xl:max-w-md" />
+            </div>
+        </div>
+    </section>
+    <section id="i4i90k" class="w-full bg-blue-600">
+        <div class="px-8 py-12 mx-auto max-w-7xl">
+            <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+                <div class="col-span-3">
+                    <a href="index.html" class="text-xl font-black leading-none text-white select-none logo">Lekha
+                        Deshmukh</a>
+                    <p class="my-4 text-xs leading-normal text-blue-100">
+                        Designed with passion.
+                    </p>
+                </div>
+                <nav class="col-span-1 md:col-span-2 lg:col-span-6">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Case Studies
+                    </p>
+                    <a href="landingpages.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Creating
+                        AI Prompts - Google Ads Landing Pages</a>
+                    <a href="dashboard.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Customer
+                        Dashboard - Reduced support time by 95%
+                    </a>
+                    <a href="adminconsole.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Faster
+                        Insights - Enterprise Admins</a>
+                    <a href="mahalabharti.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Rural
+                        Users -
+                        Access
+                        to Government Schemes </a>
+
+                </nav>
+                <!-- <nav class="col-span-1 md:col-span-1 lg:col-span-2">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">About
+                    </p>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Our
+                        Story</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Company</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Privacy</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Podcast</a>
+                </nav> -->
+                <!-- <nav class="col-span-2 md:col-span-1 lg:col-span-2">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Contact
+                    </p>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Advertising</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Press</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Email</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Partners</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Jobs</a>
+                </nav> -->
+                <div class="col-span-3">
+                    <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-end">
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/lekha.deshmukh.5" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 
+                                    1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ld.in.design/?hl=en" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 
+                                    4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 
+                                    2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 
+                                    01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 
+                                    0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 
+                                    01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 
+                                    4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 
+                                    1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 
+                                    1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 
+                                    1.15-.137.353-.3.882-.344 1.857-.047 
+                                    1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 
+                                    3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 
+                                    1.15.35.35.683.566 1.15.748.353.137.882.3 
+                                    1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 
+                                    2.917-.01 3.96-.058.976-.045 1.505-.207 
+                                    1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 
+                                    3.097 0 00-.748-1.15 3.098 3.098 0 
+                                    00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 
+                                    6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 
+                                    010-10.27zm0 1.802a3.333 3.333 0 100 6.666 
+                                    3.333 3.333 0 000-6.666zm5.338-3.205a1.2 
+                                    1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/deshmukh_lekha" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 
+                                    0-.178 0-.355-.012-.53A8.348 8.348 0 0022 
+                                    5.92a8.19 8.19 0 01-2.357.646 
+                                    4.118 4.118 0 001.804-2.27 
+                                    8.224 8.224 0 01-2.605.996 
+                                    4.107 4.107 0 00-6.993 3.743 
+                                    11.65 11.65 0 01-8.457-4.287 
+                                    4.106 4.106 0 001.27 5.477 
+                                    4.072 4.072 0 01-1.86-.514v.052 
+                                    a4.105 4.105 0 003.292 4.022 
+                                    4.095 4.095 0 01-1.853.07 
+                                    4.108 4.108 0 003.834 2.85 
+                                    A8.233 8.233 0 012 18.407 
+                                    a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/lekhadeshmukh" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">GitHub</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 
+                                    4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 
+                                    0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 
+                                    1.003.07 1.531 1.032 1.531 1.032.892 
+                                    1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 
+                                    0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 
+                                    0 0 .84-.27 2.75 1.026A9.564 9.564 0 
+                                    0112 6.844c.85.004 1.705.115 2.504.337 
+                                    1.909-1.296 2.747-1.027 2.747-1.027.546 
+                                    1.379.202 2.398.1 2.651.64.7 
+                                    1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 
+                                    4.943.359.309.678.92.678 1.855 
+                                    0 1.338-.012 2.419-.012 2.747 0 
+                                    .268.18.58.688.482A10.019 10.019 0 0022 
+                                    12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Dribbble -->
+                        <a href="https://dribbble.com/lekhad" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Dribbble</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 
+                                    10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 
+                                    2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 
+                                    25.416 0 00-.564-1.236c3.145-1.28 
+                                    4.577-3.124 4.761-3.362zM12 
+                                    3.475c2.17 0 4.154.813 5.662 
+                                    2.148-.152.216-1.443 1.941-4.48 
+                                    3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 
+                                    8.687 0 0112 3.475zm-3.633.803a53.896 
+                                    53.896 0 013.167 4.935c-3.992 
+                                    1.063-7.517 1.04-7.896 1.04a8.581 
+                                    8.581 0 014.729-5.975zM3.453 
+                                    12.01v-.26c.37.01 4.512.065 
+                                    8.775-1.215.25.477.477.965.694 
+                                    1.453-.109.033-.228.065-.336.098-4.404 
+                                    1.42-6.747 5.303-6.942 
+                                    5.629a8.522 8.522 0 01-2.19-5.705zM12 
+                                    20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 
+                                    1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 
+                                    35.318 0 011.823 6.475 
+                                    8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 
+                                    2.679-.423 5.022.271 5.314.369a8.468 
+                                    8.468 0 01-3.655 5.715z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                    </span>
+
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-blue-500 md:flex-row md:items-center">
+                <p class="mb-6 text-sm text-left text-blue-200 md:mb-0"> 2015-2025 Lekha Deshmukh. All Rights
+                    Reserved.
+                </p>
+                <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+                    <a href="terms.html" class="text-sm text-blue-200 transition hover:text-white">Terms</a>
+                    <a href="privacy.html" class="text-sm text-blue-200 transition hover:text-white">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

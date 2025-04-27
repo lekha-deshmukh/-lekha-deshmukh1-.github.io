@@ -4,405 +4,450 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scss/template.css">
+    <!-- <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scss/template.css"> -->
     <link rel="stylesheet" href="styles/plugins/lightbox/ekko-lightbox.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Lekha Deshmukh</title>
-    <style>
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Italic.woff') format('woff');
-            font-weight: normal;
-            font-weight: 400;
-            font-style: italic;
 
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Bold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 400;
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="navigation">
-        <a class="" href="index.html">Home</a>
-        <a class="active" href="work.html">Work</a>
-        <a class="" href="visuals.html">Experiments</a>
-        <a class="" href="about.html">About</a>
-    </nav>
-    <div class="logo"> <a href="index.html">ld.in.design</a></div>
-    <div class="container">
-        <!-- <div class="row"> -->
-        <div class="sidebar">
+    <header id="ijkj" class="fixed top-0 left-0  backdrop-blur-xl w-full px-8 text-gray-700  body-font">
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <a href="index.html"
+                class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black">Lekha
+                Deshmukh</a>
+            <nav
+                class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+                <a href="index.html"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Home</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#about" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">About</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#casestudies" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Case Studies</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <!-- <a href="#_" x-data="{ hover: false }" x-on:mouseenter="hover = true" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Visual Design</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a> -->
+            </nav>
+            <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+                <a href="assets/images/lekhaleadUXcv.pdf"
+                    class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 gap-2 focus:outline-none focus:shadow-none">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="Download--Streamline-Radix" height="20" width="20">
+                        <desc>Download Streamline Icon: https://streamlinehq.com</desc>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.000066666666665 1.3999866666666665c0.3313733333333333 0 0.6 0.2686266666666667 0.6 0.6v9.218133333333332l2.9758 -2.975733333333333c0.23426666666666665 -0.23432 0.6141333333333333 -0.23432 0.8483999999999999 0 0.2344 0.23432 0.2344 0.6142133333333333 0 0.8485333333333333l-3.9999333333333333 4c-0.23432 0.23430666666666666 -0.6142133333333333 0.23430666666666666 -0.8485333333333333 0l-4 -4c-0.23432 -0.23432 -0.23432 -0.6142133333333333 0 -0.8485333333333333 0.23432 -0.23432 0.6142133333333333 -0.23432 0.8485333333333333 0l2.975733333333333 2.975733333333333v-9.218133333333332c0 -0.3313733333333333 0.2686266666666667 -0.6 0.6 -0.6ZM3.333333333333333 13.333333333333332c0.36818666666666666 0 0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 0.7385333333333333 0.5942 1.3333333333333333 1.3284666666666665 1.3333333333333333h9.3398c0.7355999999999999 0 1.3317333333333332 -0.5962666666666666 1.3317333333333332 -1.3333333333333333v-2c0 -0.3681333333333333 0.2985333333333333 -0.6666666666666666 0.6666666666666666 -0.6666666666666666s0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 1.4721333333333333 -1.1917333333333333 2.6666666666666665 -2.6650666666666663 2.6666666666666665H5.3284666666666665C3.8535866666666667 18.666666666666664 2.6666666666666665 17.470666666666666 2.6666666666666665 16v-2c0 -0.3681333333333333 0.29847999999999997 -0.6666666666666666 0.6666666666666666 -0.6666666666666666Z"
+                            fill="#a2a2a2" stroke-width="1.3333"></path>
+                    </svg> Download Resume
+                </a>
 
-            <a href="index.html">
-                <div class="menu-item ">Home</div>
-            </a>
-            <a href="work.html">
-                <div class="menu-item active">Work</div>
-            </a>
-            <a href="visuals.html">
-                <div class="menu-item">Experiments</div>
-            </a>
-            <a href="about.html">
-                <div class="menu-item">About</div>
-            </a>
+            </div>
         </div>
-        <div class="content">
-            <div class="row">
+    </header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 my-28 lg:px-8">
+        <div class="ml-42 mt-16 p-5">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-11/12">
+                    <div class="space-y-12">
 
-                <div class="col-md-11">
-
-                    <div class="case-study">
-                        <div class="case-name">
+                        <!-- Case Study Title -->
+                        <div class="text-4xl font-bold leading-tight">
                             Mahalabharti
                         </div>
-                        <div class="case-sub-title">
-                            Introduction
-                        </div>
-                        <div class="case-content">
-                            To enable citizens of Maharashtra to avail the schemes published by the government. It is
-                            important to solve this problem as many people, specially poor people are unaware of the
-                            schemes that are applicable to them. Knowing a scheme and its benefits will help them to
-                            carry out a better lively hood.</div>
 
-                        <div class="case-title">
-                            PROTOTYPES - Before the research, based on assumptions
+                        <!-- Introduction -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Introduction</h2>
+                            <p class="text-gray-600 mt-4">
+                                To enable citizens of Maharashtra to avail government schemes, especially helping
+                                poor people unaware of the schemes applicable to them, to improve their livelihoods.
+                            </p>
                         </div>
-                        <div class="case-content">
-                            <i> Following the F pattern to show most important information</i>
 
-                            It is Important for people to know whose profile is opened, as family can see & operate each
-                            other’s profiles hence the most important information was placed on left most side. The
-                            profile picture and all associated family members were placed below to the profile
-                            information.
+                        <!-- Prototypes Before Research -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
+                            PROTOTYPES - Before the Research, Based on Assumptions
+                        </div>
+                        <div class="text-gray-600 space-y-4">
+                            <p><i>Following the F pattern to show most important information</i></p>
+                            <p>Important profile details were placed left, scheme benefits in the center, updates
+                                below, important notices top right, and user activity bottom right.</p>
+                        </div>
 
+                        <!-- Prototype Images -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/home.png"
+                                alt="Home Prototype">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/events.png"
+                                alt="Events Prototype">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/social.png"
+                                alt="Social Prototype">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/SRDB.png"
+                                alt="SRDB Prototype">
+                        </div>
 
-                        </div>
-                        <div class="case-content">
-                            The 2nd goal was to show people the scheme benefits that they can avail along with the
-                            scheme names, hence it was placed in the centre, related news updates were placed below it
-                            like feed.
-                        </div>
-                        <div class="case-content">
-                            3rd goal was to inform about important details hence it was placed at top right where it can
-                            be easily viewed.
-                        </div>
-                        <div class="case-content">
-                            The least but important part was recent scheme related activity to show which schemes have
-                            been availed by user, hence it was placed at bottom right.
-                        </div>
-                        <a href="assets/images/mahalabharti/prototypes/home.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/home.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/events.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/events.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/social.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/social.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/SRDB.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/SRDB.png" />
-                        </a>
-                        <div class="case-title">
+                        <!-- Research -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             EXPLORATION & RESEARCH
                         </div>
-                        <div class="case-sub-title">
-                            Learning more about the main users
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Learning More About the Main Users</h2>
+                            <p class="text-gray-600 mt-4">
+                                Visited Navale village with the team to understand real users.
+                            </p>
+
+                            <!-- Research Images -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 text-center">
+                                <div>
+                                    <img class="rounded-lg" src="assets/images/mahalabharti/research/Navale.png"
+                                        alt="Navale Route">
+                                    <div class="text-gray-500 mt-2">The route we chose</div>
+                                </div>
+                                <div>
+                                    <img class="rounded-lg" src="assets/images/mahalabharti/research/Navale2.png"
+                                        alt="Navale Village">
+                                    <div class="text-gray-500 mt-2">The Navale village</div>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-600 mt-4">
+                                Met around 50 villagers to create user personas.
+                            </p>
                         </div>
-                        <div class="case-content">
-                            Taking action towards the assumption, we (Project Manager, Business executives, Project
-                            Architect, Developers and Myself ) visited a nearby village named Navale, to learn more
-                            about our users.
-                        </div>
-                        <div class="text-center">
-                            <a href="assets/images/mahalabharti/research/Navale.png" data-toggle="lightbox">
-                                <img class="info-img mb-1" src="assets/images/mahalabharti/research/Navale.png" />
-                            </a>
-                            The route we chose
-                        </div>
-                        <div class="text-center">
-                            <a href="assets/images/mahalabharti/research/Navale2.png" data-toggle="lightbox">
-                                <img class="info-img mb-1" src="assets/images/mahalabharti/research/Navale2.png" />
-                            </a>
-                            The Navale village
-                        </div>
-                        <div class="case-content">
-                            We met around 50 villagers in the panchayat area of the village. Each team member met 3-5
-                            villagers and created their personas.
-                        </div>
-                        <div class="case-title">
+
+                        <!-- Personas -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             PERSONAS
                         </div>
-                        <div class="case-content">
-                            There were 2 more people having stories similar to Kachrabai, who were sitting with her
-                            while I was interviewing.</div>
-                        <a href="assets/images/mahalabharti/persona/1.png" data-toggle="lightbox">
-                            <img class="info-img mb-1" src="assets/images/mahalabharti/persona/1.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/persona/2.png" data-toggle="lightbox">
-                            <img class="info-img mb-1" src="assets/images/mahalabharti/persona/2.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/persona/3.png" data-toggle="lightbox">
-                            <img class="info-img mb-1" src="assets/images/mahalabharti/persona/3.png" />
-                        </a>
-                        <div class="case-title">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/persona/1.png" alt="Persona 1">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/persona/2.png" alt="Persona 2">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/persona/3.png" alt="Persona 3">
+                        </div>
+
+                        <!-- Analysis -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             ANALYSING RESEARCH
                         </div>
-                        <div class="case-sub-title">
-                            Performing Thematic Analysis of Qualitative Research Data Collected
-                        </div>
-                        <div class="case-content">
-                            <ol>
-                                <li> People are interested in scheme benefits and not scheme names.</li>
-                                <li>Majority people in the village lacked internet connection & mobile network.</li>
-                                <li>They were not aware of schemes, they only became aware if their neighbours got some
-                                    scheme benefits and they didn't.</li>
-                                <li>
-                                    < 5% people are able to read their native language, 95% population are unable to
-                                        read & write.</li>
-                                <li>Commuting is a problem in most remote villages as banks, school, govt offices are
-                                    far away. </li>
-                                <li>There is corruption in the govt. offices.</li>
-                                <li>95% people near poverty line are not techsavy, they need someone who can assist them
-                                    with technology. </li>
-                            </ol>
+                        <h2 class="text-2xl font-semibold mt-6">Performing Thematic Analysis</h2>
+                        <ol class="list-decimal pl-5 mt-4 text-gray-600 space-y-2">
+                            <li>People are interested in scheme benefits, not just scheme names.</li>
+                            <li>Internet and mobile network is scarce in villages.</li>
+                            <li>Awareness about schemes is very low.</li>
+                            <li>95% villagers are unable to read/write.</li>
+                            <li>Commuting to banks, schools, offices is difficult.</li>
+                            <li>Corruption is prevalent in local govt. offices.</li>
+                            <li>Most villagers near poverty line need tech assistance.</li>
+                        </ol>
 
+                        <!-- Thematic Analysis Image -->
+                        <div class="mt-8">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/research/ThematicAnalysis.png"
+                                alt="Thematic Analysis">
                         </div>
-                        <a href="assets/images/mahalabharti/research/ThematicAnalysis.png" data-toggle="lightbox">
-                            <img class="info-img mb-1" src="assets/images/mahalabharti/research/ThematicAnalysis.png" />
-                        </a>
-                        <div class="case-title">
+
+                        <!-- Ideation -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             IDEATION
                         </div>
-                        <div class="case-sub-title">
-                            Solutions based on research insights
-                        </div>
-                        <div class="case-content">
-                            We realised we needed an
-                            <strong> offline + online application </strong> that would run in the Panchayat computer in
-                            <strong> native language</strong>, where a trained professional(assistant) from MKCL's ALC
-                            (Authorised learning centre) or a trained person from village will add entries of all
-                            citizens who wish to learn about schemes.
-                            <strong> Once in a month this person will take the computer to the nearby town to upload
-                                citizen's data online. </strong>
+                        <h2 class="text-2xl font-semibold mt-6">Solutions Based on Research Insights</h2>
+                        <p class="text-gray-600 mt-4">
+                            We proposed an <strong>offline + online</strong> system accessible via Panchayat
+                            computers with trained assistants helping citizens.
+                        </p>
+                        <p class="text-gray-600 mt-4">
+                            Citizens select schemes visually via <strong>pictures</strong> since literacy is low.
+                        </p>
+
+                        <!-- Quote -->
+                        <div class="text-2xl font-italic mt-8 text-center">
+                            "Picture speaks a thousand words."
                         </div>
 
-                        <div class="case-content">
-                            Data synced to cloud will be accessible and shared with the concerned departments (later
-                            scope).
-                        </div>
-                        <div class="case-content">
-                            We understood the citizen’s demand is to <strong> know the scheme benefits </strong>rather
-                            than just scheme names. Knowing benefits motivates them to avail scheme.
-                        </div>
+                        <!-- Ideation Continued -->
+                        <p class="text-gray-600 mt-8">
+                            The assistant would register citizens and provide a printout of necessary forms and
+                            documents.
+                        </p>
+                        <img class="rounded-lg mt-8" src="assets/images/mahalabharti/axure6.png" alt="Axure Flow">
 
-                        <div class="quote">
-                            Picture speaks a thousand words.
-                        </div>
-                        <div class="case-content">
-                            Knowing that not everyone can read and write, we came up with <strong> pictures of all
-                                schemes</strong>. So now the citizens have to point out the schemes they want by seeing
-                            the pictures, and the trained professional (assistant) would register citizen and select
-                            schemes on behalf of the citizen
-                        </div>
-                        <img class="info-img" src="assets/images/mahalabharti/axure6.png" />
-                        <div class="case-content">
-                            The assistant would then share the print out of GR (Government Resolution) and the scheme
-                            form along with list of required documents to the village citizen. The citizens are now well
-                            informed about the scheme they are eligible for, the documents needed to proceed and they
-                            also have the scheme form with them.
-                        </div>
-                        <div class="case-content">
-                            This was the flow for Village citizens or the citizens who need technical help. In city
-                            areas the citizens can either do the entire process on their own or they can approach
-                            nearest ALC centre. Maharashtra has over 5000 + ALC centres by MKCL.
-                        </div>
-                        <strong> </strong>
-                        <div class="case-title">
+                        <!-- Service Flow -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             Flow of Service
                         </div>
-                        <div class="case-sub-title">
-                            Below is the flow of how citizens will know the list of documents required to get any scheme
-                            benefits and the scheme form which needs to be submitted to concerned departments.
-                        </div>
-                        <div class="case-content">
-                            <ol>
-                                <li>Citizen (ALC coordinater/ Assistant on behalf and in presence of citizen) will
-                                    register on the portal.</li>
-                                <li>Citizen will fill in basic information like education details, income</li>
-                                <li>Citizen will select their role as farmer, teacher etc. or the schemes they are
-                                    interested in like Atal pension yojna etc.</li>
-                                <li>Citizens will be asked to further fill up any extra details required based on their
-                                    scheme/role selection.</li>
-                                <li>The eligible schemes based on selection/ all other eligible schemes is shown to the
-                                    citizen.</li>
-                                <li>Citizen can get a print out of the documents required for respective scheme and
-                                    scheme forms that they need to submit in the respective department.</li>
+                        <ol class="list-decimal pl-5 mt-4 text-gray-600 space-y-2">
+                            <li>Citizen (or assistant) registers on the portal.</li>
+                            <li>Fills basic information.</li>
+                            <li>Selects role or scheme of interest.</li>
+                            <li>Completes additional details as required.</li>
+                            <li>Eligible schemes are shown.</li>
+                            <li>Receives printout of scheme documents.</li>
+                        </ol>
+                        <img class="rounded-lg mt-8" src="assets/images/mahalabharti/ServiceFlow.png"
+                            alt="Service Flow">
 
-                            </ol>
-                        </div>
-                        <a href="assets/images/mahalabharti/ServiceFlow.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/ServiceFlow.png" />
-                        </a>
-                        <div class="case-title">
+                        <!-- Information Architecture -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             INFORMATION ARCHITECTURE (IA)
                         </div>
-                        <a href="assets/images/mahalabharti/IA.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/IA.png" />
-                        </a>
-                        <div class="case-title">
-                            PROTOTYPES - After the research
+                        <img class="rounded-lg mt-8" src="assets/images/mahalabharti/IA.png"
+                            alt="Information Architecture">
+
+                        <!-- Prototypes After Research -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
+                            PROTOTYPES - After Research
                         </div>
-                        <div class="case-content">
-                            We learned that our users are not tech-savvy and most users cannot read & write. People in
-                            villages who can read, can only read Marathi language.
+                        <p class="text-gray-600">
+                            Application was created in Marathi, Hindi, and English with image-first design.
+                        </p>
+
+                        <!-- New Prototypes -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/1.png" alt="Prototype 1">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/2.png" alt="Prototype 2">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/3.png" alt="Prototype 3">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/4.png" alt="Prototype 4">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/5.png" alt="Prototype 5">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/6.png" alt="Prototype 6">
+                            <img class="rounded-lg" src="assets/images/mahalabharti/prototypes/7.png" alt="Prototype 7">
                         </div>
-                        <div class="case-content">
-                            Based on the above insights from research it was decided to create application which shows
-                            images of all scheme benefits. The application was made in Marathi, Hindi & English.
-                        </div>
-                        <a href="assets/images/mahalabharti/prototypes/1.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/1.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/2.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/2.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/3.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/3.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/4.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/4.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/5.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/5.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/6.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/6.png" />
-                        </a>
-                        <a href="assets/images/mahalabharti/prototypes/7.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/prototypes/7.png" />
-                        </a>
-                        <div class="case-title">
+
+                        <!-- Usability Testing -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             USABILITY TESTING
                         </div>
-                        <div class="case-content">
-                            I carried out <strong>Guerrilla usability testing</strong> with 3 citizens who were aged 25
-                            (techsavy), 42(not techsavy) & 53(not techsavy). I asked them questions to complete certain
-                            tasks and noted down time they took to complete it. Based on 1st testing result, few UI
-                            changes were made which impacted usability of software drastically. I recorded my screen
-                            using Camtasia software and shared recording with entire team with the consent of
-                            participants.
-                        </div>
-                        <a href="assets/images/mahalabharti/UsabilityTestingPPT.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/UsabilityTestingPPT.png" />
-                        </a>
-                        <div class="case-sub-title">
-                            After fixing usability issues, the effectiveness score was up to 94% as users were able to
-                            complete 17/18 tasks successfully.
-                        </div>
-                        <a href="assets/images/mahalabharti/UT.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/mahalabharti/UT.png" />
-                        </a>
-                        <div class="case-content-strong">
-                            The product was then tested on a larger scale with 5,000 people (MKCL's ALC Centers) and 1
-                            lakh students (MKCL's MFS students).
-                            We learned about 500 success stories where Mahalabharthi helped these people with government
-                            scheme benefits.
-                            These success case studies were then pitched to Govt. of Maharashtra Chief Minister's
-                            Office, and the product was launched by CM in entire Maharashtra.
-                        </div>
-                        <div class="case-title">
+                        <p class="text-gray-600 mt-4">
+                            Guerrilla testing was conducted with citizens of various tech-savvy levels. Post
+                            usability improvements, task completion rates rose to 94%.
+                        </p>
+                        <img class="rounded-lg mt-8" src="assets/images/mahalabharti/UsabilityTestingPPT.png"
+                            alt="Usability Testing PPT">
+                        <img class="rounded-lg mt-8" src="assets/images/mahalabharti/UT.png"
+                            alt="Usability Testing Results">
+
+                        <!-- Final Outcome -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             FEEDBACK and NEWS
                         </div>
-                        <div class="case-content">
-                            More than 5,00,000 citizens registered with the application and availed scheme benefits. The
-                            government announced in News channels about the launch of the product to create awareness
-                            amongst all citizens. The project was highly appreciated by people and government. Haryana
-                            government contacted MKCL for creating similar initiative in Haryana.
-                        </div>
-                        <a href="assets/images/mahalabharti/Mahalabharthi-news-Google-Search.png"
-                            data-toggle="lightbox">
-                            <img class="info-img"
-                                src="assets/images/mahalabharti/Mahalabharthi-news-Google-Search.png" />
-                        </a>
-                        <div class="case-title">
+                        <p class="text-gray-600">
+                            Over 5,00,000 citizens registered and availed benefits. Mahalabharti was launched
+                            officially by the CM of Maharashtra and inspired other states like Haryana.
+                        </p>
+                        <img class="rounded-lg mt-8"
+                            src="assets/images/mahalabharti/Mahalabharthi-news-Google-Search.png"
+                            alt="Mahalabharthi News">
+
+                        <!-- Learnings -->
+                        <div class="text-3xl font-bold mt-16 mb-8">
                             LEARNINGS
                         </div>
-                        <div class="case-content">
+                        <p class="text-gray-600">
+                            Talking to people in their native language helped break barriers and gather genuine
+                            feedback.
+                        </p>
 
 
-                            Talking to people in their native language helps them to open up and talk to you more
-                            freely, specially when we are in remote areas of the state.
-                        </div>
-                        <!-- <div class="case-title">
-                            
-                        </div>
-                        <div class="case-sub-title">
 
-                        </div>
-                        <div class="case-content">
-                            
-                        </div>
-                        <div class="case-content-strong">
-
-                        </div>
-                        <a href="assets/images/timetable/" data-toggle="lightbox">
-                        <img class="info-img" src="assets/images/timetable/"/>
-                        </a> -->
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row next-prev">
-                <div class="col-md-5 text-left">
-                    <div class="next-prev-label">
-                        Previous
-                    </div>
-                    <div class="next-prev-name">
-                        <!-- <a href="inclassroom.html"> Redefining the In-classroom experiencede</a> -->
-                        <a href="adminconsole.html"> Admin Console</a>
                     </div>
                 </div>
-                <div class="col-md-5 text-right">
-                    <div class="next-prev-label">
-                        Next
-                    </div>
-                    <div class="next-prev-name">
-                        <!-- <a href="attendance.html">Designing Attendance Module in LearniCo</a> -->
-                        <a href="landingpages.html">Landing Page creation with AI Prompt</a>
-                    </div>
-                </div>
-
             </div>
         </div>
+    </div>
 
-    </div>
-    <script src="styles/plugins/lightbox/ekko-lightbox.min.js" />
-    <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-            event.preventDefault();
-            $(this).ekkoLightbox();
-        });
-    </script>
-    <div class="footer">
-        Crafted and created by <strong>Lekha Deshmukh</strong>
-    </div>
+
+
+
+    <section id="i4i90k" class="w-full bg-blue-600">
+        <div class="px-8 py-12 mx-auto max-w-7xl">
+            <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+                <div class="col-span-3">
+                    <a href="index.html" class="text-xl font-black leading-none text-white select-none logo">Lekha
+                        Deshmukh</a>
+                    <p class="my-4 text-xs leading-normal text-blue-100">
+                        Designed with passion.
+                    </p>
+                </div>
+                <nav class="col-span-1 md:col-span-2 lg:col-span-6">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Case Studies
+                    </p>
+                    <a href="landingpages.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Creating
+                        AI Prompts - Google Ads Landing Pages</a>
+                    <a href="dashboard.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Customer
+                        Dashboard - Reduced support time by 95%
+                    </a>
+                    <a href="adminconsole.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Faster
+                        Insights - Enterprise Admins</a>
+                    <a href="mahalabharti.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Rural
+                        Users -
+                        Access
+                        to Government Schemes </a>
+
+                </nav>
+
+                <div class="col-span-3">
+                    <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-end">
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/lekha.deshmukh.5" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 
+                                    1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ld.in.design/?hl=en" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 
+                                    4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 
+                                    2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 
+                                    01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 
+                                    0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 
+                                    01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 
+                                    4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 
+                                    1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 
+                                    1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 
+                                    1.15-.137.353-.3.882-.344 1.857-.047 
+                                    1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 
+                                    3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 
+                                    1.15.35.35.683.566 1.15.748.353.137.882.3 
+                                    1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 
+                                    2.917-.01 3.96-.058.976-.045 1.505-.207 
+                                    1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 
+                                    3.097 0 00-.748-1.15 3.098 3.098 0 
+                                    00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 
+                                    6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 
+                                    010-10.27zm0 1.802a3.333 3.333 0 100 6.666 
+                                    3.333 3.333 0 000-6.666zm5.338-3.205a1.2 
+                                    1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/deshmukh_lekha" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 
+                                    0-.178 0-.355-.012-.53A8.348 8.348 0 0022 
+                                    5.92a8.19 8.19 0 01-2.357.646 
+                                    4.118 4.118 0 001.804-2.27 
+                                    8.224 8.224 0 01-2.605.996 
+                                    4.107 4.107 0 00-6.993 3.743 
+                                    11.65 11.65 0 01-8.457-4.287 
+                                    4.106 4.106 0 001.27 5.477 
+                                    4.072 4.072 0 01-1.86-.514v.052 
+                                    a4.105 4.105 0 003.292 4.022 
+                                    4.095 4.095 0 01-1.853.07 
+                                    4.108 4.108 0 003.834 2.85 
+                                    A8.233 8.233 0 012 18.407 
+                                    a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/lekhadeshmukh" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">GitHub</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 
+                                    4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 
+                                    0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 
+                                    1.003.07 1.531 1.032 1.531 1.032.892 
+                                    1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 
+                                    0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 
+                                    0 0 .84-.27 2.75 1.026A9.564 9.564 0 
+                                    0112 6.844c.85.004 1.705.115 2.504.337 
+                                    1.909-1.296 2.747-1.027 2.747-1.027.546 
+                                    1.379.202 2.398.1 2.651.64.7 
+                                    1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 
+                                    4.943.359.309.678.92.678 1.855 
+                                    0 1.338-.012 2.419-.012 2.747 0 
+                                    .268.18.58.688.482A10.019 10.019 0 0022 
+                                    12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Dribbble -->
+                        <a href="https://dribbble.com/lekhad" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Dribbble</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 
+                                    10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 
+                                    2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 
+                                    25.416 0 00-.564-1.236c3.145-1.28 
+                                    4.577-3.124 4.761-3.362zM12 
+                                    3.475c2.17 0 4.154.813 5.662 
+                                    2.148-.152.216-1.443 1.941-4.48 
+                                    3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 
+                                    8.687 0 0112 3.475zm-3.633.803a53.896 
+                                    53.896 0 013.167 4.935c-3.992 
+                                    1.063-7.517 1.04-7.896 1.04a8.581 
+                                    8.581 0 014.729-5.975zM3.453 
+                                    12.01v-.26c.37.01 4.512.065 
+                                    8.775-1.215.25.477.477.965.694 
+                                    1.453-.109.033-.228.065-.336.098-4.404 
+                                    1.42-6.747 5.303-6.942 
+                                    5.629a8.522 8.522 0 01-2.19-5.705zM12 
+                                    20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 
+                                    1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 
+                                    35.318 0 011.823 6.475 
+                                    8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 
+                                    2.679-.423 5.022.271 5.314.369a8.468 
+                                    8.468 0 01-3.655 5.715z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                    </span>
+
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-blue-500 md:flex-row md:items-center">
+                <p class="mb-6 text-sm text-left text-blue-200 md:mb-0"> 2015-2025 Lekha Deshmukh. All Rights
+                    Reserved.
+                </p>
+                <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+                    <a href="terms.html" class="text-sm text-blue-200 transition hover:text-white">Terms</a>
+                    <a href="privacy.html" class="text-sm text-blue-200 transition hover:text-white">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

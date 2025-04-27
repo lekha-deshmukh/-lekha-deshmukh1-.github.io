@@ -4,745 +4,618 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scss/template.css">
+    <!-- <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scss/template.css"> -->
     <link rel="stylesheet" href="styles/plugins/lightbox/ekko-lightbox.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Lekha Deshmukh</title>
-    <style>
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Italic.woff') format('woff');
-            font-weight: normal;
-            font-weight: 400;
-            font-style: italic;
-
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Bold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 400;
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="navigation">
-        <a class="" href="index.html">Home</a>
-        <a class="active" href="work.html">Work</a>
-        <a class="" href="visuals.html">Experiments</a>
-        <a class="" href="about.html">About</a>
-    </nav>
-    <div class="logo"> <a href="index.html">ld.in.design</a></div>
-    <div class="container">
-        <!-- <div class="row"> -->
-        <div class="sidebar">
+    <header id="ijkj" class="fixed top-0 left-0  backdrop-blur-xl w-full px-8 text-gray-700  body-font">
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <a href="index.html"
+                class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black">Lekha
+                Deshmukh</a>
+            <nav
+                class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+                <a href="index.html"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Home</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#about" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">About</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#casestudies" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Case Studies</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <!-- <a href="#_" x-data="{ hover: false }" x-on:mouseenter="hover = true" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Visual Design</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a> -->
+            </nav>
+            <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+                <a href="assets/images/lekhaleadUXcv.pdf"
+                    class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 gap-2 focus:outline-none focus:shadow-none">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="Download--Streamline-Radix" height="20" width="20">
+                        <desc>Download Streamline Icon: https://streamlinehq.com</desc>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.000066666666665 1.3999866666666665c0.3313733333333333 0 0.6 0.2686266666666667 0.6 0.6v9.218133333333332l2.9758 -2.975733333333333c0.23426666666666665 -0.23432 0.6141333333333333 -0.23432 0.8483999999999999 0 0.2344 0.23432 0.2344 0.6142133333333333 0 0.8485333333333333l-3.9999333333333333 4c-0.23432 0.23430666666666666 -0.6142133333333333 0.23430666666666666 -0.8485333333333333 0l-4 -4c-0.23432 -0.23432 -0.23432 -0.6142133333333333 0 -0.8485333333333333 0.23432 -0.23432 0.6142133333333333 -0.23432 0.8485333333333333 0l2.975733333333333 2.975733333333333v-9.218133333333332c0 -0.3313733333333333 0.2686266666666667 -0.6 0.6 -0.6ZM3.333333333333333 13.333333333333332c0.36818666666666666 0 0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 0.7385333333333333 0.5942 1.3333333333333333 1.3284666666666665 1.3333333333333333h9.3398c0.7355999999999999 0 1.3317333333333332 -0.5962666666666666 1.3317333333333332 -1.3333333333333333v-2c0 -0.3681333333333333 0.2985333333333333 -0.6666666666666666 0.6666666666666666 -0.6666666666666666s0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 1.4721333333333333 -1.1917333333333333 2.6666666666666665 -2.6650666666666663 2.6666666666666665H5.3284666666666665C3.8535866666666667 18.666666666666664 2.6666666666666665 17.470666666666666 2.6666666666666665 16v-2c0 -0.3681333333333333 0.29847999999999997 -0.6666666666666666 0.6666666666666666 -0.6666666666666666Z"
+                            fill="#a2a2a2" stroke-width="1.3333"></path>
+                    </svg> Download Resume
+                </a>
 
-            <a href="index.html">
-                <div class="menu-item ">Home</div>
-            </a>
-            <a href="work.html">
-                <div class="menu-item active">Work</div>
-            </a>
-            <a href="visuals.html">
-                <div class="menu-item">Experiments</div>
-            </a>
-            <a href="about.html">
-                <div class="menu-item">About</div>
-            </a>
+            </div>
         </div>
-        <div class="content">
-            <div class="row">
+    </header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 my-28 lg:px-8">
+        <div class="ml-42 mt-16 p-5">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-11/12">
 
-                <div class="col-md-11">
-
-                    <div class="case-study">
-                        <div class="case-name">
+                    <div class="space-y-8">
+                        <div class="text-4xl font-bold leading-tight">
                             Creating AI prompts for Google Ads Landing Pages used by 100+ Premium Clients by building a
                             scalable framework for Landing Pages
                         </div>
-                        <div class="case-sub-title">
-                            Objective
-                        </div>
-                        <div class="case-content">
-                            Design a scalable high-conversion landing page framework that generates highly qualified
-                            leads for clients across 20+ domains using AI-powered Google Ads.
+
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Objective</h2>
+                            <p class="text-gray-600 mt-4">
+                                Design a scalable high-conversion landing page framework that generates highly qualified
+                                leads for clients across 20+ domains using AI-powered Google Ads.
+                            </p>
                         </div>
 
-                        <div class="case-sub-title">
-                            Key Achievements
-                        </div>
-                        <div class="case-content">
-                            <ul>
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Key Achievements</h2>
+                            <ul class="list-disc pl-5 mt-4 text-gray-600 space-y-2">
                                 <li>130+ impactful landing pages delivered to over 100 clients.</li>
                                 <li>25,000+ high-quality leads generated.</li>
-                                <li>Reduced landing page creation time from 25 days to 20 minutes in 3 iterations over
-                                    1.5 years.</li>
-                                <li>Helped 100+ Clients across different domains like - Software services,
-                                    manufacturing, consulting, education(online/ offline) , interior design, home
-                                    decoration, financial services, Elevators, tours and travels, waterproofing, Real
-                                    estate, NA Plots, solar, automobile, NGO, will making, environment, lockers,
-                                    Healthcare, Jewellery</li>
+                                <li>Reduced landing page creation time from 25 days to 20 minutes over 1.5 years.</li>
+                                <li>Helped 100+ Clients across domains like Software services, manufacturing,
+                                    consulting, education, interior design, home decoration, financial services,
+                                    Elevators, tours and travels, waterproofing, Real estate, NA Plots, solar,
+                                    automobile, NGO, will making, environment, lockers, Healthcare, Jewellery.</li>
                             </ul>
                         </div>
 
-                        <div class="case-sub-title">
-                            Context
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Context</h2>
+                            <p class="text-gray-600 mt-4">
+                                To kickstart any successful Google Ads campaign, an optimized and high-performing
+                                landing page is critical. This case study showcases the development and refinement of a
+                                landing page framework that enhances efficiency, streamlines processes, and ensures
+                                timely delivery of high-quality leads.
+                            </p>
                         </div>
-                        <div class="case-content">
-                            To kickstart any successful Google Ads campaign, an optimized and high-performing landing
-                            page is critical. This case study showcases the development and refinement of a landing page
-                            framework that I have designed to enhance efficiency, streamline processes, and ensure
-                            timely delivery
-                            for creation of landing pages for Google Ads that deliver high quality leads.
+
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">More on context - The Market Gap Addressed by
+                                Inaiways</h2>
+                            <p class="text-gray-600 mt-4">
+                                The Inaiways AI-powered Google Ads platform bridges a significant market gap by
+                                dynamically generating contextual landing pages, ad content & ad setup. This system
+                                optimizes ads continuously, 24/7, using real-time user search patterns to maximize
+                                relevance and conversions.
+                            </p>
                         </div>
-                        <div class="case-sub-title">
-                            More on context - The Market Gap Addressed by Inaiways
-                        </div>
-                        <div class="case-content">
-                            The Inaiways AI-powered Google Ads platform bridges a significant market gap by dynamically
-                            generating contextual landing pages, ad content & ad set up. This system optimizes ads
-                            continuously,
-                            24/7, using real-time user search patterns to maximize relevance and conversions.
-                        </div>
-                        <div class="case-sub-title">
-                            Business Concerns
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li>Increasing number of customers for next funding round
-                                </li>
-                                <li>The landing page delivery along with ad set up took 45 days. Landing page creation
-                                    time alone was 20-25 days. In order to serve more customers, goal was to bring the
-                                    time to delivery to under 10 days.</li>
-                                <li>At times when clients did not have a website we didn't get enough content at time.
-                                    This
-                                    led to delayed delivery more than decided timeline. Goal was to overcome this
-                                    bottleneck.</li>
+
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Business Concerns</h2>
+                            <ul class="list-disc pl-5 mt-4 text-gray-600 space-y-2">
+                                <li>Increasing number of customers for next funding round.</li>
+                                <li>Landing page + ad setup took 45 days; goal was to bring delivery under 10 days.</li>
+                                <li>Lack of website content led to delays; goal was to overcome this bottleneck.</li>
                             </ul>
                         </div>
 
-                        <div class="case-sub-title">
-                            My Role
-                        </div>
-                        <div class="case-content">
-                            As Co-Founder and UX Lead, I:
-                            <ul>
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">My Role</h2>
+                            <p class="text-gray-600 mt-4">As Co-Founder and UX Lead, I:</p>
+                            <ul class="list-disc pl-5 mt-4 text-gray-600 space-y-2">
                                 <li>Spearheaded the landing page creation process from research to execution.</li>
-                                <li>Trained and mentored the team to adopt Lean UX principles for iterative
-                                    improvements.</li>
-                                <li>Collaborated with clients, stakeholders, and cross-functional teams to align
-                                    goals
-                                    with business KPIs.</li>
+                                <li>Trained and mentored the team to adopt Lean UX principles.</li>
+                                <li>Collaborated with clients, stakeholders, and cross-functional teams to align with
+                                    business KPIs.</li>
                             </ul>
                         </div>
 
-                        <div class="case-sub-title">
-                            Business KPIs for the UX Department
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li>Build the team’s capacity to serve 30+ clients/month.</li>
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Business KPIs for the UX Department</h2>
+                            <ul class="list-disc pl-5 mt-4 text-gray-600 space-y-2">
+                                <li>Build the team's capacity to serve 30+ clients/month.</li>
                                 <li>Reduce landing page delivery timelines to under 10 days.</li>
                             </ul>
                         </div>
 
-                        <div class="case-sub-title">
-                            Logging and Communication
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Logging and Communication</h2>
+                            <p class="text-gray-600 mt-4">
+                                A structured Google Drive folder and Excel tracker were created for organizing assets
+                                and tracking milestones. Omnifocus prioritized tasks. Slack channels and regular huddles
+                                kept the team aligned, while feedback was collected using Playtailwind links and
+                                documented in Excel for better iteration.
+                            </p>
                         </div>
-                        <div class="case-content">
-                            A structured Google Drive folder and Excel
-                            tracker were created for organizing assets and tracking milestones, with Omnifocus
-                            prioritizing tasks. Slack channels and regular huddles kept the team aligned, while
-                            design feedback through Playtailwind links was documented in Excel to streamline
-                            iteration. All files were versioned within Google Drive for easy, up-to-date access
-                            across the team.
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img class="info-img-small" src="assets/images/landingpages/LandingPageLog.png" />
+
+                        <!-- Images Section -->
+                        <div class="flex flex-wrap mt-10 gap-6">
+                            <div class="w-full md:w-5/12">
+                                <img class="rounded-lg" src="assets/images/landingpages/LandingPageLog.png"
+                                    alt="Landing Page Log">
                             </div>
-                            <div class="col-md-7">
-                                <div class="case-sub-title">
-                                    Planning
-                                </div>
-                                <div class="case-content">
-                                    - Google Drive Folder & Excel tracking<br>
-                                    - Omnifocus
-                                </div>
+                            <div class="w-full md:w-6/12">
+                                <h3 class="text-xl font-semibold">Planning</h3>
+                                <p class="text-gray-600 mt-2">- Google Drive Folder & Excel tracking<br>- Omnifocus</p>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img class="info-img-small" src="assets/images/landingpages/Slack.png" />
+                        <div class="flex flex-wrap mt-10 gap-6">
+                            <div class="w-full md:w-5/12">
+                                <img class="rounded-lg" src="assets/images/landingpages/Slack.png" alt="Slack">
                             </div>
-                            <div class="col-md-7">
-                                <div class="case-sub-title">
-                                    Communication
-                                </div>
-                                <div class="case-content">
-                                    - Slack<br>
-                                    - Huddles
-                                </div>
+                            <div class="w-full md:w-6/12">
+                                <h3 class="text-xl font-semibold">Communication</h3>
+                                <p class="text-gray-600 mt-2">- Slack<br>- Huddles</p>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img class="info-img-small"
-                                    src="assets/images/landingpages/LandingPageStructureLog.png" />
+                        <div class="flex flex-wrap mt-10 gap-6">
+                            <div class="w-full md:w-5/12">
+                                <img class="rounded-lg" src="assets/images/landingpages/LandingPageStructureLog.png"
+                                    alt="Landing Page Structure">
                             </div>
-                            <div class="col-md-7">
-                                <div class="case-sub-title">
-                                    Feedback
-                                </div>
-                                <div class="case-content">
-                                    - Playtailwind links<br>
-                                    - Comments on Excel
-                                </div>
+                            <div class="w-full md:w-6/12">
+                                <h3 class="text-xl font-semibold">Feedback</h3>
+                                <p class="text-gray-600 mt-2">- Playtailwind links<br>- Comments on Excel</p>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img class="info-img-small" src="assets/images/landingpages/Backup.png" />
+                        <div class="flex flex-wrap mt-10 gap-6">
+                            <div class="w-full md:w-5/12">
+                                <img class="rounded-lg" src="assets/images/landingpages/Backup.png" alt="Backup">
                             </div>
-                            <div class="col-md-7">
-                                <div class="case-sub-title">
-                                    Versioning
-                                </div>
-                                <div class="case-content">
-                                    - Google Drive
-                                </div>
+                            <div class="w-full md:w-6/12">
+                                <h3 class="text-xl font-semibold">Versioning</h3>
+                                <p class="text-gray-600 mt-2">- Google Drive</p>
                             </div>
                         </div>
-
-
-
-                        <div class="case-title case-content-strong">
-                            Lean UX Process: Think, Make, Check
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="info-img-small" src="assets/images/landingpages/leanux.png" />
-                            </div>
-                        </div>
-                        <div class="case-title-alt">
-                            Iteration 1: Building the Foundation - Jan to March 2023, in between months period(where I
-                            also tested the framework), & August 2023
-                        </div>
-                        <div class="case-content-strong">
-                            Think
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>Objective:</strong> Develop a repeatable and scalable framework to
-                                    reduce
-                                    delivery time.</li>
-                                <li><strong>Research & Insights: </strong>
-                                    <ul>
-                                        <li> Studied Sabri Suby’s <i>Sell Like Crazy (Book)</i>: Identified as the most
-                                            effective
-                                            framework for high-conversion Google Ads landing pages.</li>
-                                        <li>Explored Jim Huffman's Conversion Rate Optimization Course (Linkedin): This
-                                            course
-                                            again reinforced the learnings from sell like crazy, also understood how
-                                            to test qualitative and quantitatively for landing pages.
-                                        </li>
-                                        <li>Learned from Alisha Conlin-Hurd (YouTube): Insights into user-intent-focused
-                                            designs
-                                            and
-                                            conversion psychology.</li>
-                                        <li>Checked out Alex Cattoni (Youtube): Strategies for crafting emotionally
-                                            resonant
-                                            copywriting for landing pages.</li>
-                                        <li>For every new domain I carried out interviews with client stakeholders
-                                            that included the Client's customers, CEO, CMO or Marketing HODs or
-                                            Project Owners. This was
-                                            done till I could draw a pattern for each domain. </li>
-                                        <!-- <li>Stakeholder interviews revealed delays caused by incomplete client
-                                            assets
-                                            like testimonials, images, and stats.</li>
-                                        <li>Lack of reusable templates increased the time-to-market for each page.
-                                        </li> -->
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <img src="assets/images/landingpages/sellLikeCrazy.jpg" />
-                        <div class="case-content-strong">
-                            Make
-                        </div>
-                        <div class="case-content">
-                            <ul>
-
-                                <li>Created 300+ reusable HTML templates for landing page sections.</li>
-                                <li>Developed a goto file documenting layouts for specific industries like
-                                    manufacturing, education, interior design, consulting, healthcare, etc.</li>
-                                <li>Trained the team on resolving <a href="https://pagespeed.web.dev/"
-                                        target="_blank">Google Page Speed</a>.
-                                </li>
-                                <li>Trained team on performing competitive analysis for landing page design.
-                                </li>
-                                <li>Streamlined communication by introducing:
-                                    <ul>
-                                        <li>Google Drive folders for asset management.</li>
-                                        <li>Excel trackers for project milestone tracking.</li>
-                                        <li>Slack channels for real-time collaboration.</li>
-                                    </ul>
-                                </li>
-                                <li>Installed MS Clarity to track user behavior metrics such as dead clicks, rage
-                                    clicks and
-                                    scroll
-                                    depth.</li>
-                                <li> For each section - the design was adapted as per Sabri Suby’s guidelines, treated
-                                    it as the gospel truth to start with. We would tweak the landing page structure
-                                    based on information found from client's competitors & learnings from MS Clarity.
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img class="info-img-small border" src="assets/images/landingpages/editor.png" />
-                                <caption>Editor for Landing Pages</caption>
-                            </div>
-                            <div class="col-md-12 text-center mt-4">
-                                <img class="info-img-small border mt-4"
-                                    src="assets/images/landingpages/msclarity.png" />
-                                <caption>MS Clarity Example for studying Quantitative Metrics</caption>
-                            </div>
-                            <div class="col-md-12 text-center mt-4">
-                                <img class="info-img-small border mt-4"
-                                    src="assets/images/landingpages/pagespeed.png" />
-                                <caption>Page speed test results for 1 of our clients</caption>
-                            </div>
-                        </div>
-                        <div class="case-content-strong">
-                            Check
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>UX Results:</strong>
-                                    <ul>
-
-                                        <li>For quantitative research - Reviewed landing pages with help of MS Clarity
-                                            tool for rage clicks, dead clicks & scroll depth after every 16 days of an
-                                            iteration, also carried out paid usability test with Usability Hub software/
-                                            now renamed to lyssna.</li>
-                                        <li>For qualitative research - Carried our Usability test with client customers
-                                            to understand the impact of landing pages in conversions.</li>
-                                        <li>Once the domain specific landing page was getting good amount of leads then
-                                            same landing page structure was repeated for similar clients in same
-                                            respective domain.</li>
-                                        <li><b>Reduced landing page creation time from 25 days to 10 days.</b></li>
-                                        <li>Improved alignment between content, design, and business teams using
-                                            structured workflows.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Business Results:</strong>
-                                    <ul>
-
-                                        <li>Used internal CRM and google analytics to track number of leads and lead
-                                            quality. Count of actual customers who signed
-                                            up for client services was an indicator of the quality of the landing
-                                            pages. </li>
-                                        <li>Sales team Started to focus on repeat domain clients where lead inflow was
-                                            promising. Sales for repeat domain increased by 300% in quarter 2.</li>
-
-
-                                    </ul>
-                                </li>
-                                <li><strong>Challenges:</strong>
-                                    <ul>
-                                        <li><strong>Business:</strong> </li>
-                                        <li> Clients delayed delivering assets, resulting
-                                            in
-                                            extended timelines of 60–90 days. Clients did not have images related to
-                                            their products or services and asked us to pick images, however 40% of the
-                                            times they would ask for changes in images which led to delayed deliveries -
-                                            we purchased images from Envato Elements & Adobe Stock to make the clients
-                                            happy initially, later we asked clients to provide images when they are
-                                            ready, till then we used the purchased stock images, this stopped the delay
-                                            to go live.</li>
-                                        <li>Some Clients did not have enough money to pay for specific service or
-                                            product related landing pages for ads - we clubbed the product offerings
-                                            into 1 landing page for such clients, and later made an onboarding rule to
-                                            only take clients who have paying capacity. </li>
-
-                                        <li><strong>Design:</strong> </li>
-                                        <li>Landing Page Design team found it difficult to pick colors for landing pages
-                                            - I took training of team on choosing right color like primary secondary and
-                                            taught them how to take inspiration from logo of client & client’s website
-                                            as well</li>
-                                        <li>Landing Page Design team had difficulty picking the right image - to resolve
-                                            this we took subscription of envato and adobe stock we discontinued as it
-                                            was more expensive. Also Customer success team requested clients to share
-                                            images so that design team doesn’t spend extra time in support zone of the
-                                            landing page. </li>
-                                        <li><strong>Team:</strong></li>
-                                        <li> Inefficient handoffs between content writers and
-                                            designers caused bottlenecks. Content writer needed design to be in fixed
-                                            format - This needed many to and fro communication, we decided on a format
-                                            for character length as per best practices for each section of the landing
-                                            page.
-                                        </li>
-                                        <li>Sections looked repetitive, team was using a pre made template for similar
-                                            domain
-                                        </li>
-                                        <li>We (Landing Page Design Team) at times missed reminding for necessary
-                                            details that were not shared by client already. I had to ensure team asked
-                                            for missing details proactively to customer success team for example -
-                                            testimonials or images or company product stats to avoid delay in delivery.
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="case-title-alt">
-                            Iteration 2: Process Optimization - Oct 2023 to Dec 2023
-                        </div>
-                        <div class="case-content-strong">
-                            Think
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>Objective:</strong> Address bottlenecks from the first iteration and
-                                    improve
-                                    mobile-first designs.</li>
-                                <li><strong>Research Insights:</strong>
-                                    <ul>
-                                        <li>MS Clarity data: Long scroll lengths reduced engagement on mobile
-                                            devices, encouraging users to scroll faster and missing out on important
-                                            sections.
-                                        </li>
-                                        <li>Interior design clients required image-heavy layouts,
-                                            manufacturing
-                                            clients preferred concise, solution-focused sections.</li>
-                                        <li>Optional sections (e.g., comparison tables) data took time to be
-                                            delivered by client often caused delays in
-                                            project
-                                            timelines.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="case-content-strong">
-                            Make
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li>For Resolving Business Problems </li>
-                                <li>Deferred optional sections like "Why Choose Us" for post-launch updates - We (Google
-                                    ads team + Business team + Design Team + Client consent) decided to drop sections
-                                    that needed extra time from clients, and add it at a later time - e.g. comparison
-                                    table, why choose us section or even stats - this allowed us faster delivery and
-                                    gave more time for discovering keywords for Google Ads..</li>
-                                <li>For clients that did not have sufficient funds - we (Google ads team + Business team
-                                    + Design Team + Client consent) decided to show all services as a new section and
-                                    sell the premium service as the main offering, this allowed attention for all
-                                    products in low budget.
-                                </li>
-                                <li><strong>Design:</strong></li>
-                                <li>Introduced horizontal scrolling for image-heavy sections in domains like
-                                    interior
-                                    design. Added horizontal scroll for problems and solutions section for interior
-                                    domains to reduce mobile scroll, after qualitative inputs we found that for interior
-                                    domains people are not
-                                    interested in reading text they only want to see the images of the work interior
-                                    designers have done.</li>
-                                <li> Understood that top navigation is not needed in landing pages for all domains
-                                    except healthcare and education domain. The personas searched only via top menus and
-                                    it let to more conversions by 32% (education domain). In healthcare domain the
-                                    qualitative analysis showed that personas identified landing pages with more menus
-                                    as informative and more skilled to do the job compared to less menu or no top menu.
-                                </li>
-                                <li>Merged problem and solution sections for manufacturing clients to streamline the
-                                    experience.</li>
-                                <li>Expanded the team by hiring:
-                                    <ul>
-                                        <li>Two junior designers for HTML/CSS support.</li>
-                                        <li>One senior designer to mediate workflows and ensure quality.</li>
-                                    </ul>
-                                </li>
-                                <li>Conducted training sessions on:
-                                    <ul>
-                                        <li>Selecting colors and fonts inspired by client branding.</li>
-                                        <li>Trained new team in creation of landing pages in in-house editor.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="case-content-strong">
-                            Check
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>UX Results:</strong>
-                                    <ul>
-                                        <li>Reduced landing page creation time to 3 days.</li>
-                                        <li>Enhanced mobile-first designs tailored to domain-specific needs.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Challenges:</strong>
-                                    <ul>
-                                        <li><strong>Business:</strong> Listen to the clients wishes as well if they want
-                                            UI changes - if it works great! If it doesnt then show them UX report on why
-                                            the changes are not working and make the necessary ui changes in landing
-                                            page again.</li>
-                                        <li><strong>Design:</strong>
-                                            Discovered landing page patterns for each of our 20+ client domains.
-                                            These patterns were observed after qualitative + quantitative feedback for
-                                            the domains.
-                                            I created a documentation for each domain - section wise details that should
-                                            be shown in sequence.
-
-                                            In case lead conversion is low - We ( Design team ) study quantitative
-                                            feedback with MS clarity for client in case lead conversion is affected,
-                                            unless new domain is in the picture in which case we talk to client
-                                            customers as well.
-
-                                        </li>
-                                        <li>Repetitive designs in templates required
-                                            rethinking
-                                            layout creativity - For resolving issue related to repetitive design - Took
-                                            sessions with team on how to utilise different ui design for showcasing
-                                            information, Motivated team to explore designs, shared team members with
-                                            appreciation emails from .</li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="case-title-alt">
-                            Iteration 3: AI-Powered Landing Pages - Starting June 2024
-                        </div>
-                        <div class="case-content-strong">
-                            Think
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>Objective:</strong> Leverage AI for exponential scalability and reduce
-                                    repetitive tasks.</li>
-                                <li><strong>Research Insights:</strong>
-                                    <ul>
-                                        <li>Manual workflows, even with optimizations, were limiting scalability from
-                                            investment point of view for our business.
-                                        </li>
-                                        <li>Patterns identified across domains (e.g., real estate, software, and
-                                            healthcare) could be standardized for AI.</li>
-                                        <li>AI tools offered opportunities to automate repetitive tasks like layout
-                                            generation and text formatting. My role is to pour my knowledge of landing
-                                            pages as an AI prompt for each section of the landing page for each domain.
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="case-content-strong">
-                            Make
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li>Developed AI prompts for each landing page section, standardizing inputs like:
-                                    <ul>
-                                        <li>Character limits for headlines and descriptions.</li>
-                                        <li>Collaborated with the CEO to define data format for AI prompt for design
-                                            consistency (e.g.,
-                                            colors, fonts) & scaling up.</li>
-                                    </ul>
-                                </li>
-                                <li>Created total 15 domain-specific templates with help of Design team.</li>
-                                <li>Introduced a design system for branding consistency across all pages in AI Prompt.
-                                </li>
-
-
-                            </ul>
-                        </div>
-
-                        <div class="case-content-strong">
-                            Check
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>Results:</strong>
-                                    <ul>
-                                        <li>Reduced landing page creation time to 20 minutes per page!</li>
-                                        <li><strong>Improved scalability to 99.54% from 3 days delivery time to 20
-                                                minutes per
-                                                landing page.</strong>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><strong>Challenges:</strong>
-                                    <ul>
-                                        <li><strong>Business:</strong> Educating channel partners/ marketers on the
-                                            capabilities and
-                                            limitations of AI tools.</li>
-                                        <li><strong>Design:</strong> AI outputs required initial manual adjustments
-                                            for
-                                            visual appeal.</li>
-                                        <li><strong>Team:</strong> Training team members on AI Prompt was
-                                            time-intensive but necessary.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <img class="info-img-small " src="assets/images/landingpages/Fonzellp.png" />
-                                <caption>Landing page for Fonzel</caption>
-                            </div>
-                            <div class="col-md-12 text-center mt-4">
-                                <img class="info-img-small  mt-4" src="assets/images/landingpages/evohomecare.png" />
-                                <caption>Landing page for Evolution Homecare</caption>
-                            </div>
-                        </div>
-
-                        <div class="case-title case-content-strong">
-                            Final Impact Across All Iterations
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li>
-                                    <strong>Some examples of Client Impact:</strong>
-                                    <ul>
-                                        <li><strong>vGoldenage:</strong> are planning to setup a new facility for
-                                            old age care near Mumbai as their current Google ads landing pages are
-                                            generating 125% increase in yearly revenue.</li>
-                                        <li><strong>Will Jini:</strong> Started targeting international business
-                                            after successfully crossing their benchmark in Indian Demographic. They
-                                            get 266%% more leads than their old ads landing page. </li>
-
-                                        <li><strong>Fonzel:</strong> Increase in revenue by getting highly qualified
-                                            leads with the framework I created for Landing pages. They've got leads
-                                            like - like Mercedes Benz, ONGC, Edifice, Tata Communications, etc. and
-                                            planning their next funding round.</li>
-                                    </ul>
-
-
-
-                                </li>
-                                <li>Delivered 130+ landing pages across 20+ industries, including:
-                                    <ul>
-                                        <li>Software services, manufacturing, healthcare, real estate, interior
-                                            design,
-                                            education (online/offline), and financial services.</li>
-                                    </ul>
-                                </li>
-                                <!-- <li>Generated 25,000+ qualified leads for clients.</li> -->
-                                <li>Reduced delivery timelines from 25 days to 10 days to 3 days and now to 20
-                                    minutes, achieving exponential
-                                    scalability. We went back to 3 days timeline as AI is consuming large amount of
-                                    server costs (60K) to generate the landing pages.</li>
-                                <li>Created a self-sustaining framework that partners could extend for future
-                                    campaigns.</li>
-                            </ul>
-                        </div>
-
-                        <div class="case-title case-content-strong">
-                            Learnings Across Iterations
-                        </div>
-                        <div class="case-content">
-                            <ul>
-                                <li><strong>Client-Centric Adjustments:</strong>
-                                    <ul>
-                                        <li>Proactively communicating with clients during the sales closure helped
-                                            streamline asset collection and reduced delays in delivery timelines.
-                                        </li>
-                                        <li>Flexibility in addressing UI change requests ensured client satisfaction
-                                            while maintaining design standards.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Domain-Specific Patterns:</strong> Recognizing emerging patterns across
-                                    industries allowed us to document tailored landing page sequences for 20+
-                                    domains,
-                                    making future projects faster and more effective.</li>
-                                <li><strong>Data-Driven Decisions:</strong> User behavior insights from tools like
-                                    MS
-                                    Clarity enabled iterative improvements.</li>
-                                <li><strong>Team Efficiency:</strong>
-                                    <ul>
-                                        <li>Training team members on UI/UX principles, color selection, and image
-                                            curation empowered them to make autonomous decisions, improving quality
-                                            and
-                                            speed.</li>
-                                        <li>Onboarding new designers with well-documented processes and templates
-                                            ensured smoother transitions.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>AI Integration:</strong> Manually performance can be translated to AI
-                                    prompts once patterns are identified. While AI drastically reduced production
-                                    time,
-                                    initial manual fine-tuning was essential to achieve high-quality results.
-                                    Continuous
-                                    documentation and prompt refinement improved the AI system over time. AI is
-                                    costly & it is reliable with the right context and prompt refinement.
-                                </li>
-
-                            </ul>
-                        </div>
-
-
-
-
 
                     </div>
+
                 </div>
-
-
             </div>
-            <div class="row next-prev">
-                <div class="col-md-5 text-left">
-                    <div class="next-prev-label">
-                        Previous
-                    </div>
-                    <div class="next-prev-name">
-                        <a href="mahalabharti.html">Mahalabharti</a>
-                    </div>
-                </div>
-                <div class="col-md-5 text-right">
-                    <div class="next-prev-label">
-                        Next
-                    </div>
-                    <div class="next-prev-name">
-                        <a href="dashboard.html">Dashboard App</a>
-                    </div>
+
+
+            <!-- Lean UX Process -->
+            <div class="mt-16">
+                <div class="text-3xl font-bold mb-8">Lean UX Process: Think, Make, Check</div>
+
+                <!-- Lean UX Diagram -->
+                <div class="w-full flex justify-center mb-10">
+                    <img class="rounded-lg" src="assets/images/landingpages/leanux.png" alt="Lean UX Diagram">
                 </div>
 
+                <!-- Iteration 1 -->
+                <div class="mt-16">
+                    <div class="text-2xl font-semibold mb-4">Iteration 1: Building the Foundation - Jan to March 2023
+                    </div>
+
+                    <!-- Think -->
+                    <div class="text-xl font-semibold text-gray-800 mt-8 mb-2">Think</div>
+                    <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                        <li><strong>Objective:</strong> Develop a repeatable and scalable framework to reduce delivery
+                            time.
+                        </li>
+                        <li><strong>Research & Insights:</strong>
+                            <ul class="list-disc pl-5 mt-2">
+                                <li>Studied Sabri Suby’s <i>Sell Like Crazy</i> book.</li>
+                                <li>Learned CRO from Jim Huffman’s LinkedIn course.</li>
+                                <li>Gained insights into user-intent design from Alisha Conlin-Hurd.</li>
+                                <li>Learned emotionally resonant copywriting from Alex Cattoni.</li>
+                                <li>Conducted stakeholder interviews for each domain to build patterns.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Book Image -->
+                    <div class="w-full flex justify-center mt-8">
+                        <img class="rounded-lg" src="assets/images/landingpages/sellLikeCrazy.jpg"
+                            alt="Sell Like Crazy Book">
+                    </div>
+
+                    <!-- Make -->
+                    <div class="text-xl font-semibold text-gray-800 mt-12 mb-2">Make</div>
+                    <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                        <li>Created 300+ reusable HTML templates for sections.</li>
+                        <li>Built layouts for industries like manufacturing, healthcare, education, etc.</li>
+                        <li>Trained team for Google Page Speed, competitive analysis, and MS Clarity use.</li>
+                        <li>Adopted Sabri Suby’s framework, then iteratively improved from user behavior metrics.</li>
+                    </ul>
+
+                    <!-- Editor, MS Clarity, PageSpeed Images -->
+                    <div class="flex flex-wrap gap-8 justify-center mt-10">
+                        <div class="w-full text-center">
+                            <img class="rounded-lg" src="assets/images/landingpages/editor.png"
+                                alt="Landing Page Editor">
+                            <div class="mt-2 text-gray-500">Editor for Landing Pages</div>
+                        </div>
+                        <div class="w-full text-center">
+                            <img class="rounded-lg" src="assets/images/landingpages/msclarity.png"
+                                alt="MS Clarity Screenshot">
+                            <div class="mt-2 text-gray-500">MS Clarity Metrics</div>
+                        </div>
+                        <div class="w-full text-center mt-8">
+                            <img class="rounded-lg" src="assets/images/landingpages/pagespeed.png" alt="PageSpeed Test">
+                            <div class="mt-2 text-gray-500">Page Speed Test Results</div>
+                        </div>
+                    </div>
+
+                    <!-- Check -->
+                    <div class="text-xl font-semibold text-gray-800 mt-16 mb-2">Check</div>
+                    <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                        <li>Used MS Clarity + paid usability testing to improve designs every 16 days.</li>
+                        <li>Qualitative feedback from client customers informed copy and structure changes.</li>
+                        <li>Reduced landing page creation from 25 days to 10 days.</li>
+                        <li>Sales team focused on successful domain templates, growing domain-specific sales by 300%.
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!-- Iteration 2 -->
+            <div class="mt-20">
+                <div class="text-2xl font-semibold mb-4">Iteration 2: Process Optimization - Oct 2023 to Dec 2023</div>
+
+                <!-- Think -->
+                <div class="text-xl font-semibold text-gray-800 mt-8 mb-2">Think</div>
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li><strong>Objective:</strong> Address bottlenecks from the first iteration and improve
+                        mobile-first
+                        designs.</li>
+                    <li><strong>Research Insights:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>MS Clarity data showed that long scroll lengths reduced mobile engagement.</li>
+                            <li>Interior design clients needed image-heavy layouts; manufacturing preferred concise
+                                sections.
+                            </li>
+                            <li>Optional sections delayed delivery; goal was to defer them post-launch.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Make -->
+                <div class="text-xl font-semibold text-gray-800 mt-12 mb-2">Make</div>
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li>Deferred optional sections (like "Why Choose Us", comparison tables) for post-launch updates.
+                    </li>
+                    <li>Created service sections to group low-budget client offerings.</li>
+                    <li>Introduced horizontal scrolling for image-heavy sections (e.g., interior design domains).</li>
+                    <li>Removed top navigation for most domains except healthcare and education where it boosted
+                        conversions.
+                    </li>
+                    <li>Merged problem and solution sections for manufacturing clients.</li>
+                    <li>Expanded the team: 2 junior designers, 1 senior designer.</li>
+                    <li>Trained team on color and font selection aligned with client branding.</li>
+                </ul>
+
+                <!-- Check -->
+                <div class="text-xl font-semibold text-gray-800 mt-12 mb-2">Check</div>
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li><strong>UX Results:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Reduced landing page creation time from 10 days to 3 days.</li>
+                            <li>Mobile-first designs significantly improved for different industries.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Challenges:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Addressing client UI change requests while educating them with UX reports.</li>
+                            <li>Documenting domain-specific landing page sequences for consistency.</li>
+                            <li>Resolving issues of repetitive templates by promoting creative layouts among designers.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Iteration 3 -->
+            <div class="mt-20">
+                <div class="text-2xl font-semibold mb-4">Iteration 3: AI-Powered Landing Pages - Starting June 2024
+                </div>
+
+                <!-- Think -->
+                <div class="text-xl font-semibold text-gray-800 mt-8 mb-2">Think</div>
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li><strong>Objective:</strong> Leverage AI for exponential scalability and reduce repetitive tasks.
+                    </li>
+                    <li><strong>Research Insights:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Manual workflows, even when optimized, were limiting scalability.</li>
+                            <li>Patterns across domains like real estate, healthcare, and software could be standardized
+                                for
+                                AI prompts.</li>
+                            <li>AI tools could automate repetitive tasks like layout generation and text formatting.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Make -->
+                <div class="text-xl font-semibold text-gray-800 mt-12 mb-2">Make</div>
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li>Developed AI prompts for each landing page section with standardized input formats (e.g.,
+                        headline
+                        character limits, description rules).</li>
+                    <li>Collaborated with CEO to define prompt data formats ensuring consistency in branding (colors,
+                        fonts).</li>
+                    <li>Created 15 domain-specific templates using team expertise.</li>
+                    <li>Introduced a design system for consistency across all AI-generated pages.</li>
+                </ul>
+
+                <!-- Check -->
+                <div class="text-xl font-semibold text-gray-800 mt-12 mb-2">Check</div>
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li><strong>Results:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Landing page creation reduced to <strong>20 minutes per page</strong>!</li>
+                            <li>Scalability improved to <strong>99.54%</strong>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Challenges:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Educating channel partners and marketers about AI's capabilities and limits.</li>
+                            <li>Initial AI outputs needed manual fine-tuning for better visual and branding consistency.
+                            </li>
+                            <li>Training the internal team on AI prompt creation was time-intensive but critical for
+                                long-term scalability.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- AI Landing Page Image Example -->
+                <div class="w-full   mt-10">
+                    <img class="rounded-lg" src="assets/images/landingpages/evohomecare.png"
+                        alt="Evolution Homecare Landing Page">
+                    <div class="text-gray-500 text-center mt-2">Landing page for Evolution Homecare</div>
+                </div>
+            </div>
+
+            <!-- Final Impact Section -->
+            <div class="mt-20">
+                <div class="text-3xl font-bold mb-8">Final Impact Across All Iterations</div>
+
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li><strong>Client Success Stories:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><strong>vGoldenage:</strong> Planning to set up a new old-age care facility due to 125%
+                                yearly revenue increase.</li>
+                            <li><strong>Will Jini:</strong> Expanded to international business; leads increased by 266%.
+                            </li>
+                            <li><strong>Fonzel:</strong> Acquired premium clients like Mercedes Benz, Tata
+                                Communications; planning next funding round.</li>
+                        </ul>
+                    </li>
+                    <li>Delivered 130+ landing pages across 20+ industries (software services, healthcare, education,
+                        financial services, manufacturing, etc.).</li>
+                    <li>Reduced delivery timelines from 25 days to 10 days, then to 3 days, and now 20 minutes (with AI
+                        prompts).</li>
+                    <li>Created a self-sustaining scalable framework for future campaign expansions.</li>
+                </ul>
+            </div>
+
+            <!-- Learnings Section -->
+            <div class="mt-20">
+                <div class="text-3xl font-bold mb-8">Learnings Across Iterations</div>
+
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li><strong>Client-Centric Adjustments:</strong> Early communication streamlined asset collection
+                        and reduced project delays.</li>
+                    <li><strong>Domain-Specific Patterns:</strong> Documenting domain-specific landing page sequences
+                        accelerated production and improved effectiveness.</li>
+                    <li><strong>Data-Driven Decisions:</strong> Using MS Clarity and usability tests led to continuous,
+                        evidence-based improvements.</li>
+                    <li><strong>Team Efficiency:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Training on UI/UX, color theory, and layout principles empowered team members.</li>
+                            <li>Well-documented onboarding processes made scaling easier.</li>
+                        </ul>
+                    </li>
+                    <li><strong>AI Integration:</strong> Manual performance patterns were successfully translated into
+                        AI prompts for faster scalability while maintaining quality standards.</li>
+                </ul>
+            </div>
+
+
 
         </div>
-        <script src="styles/plugins/lightbox/ekko-lightbox.min.js" />
-        <script>
-            $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-        </script>
     </div>
-    <div class="footer">
-        Crafted and created by <strong>Lekha Deshmukh</strong>
-    </div>
+    <section id="i4i90k" class="w-full bg-blue-600">
+        <div class="px-8 py-12 mx-auto max-w-7xl">
+            <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+                <div class="col-span-3">
+                    <a href="index.html" class="text-xl font-black leading-none text-white select-none logo">Lekha
+                        Deshmukh</a>
+                    <p class="my-4 text-xs leading-normal text-blue-100">
+                        Designed with passion.
+                    </p>
+                </div>
+                <nav class="col-span-1 md:col-span-2 lg:col-span-6">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Case Studies
+                    </p>
+                    <a href="landingpages.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Creating
+                        AI Prompts - Google Ads Landing Pages</a>
+                    <a href="dashboard.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Customer
+                        Dashboard - Reduced support time by 95%
+                    </a>
+                    <a href="adminconsole.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Faster
+                        Insights - Enterprise Admins</a>
+                    <a href="mahalabharti.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Rural
+                        Users -
+                        Access
+                        to Government Schemes </a>
+
+                </nav>
+
+                <div class="col-span-3">
+                    <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-end">
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/lekha.deshmukh.5" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 
+                                    1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ld.in.design/?hl=en" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 
+                                    4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 
+                                    2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 
+                                    01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 
+                                    0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 
+                                    01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 
+                                    4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 
+                                    1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 
+                                    1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 
+                                    1.15-.137.353-.3.882-.344 1.857-.047 
+                                    1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 
+                                    3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 
+                                    1.15.35.35.683.566 1.15.748.353.137.882.3 
+                                    1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 
+                                    2.917-.01 3.96-.058.976-.045 1.505-.207 
+                                    1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 
+                                    3.097 0 00-.748-1.15 3.098 3.098 0 
+                                    00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 
+                                    6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 
+                                    010-10.27zm0 1.802a3.333 3.333 0 100 6.666 
+                                    3.333 3.333 0 000-6.666zm5.338-3.205a1.2 
+                                    1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/deshmukh_lekha" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 
+                                    0-.178 0-.355-.012-.53A8.348 8.348 0 0022 
+                                    5.92a8.19 8.19 0 01-2.357.646 
+                                    4.118 4.118 0 001.804-2.27 
+                                    8.224 8.224 0 01-2.605.996 
+                                    4.107 4.107 0 00-6.993 3.743 
+                                    11.65 11.65 0 01-8.457-4.287 
+                                    4.106 4.106 0 001.27 5.477 
+                                    4.072 4.072 0 01-1.86-.514v.052 
+                                    a4.105 4.105 0 003.292 4.022 
+                                    4.095 4.095 0 01-1.853.07 
+                                    4.108 4.108 0 003.834 2.85 
+                                    A8.233 8.233 0 012 18.407 
+                                    a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/lekhadeshmukh" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">GitHub</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 
+                                    4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 
+                                    0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 
+                                    1.003.07 1.531 1.032 1.531 1.032.892 
+                                    1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 
+                                    0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 
+                                    0 0 .84-.27 2.75 1.026A9.564 9.564 0 
+                                    0112 6.844c.85.004 1.705.115 2.504.337 
+                                    1.909-1.296 2.747-1.027 2.747-1.027.546 
+                                    1.379.202 2.398.1 2.651.64.7 
+                                    1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 
+                                    4.943.359.309.678.92.678 1.855 
+                                    0 1.338-.012 2.419-.012 2.747 0 
+                                    .268.18.58.688.482A10.019 10.019 0 0022 
+                                    12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Dribbble -->
+                        <a href="https://dribbble.com/lekhad" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Dribbble</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 
+                                    10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 
+                                    2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 
+                                    25.416 0 00-.564-1.236c3.145-1.28 
+                                    4.577-3.124 4.761-3.362zM12 
+                                    3.475c2.17 0 4.154.813 5.662 
+                                    2.148-.152.216-1.443 1.941-4.48 
+                                    3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 
+                                    8.687 0 0112 3.475zm-3.633.803a53.896 
+                                    53.896 0 013.167 4.935c-3.992 
+                                    1.063-7.517 1.04-7.896 1.04a8.581 
+                                    8.581 0 014.729-5.975zM3.453 
+                                    12.01v-.26c.37.01 4.512.065 
+                                    8.775-1.215.25.477.477.965.694 
+                                    1.453-.109.033-.228.065-.336.098-4.404 
+                                    1.42-6.747 5.303-6.942 
+                                    5.629a8.522 8.522 0 01-2.19-5.705zM12 
+                                    20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 
+                                    1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 
+                                    35.318 0 011.823 6.475 
+                                    8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 
+                                    2.679-.423 5.022.271 5.314.369a8.468 
+                                    8.468 0 01-3.655 5.715z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                    </span>
+
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-blue-500 md:flex-row md:items-center">
+                <p class="mb-6 text-sm text-left text-blue-200 md:mb-0"> 2015-2025 Lekha Deshmukh. All Rights
+                    Reserved.
+                </p>
+                <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+                    <a href="terms.html" class="text-sm text-blue-200 transition hover:text-white">Terms</a>
+                    <a href="privacy.html" class="text-sm text-blue-200 transition hover:text-white">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
