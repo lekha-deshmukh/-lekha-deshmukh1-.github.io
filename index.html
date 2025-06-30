@@ -7,7 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LD</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @keyframes bounce-lr {
 
+            0%,
+            100% {
+                transform: translateX(0) translateY(0);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+
+            50% {
+                transform: translateX(8px) translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+
+        .animate-bounce-lr {
+            animation: bounce-lr 1s infinite;
+        }
+    </style>
 </head>
 
 <body class="overflow-x-hidden">
@@ -59,7 +77,7 @@
             <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
                 <a href="assets/images/LekhaLeadUXResume.pdf"
                     class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 gap-2 focus:outline-none focus:shadow-none">
-                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg viewBox="0 0 20 20" fill="none" class="animate-bounce" xmlns="http://www.w3.org/2000/svg"
                         id="Download--Streamline-Radix" height="20" width="20">
                         <desc>Download Streamline Icon: https://streamlinehq.com</desc>
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -75,8 +93,8 @@
         <div class="flex justify-end p-8 bg-white lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
             <div class="flex flex-col items-start justify-center w-full lg:max-w-lg">
                 <p
-                    class="inline-block px-2 py-1 mb-5 font-medium tracking-wider text-gray-900 uppercase bg-gray-200 rounded-full text-xxs">
-                    UX Leader • Enterprise • AI • Impact
+                    class="inline-block px-1 sm:px-2   py-1 mb-5 font-medium tracking-wider text-gray-900 uppercase bg-gray-200 rounded-full text-xs sm:text-sm">
+                    UX • Enterprise • AI • Impact
 
 
                 </p>
@@ -84,19 +102,26 @@
                     Designing Systems for Scale
                 </h5>
                 <p class="py-5 mb-5 text-gray-600 lg:text-xl">
-                    With 10+ years in UX, I design data-informed, AI-powered experiences that scale. From dashboards
+                    With 10+ years in UX, I design data-informed experiences that scale. From dashboards
                     to
                     conversational interfaces, I craft systems that solve real problems and grow with your users.
                 </p>
                 <div class="flex items-center">
                     <a href="mailto:deshmukh.lekha@gmail.com"
                         class="inline-flex cursor-pointer items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 gap-2 rounded-lg hover:bg-black">
-                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        <!-- <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                             id="Envelope-Closed--Streamline-Radix" height="20" width="20">
                             <desc>Envelope Closed Streamline Icon: https://streamlinehq.com</desc>
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M1.3333333333333333 2.6666666666666665c-0.73638 0 -1.3333333333333333 0.5969599999999999 -1.3333333333333333 1.3333333333333333v12c0 0.7363999999999999 0.5969533333333332 1.3333333333333333 1.3333333333333333 1.3333333333333333h17.333333333333332c0.7363999999999999 0 1.3333333333333333 -0.5969333333333333 1.3333333333333333 -1.3333333333333333V4c0 -0.7363733333333333 -0.5969333333333333 -1.3333333333333333 -1.3333333333333333 -1.3333333333333333H1.3333333333333333Zm0 1.3333333333333333 17.333333333333332 0v1.2332533333333333c-0.11013333333333333 -0.00010666666666666667 -0.22159999999999996 0.030093333333333333 -0.3214666666666667 0.09348000000000001L10 10.622706666666666 1.6548266666666667 5.326733333333333C1.5549466666666665 5.263346666666666 1.4434666666666667 5.233146666666666 1.3333333333333333 5.233253333333333V4Zm0 2.5439599999999998V16h17.333333333333332V6.543959999999999L10.321493333333333 11.839933333333331c-0.19624 0.12453333333333333 -0.4467466666666667 0.12453333333333333 -0.6429866666666666 0L1.3333333333333333 6.543959999999999Z"
                                 fill="#f3f3f3" stroke-width="1.3333"></path>
+                        </svg> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce-lr" viewBox="0 0 16 16"
+                            fill="#ffffff" id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
+
+                            <path
+                                d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                stroke-width="0.0625"></path>
                         </svg>
                         Get in touch
                     </a>
@@ -119,10 +144,10 @@
     <section>
 
 
-        <div class="grid grid-cols-2 md:grid-cols-4   px-1  gap-1">
+        <div class=" grid-cols-1 sm:grid-cols-2 md:grid-cols-4   px-1  gap-1 hidden sm:grid">
             <div class="grid gap-1">
                 <div>
-                    <img class="max-h-full max-w-full rounded-lg " src="assets/images/about/webinar.PNG" alt="">
+                    <img class="max-h-full max-w-full rounded-lg " src="assets/images/about/webinar.webp" alt="">
                 </div>
                 <div>
                     <img class=" max-w-full rounded-lg " src="assets/images/about/podcast.webp" alt="">
@@ -137,11 +162,11 @@
                 </div> -->
 
                 <div>
-                    <img class="h-auto max-w-full rounded-lg  " src="assets/images/about/kinabaluTrees.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  " src="assets/images/about/kinabaluTrees.webp" alt="">
                 </div>
 
             </div>
-            <div class="grid gap-1">
+            <div class="grid gap-1 ">
                 <div>
                     <img class="max-h-full max-w-full  rounded-lg" src="assets/images/about/meaevent.jpg" alt="">
                 </div>
@@ -150,7 +175,7 @@
                 </div>
                 <div>
                     <img class="max-h-full  max-w-full object-cover rounded-lg   "
-                        src="assets/images/about/kinabaluTrek.png" alt="">
+                        src="assets/images/about/kinabaluTrek.webp" alt="">
                 </div>
                 <!-- <div>
                     <img class="h-auto max-w-full rounded-lg"
@@ -160,7 +185,7 @@
             </div>
             <div class="grid gap-4">
                 <div>
-                    <img class="max-h-full  rounded-lg" src="assets/images/about/sinhagad.PNG" alt="">
+                    <img class="max-h-full  rounded-lg" src="assets/images/about/sinhagad.webp" alt="">
                 </div>
                 <div>
                     <img class="max-h-full -mt-3  w-full object-cover rounded-lg"
@@ -177,7 +202,7 @@
             </div>
             <div class="grid gap-1">
                 <div>
-                    <img class="max-h-full max-w-full object-cover rounded-lg  " src="assets/images/quotes/desk.PNG"
+                    <img class="max-h-full max-w-full object-cover rounded-lg  " src="assets/images/about/desk.webp"
                         alt="">
                 </div>
                 <div>
@@ -189,9 +214,366 @@
         </div>
 
     </section>
+    <section class="p-1 rounded-lg" id="casestudies">
+        <div id="iucyrz" class="w-full py-20 bg-gray-50">
+            <div class="sm:px-10 mx-auto max-w-7xl">
+                <div class="px-4 sm:px-10 mb-8 space-y-5 lg:px-0 lg:text-center lg:mb-16">
+                    <h2 class="text-4xl font-bold sm:text-5xl">Case Studies
+                    </h2>
+                    <p class="text-lg text-gray-600 w-ful sm:text-xl"><a href="mailto:deshmukh.lekha@gmail.com"
+                            class="text-blue-500 hover:text-blue-700">Get in
+                            touch </a>to know the stories behind these
+                        screens
+                    </p>
+                </div>
+                <div class="grid overflow-hidden lg:rounded-lg">
+                    <div class="grid items-center lg:grid-cols-2">
+
+                        <div
+                            class="flex  flex-col items-start justify-center h-full py-16 px-8 sm:pl-16 sm:pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl  ">Redesigning the In-Classroom Experience
+                                    for Teachers
+
+                                </h3>
+                                <a href="inclassroom.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce-lr"
+                                        viewBox="0 0 16 16" fill="#000000" id="Caret-Right-Light--Streamline-Phosphor"
+                                        height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+
+                                <!-- <p class="text-sm text-gray-600 mb-4">Role: <span
+                                    class="font-medium text-gray-800">Co-Founder & UX Lead</span></p> -->
+
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Teachers were tethered to desktops to control
+                                        slides, breaking engagement and limiting mobility.</p>
+                                </div>
+
+                                <!-- <div class="mb-4">
+                                <h4 class="font-semibold text-gray-800 mb-1">Approach:</h4>
+                                <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+                                    <li>Built 300+ reusable landing page templates across 20+ industries</li>
+                                    <li>Led UX strategy, process optimization, and cross-team collaboration</li>
+                                    <li>Introduced a scalable framework powered by AI and automation</li>
+                                </ul>
+                            </div> -->
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>⚡ Introduced mobile clicker feature
+
+                                        </li>
+                                        <li> ✅ Increased mobile app adoption to 100%</li>
+                                        <li> 📈 Enhanced classroom interactivity across 300+ sessions</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="overflow-hidden bg-gray-100 h-96">
+                            <img src="assets/images/inclassroom/mockup/2.png" alt=""
+                                class="object-contain object-top w-full h-full" />
+                        </div>
+
+                    </div>
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div class="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
+                            <img src="assets/images/dashboard/2.png" alt=""
+                                class="object-cover object-left sm:object-top  w-full h-full" />
+                        </div>
+                        <div
+                            class="flex  flex-col items-start justify-center h-full py-16 px-8 sm:pl-16 sm:pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl">Designing a self-serve dashboard, reduced
+                                    support time by 95%
+                                </h3>
+                                <a href="dashboard.html"
+                                    class="  inline-flex flex-none float-right cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce-lr"
+                                        viewBox="0 0 16 16" fill="#000000" id="Caret-Right-Light--Streamline-Phosphor"
+                                        height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Clients had no real-time visibility into ad
+                                        performance, overwhelming the support team with frequent status update
+                                        requests.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>📉 Reduced customer support time by 95%</li>
+                                        <li>🧠 Improved client understanding of ROI through funnel-based data
+                                            visualization
+                                        </li>
+                                        <li>🚀 Enabled scalable operations by freeing up support team bandwidth</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div
+                            class="flex  flex-col items-start justify-center h-full py-16 px-8 sm:pl-16 sm:pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl">Faster Insights for Enterprise Admins
+
+                                </h3>
+                                <a href="adminconsole.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce-lr"
+                                        viewBox="0 0 16 16" fill="#000000" id="Caret-Right-Light--Streamline-Phosphor"
+                                        height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Inconsistent, inefficient admin tools were
+                                        increasing
+                                        issue resolution time and contributing to client dissatisfaction and
+                                        retention
+                                        risks.</p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-3">
+                                        <li>⚡ Reduced admin troubleshooting time by 30–35% through clear, real-time
+                                            system
+                                            summaries</li>
+                                        <li>🔍 Improved visibility into error states, enabling faster detection and
+                                            resolution</li>
+                                        <li>🧩 Unified design system across admin tools, reducing onboarding time
+                                            and
+                                            cognitive load</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bg-gray-100 h-96">
+                            <img src="assets/images/adminconsole/afteradmin.png" alt=""
+                                class="object-cover object-left sm:object-top w-full h-full" />
+                        </div>
+                    </div>
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div class="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
+                            <img src="assets/images/mahalabharti/research/Navale.png" alt=""
+                                class="object-cover object-left  w-full h-full" />
+                        </div>
+                        <div
+                            class="flex  flex-col items-start justify-center h-full py-16 px-8 sm:pl-16 sm:pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl ">Providing Access to Government Schemes
+                                    for
+                                    Rural
+                                    Citizens
+
+                                </h3>
+                                <a href="mahalabharti.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce-lr"
+                                        viewBox="0 0 16 16" fill="#000000" id="Caret-Right-Light--Streamline-Phosphor"
+                                        height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Low literacy, limited digital access, and lack
+                                        of
+                                        awareness prevented rural citizens from availing government welfare schemes.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>⚡ Enabled 500,000+ citizen registrations via offline-first, image-based
+                                            UX
+                                        </li>
+                                        <li>✅ 94% task success rate after usability improvements</li>
+                                        <li>📈 500+ success stories, adopted state-wide and noticed by other state
+                                            govts
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid items-center lg:grid-cols-2">
+
+                        <div
+                            class="flex  flex-col items-start justify-center h-full py-16 px-8 sm:pl-16 sm:pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl  ">Creating AI prompts for
+                                    Google Ads
+                                    Landing
+                                    Pages
+
+                                </h3>
+                                <a href="landingpages.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce-lr"
+                                        viewBox="0 0 16 16" fill="#000000" id="Caret-Right-Light--Streamline-Phosphor"
+                                        height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+
+                                <!-- <p class="text-sm text-gray-600 mb-4">Role: <span
+                                    class="font-medium text-gray-800">Co-Founder & UX Lead</span></p> -->
+
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Initial landing page creation took 20–25 days,
+                                        limiting
+                                        campaign scalability and lead generation.</p>
+                                </div>
+
+                                <!-- <div class="mb-4">
+                                <h4 class="font-semibold text-gray-800 mb-1">Approach:</h4>
+                                <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+                                    <li>Built 300+ reusable landing page templates across 20+ industries</li>
+                                    <li>Led UX strategy, process optimization, and cross-team collaboration</li>
+                                    <li>Introduced a scalable framework powered by AI and automation</li>
+                                </ul>
+                            </div> -->
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>⚡ Reduced build time from 25 days to 20 minutes</li>
+                                        <li>✅ 130+ pages delivered</li>
+                                        <li>📈 25,000+ leads generated</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="overflow-hidden bg-gray-100 h-96">
+                            <img src="assets/images/landingpages/gads.jpg" alt="" class="object-cover w-full h-full" />
+                        </div>
+
+                    </div>
+
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div class="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
+                            <img src="assets/images/timetable/prototypes/ttstudent.png" alt=""
+                                class="object-cover   w-full h-full" />
+                        </div>
+                        <div
+                            class="flex  flex-col items-start justify-center h-full py-16 px-8 sm:pl-16 sm:pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+
+                            <div class="flex justify-between items-center">
+
+                                <h3 class="text-2xl font-semibold sm:text-3xl ">Designing the Timetable Module in
+                                    LearniCo Product
+
+                                </h3>
+                                <a href="timetable.html"
+                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce-lr"
+                                        viewBox="0 0 16 16" fill="#000000" id="Caret-Right-Light--Streamline-Phosphor"
+                                        height="16" width="16">
+
+                                        <path
+                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
+                                            stroke-width="0.0625"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
+                                    <p class="text-gray-700 text-sm">Students often missed lectures due to last-minute
+                                        changes and scattered notifications. Teachers lacked a unified system to manage
+                                        and reschedule classes efficiently.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>🧠 Identified key user pain points through qualitative research
+
+                                        </li>
+                                        <li>📅 Designed a centralized timetable module with live + recorded lectures
+                                        </li>
+                                        <li> 📲 Improved class attendance and reduced scheduling confusion for students
+                                            and teachers alike
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="p-1" id="about">
         <div class="w-full bg-purple-900 rounded-lg">
-            <div class="flex flex-col px-12 py-20 mx-auto max-w-7xl lg:flex-row ">
+            <div class="flex flex-col px-4 sm:px-12 py-20 mx-auto max-w-7xl lg:flex-row ">
                 <div
                     class="relative w-full pr-12 mb-10 lg:text-left sm:text-center text-white lg:w-1/2 xl:w-6/12 lg:mb-0">
 
@@ -208,12 +590,11 @@
                         <div class="mb-6">
                             <p
                                 class="inline font-sans text-5xl text-white font-bold tracking-tight sm:text-5xl sm:leading-none ">
-                                Human-First Design -
+                                About Me
                             </p>
                             <p
-                                class="block font-sans text-5xl font-bold tracking-tight text-purple-300 sm:text-5xl sm:leading-none">
-                                My Work, My Passion
-                            </p>
+                                class="block font-sans text-3xl mt-2 font-bold tracking-tight text-purple-300 sm:leading-none">
+                                Passionate . Driven . Collaborative </p>
                         </div>
                         <p class="text-base text-purple-200 md:text-lg">
 
@@ -253,7 +634,8 @@
                                         cliprule="evenodd">
                                     </path>
                                 </svg>
-                                <span class="font-bold">Outcome Driven -</span> Setting UX KPIs while ensuring
+                                <span class="font-bold">Outcome Driven -</span> Setting & achieving UX KPIs while
+                                ensuring
                                 delivery of products that are intuitive, flexible, and
                                 human-first.
                             </li>
@@ -274,7 +656,7 @@
                     </div>
                 </div>
                 <div
-                    class="relative flex flex-col items-center justify-center flex-shrink-0 w-full max-w-2xl py-16 mx-auto bg-gray-200 rounded-lg lg:w-1/2 lg:mx-0 xl:w-6/12">
+                    class="relative hidden sm:flex flex-col items-center justify-center flex-shrink-0 w-full max-w-2xl py-16 mx-auto bg-gray-200 rounded-lg lg:w-1/2 lg:mx-0 xl:w-6/12">
                     <h3 class="text-2xl font-bold text-gray-500">Work Experience
                     </h3>
                     <div class="w-1 h-6 my-3 bg-gray-300 rounded-full">
@@ -382,11 +764,11 @@
                     Work Areas
                 </h5> -->
 
-                    <h2 class="text-4xl text-center font-bold sm:text-5xl "> What I Bring to the Table
+                    <h2 class="text-4xl text-center font-bold sm:text-5xl "> Skillset
                     </h2>
                     <p
                         class="w-full max-w-xl   mx-auto  font-sans  text-center  lg:text-lg text-lg text-gray-600  sm:text-xl">
-                        A snapshot of the skills and practices I bring to every project
+                        A snapshot of my skills practiced over the years
                     </p>
                 </div>
                 <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
@@ -605,7 +987,7 @@
             </svg>
         </div> -->
         </div>
-        <section class="w-full pb-24  bg-gray-100  relative">
+        <section class="w-full pb-24  bg-gray-100  relative hidden md:block">
 
             <div
                 class="max-w-6xl relative mx-auto flex sm:px-0 px-10 flex-col items-start sm:items-center justify-center">
@@ -660,241 +1042,9 @@
     </section>
 
 
-    <section class="p-1 rounded-lg" id="casestudies">
-        <div id="iucyrz" class="w-full py-20 bg-gray-50">
-            <div class="px-10 mx-auto max-w-7xl">
-                <div class="px-10 mb-8 space-y-5 lg:px-0 lg:text-center lg:mb-16">
-                    <h2 class="text-4xl font-bold sm:text-5xl">Case Studies
-                    </h2>
-                    <p class="text-lg text-gray-600 w-ful sm:text-xl"><a href="mailto:deshmukh.lekha@gmail.com"
-                            class="text-blue-500 hover:text-blue-700">Get in
-                            touch </a>to know the stories behind these
-                        screens
-                    </p>
-                </div>
-                <div class="grid overflow-hidden lg:rounded-lg">
-                    <div class="grid items-center lg:grid-cols-2">
 
-                        <div
-                            class="flex  flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                            <div class="flex justify-between items-center">
-
-                                <h3 class="text-2xl font-semibold sm:text-3xl  ">Creating AI prompts for
-                                    Google Ads
-                                    Landing
-                                    Pages
-
-                                </h3>
-                                <a href="landingpages.html"
-                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
-                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
-
-                                        <path
-                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
-                                            stroke-width="0.0625"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div>
-
-                                <!-- <p class="text-sm text-gray-600 mb-4">Role: <span
-                                    class="font-medium text-gray-800">Co-Founder & UX Lead</span></p> -->
-
-                                <div class="mb-4">
-                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
-                                    <p class="text-gray-700 text-sm">Initial landing page creation took 20–25 days,
-                                        limiting
-                                        campaign scalability and lead generation.</p>
-                                </div>
-
-                                <!-- <div class="mb-4">
-                                <h4 class="font-semibold text-gray-800 mb-1">Approach:</h4>
-                                <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
-                                    <li>Built 300+ reusable landing page templates across 20+ industries</li>
-                                    <li>Led UX strategy, process optimization, and cross-team collaboration</li>
-                                    <li>Introduced a scalable framework powered by AI and automation</li>
-                                </ul>
-                            </div> -->
-
-                                <div>
-                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-1">
-                                        <li>⚡ Reduced build time from 25 days to 20 minutes</li>
-                                        <li>✅ 130+ pages delivered</li>
-                                        <li>📈 25,000+ leads generated</li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="overflow-hidden bg-gray-100 h-96">
-                            <img src="assets/images/landingpages/gads.jpg" alt="" class="object-cover w-full h-full" />
-                        </div>
-
-                    </div>
-                    <div class="grid items-center lg:grid-cols-2">
-                        <div class="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
-                            <img src="assets/images/dashboard/2.png" alt=""
-                                class="object-cover object-top w-full h-full" />
-                        </div>
-                        <div
-                            class="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                            <div class="flex justify-between items-center">
-
-                                <h3 class="text-2xl font-semibold sm:text-3xl">Designing a self-serve dashboard, reduced
-                                    support time by 95%
-                                </h3>
-                                <a href="dashboard.html"
-                                    class="  inline-flex flex-none float-right cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
-                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
-
-                                        <path
-                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
-                                            stroke-width="0.0625"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div>
-                                <div class="mb-4">
-                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
-                                    <p class="text-gray-700 text-sm">Clients had no real-time visibility into ad
-                                        performance, overwhelming the support team with frequent status update
-                                        requests.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-1">
-                                        <li>📉 Reduced customer support time by 95%</li>
-                                        <li>🧠 Improved client understanding of ROI through funnel-based data
-                                            visualization
-                                        </li>
-                                        <li>🚀 Enabled scalable operations by freeing up support team bandwidth</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="grid items-center lg:grid-cols-2">
-                        <div
-                            class="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-
-                            <div class="flex justify-between items-center">
-
-                                <h3 class="text-2xl font-semibold sm:text-3xl">Faster Insights for Enterprise Admins
-
-                                </h3>
-                                <a href="adminconsole.html"
-                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
-                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
-
-                                        <path
-                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
-                                            stroke-width="0.0625"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div>
-                                <div class="mb-4">
-                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
-                                    <p class="text-gray-700 text-sm">Inconsistent, inefficient admin tools were
-                                        increasing
-                                        issue resolution time and contributing to client dissatisfaction and
-                                        retention
-                                        risks.</p>
-                                </div>
-
-                                <div>
-                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-3">
-                                        <li>⚡ Reduced admin troubleshooting time by 30–35% through clear, real-time
-                                            system
-                                            summaries</li>
-                                        <li>🔍 Improved visibility into error states, enabling faster detection and
-                                            resolution</li>
-                                        <li>🧩 Unified design system across admin tools, reducing onboarding time
-                                            and
-                                            cognitive load</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="bg-gray-100 h-96">
-                            <img src="assets/images/adminconsole/afteradmin.png" alt=""
-                                class="object-cover w-full h-full" />
-                        </div>
-                    </div>
-                    <div class="grid items-center lg:grid-cols-2">
-                        <div class="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
-                            <img src="assets/images/mahalabharti/research/Navale.png" alt=""
-                                class="object-cover object-left  w-full h-full" />
-                        </div>
-                        <div
-                            class="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-
-                            <div class="flex justify-between items-center">
-
-                                <h3 class="text-2xl font-semibold sm:text-3xl ">Providing Access to Government Schemes
-                                    for
-                                    Rural
-                                    Citizens
-
-                                </h3>
-                                <a href="mahalabharti.html"
-                                    class="inline-flex float-right flex-none cursor-pointer items-center justify-center h-12 w-12  font-medium tracking-wide text-white transition duration-200 bg-gray-200 rounded-full hover:bg-gray-300">
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000000"
-                                        id="Caret-Right-Light--Streamline-Phosphor" height="16" width="16">
-
-                                        <path
-                                            d="M12.03348125 8.38720625 4.72774375 15.69294375c-0.3085875 0.28755 -0.8127375 0.1332125 -0.907475 -0.27780625 -0.040875 -0.1773625 0.00898125 -0.36344375 0.13306875 -0.49660625L10.87095625 8 3.9533375 1.08146875c-0.28755625 -0.3085875 -0.13321875 -0.8127375 0.2778 -0.907475 0.1773625 -0.04088125 0.36344375 0.00898125 0.49660625 0.1330625l7.3057375 7.3057375c0.21365625 0.213925 0.21365625 0.5604875 0 0.7744125Z"
-                                            stroke-width="0.0625"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div>
-                                <div class="mb-4">
-                                    <h4 class="font-semibold text-gray-800 mb-1">Challenge:</h4>
-                                    <p class="text-gray-700 text-sm">Low literacy, limited digital access, and lack
-                                        of
-                                        awareness prevented rural citizens from availing government welfare schemes.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h4 class="font-semibold text-gray-800 mb-1">Outcome:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-1">
-                                        <li>⚡ Enabled 500,000+ citizen registrations via offline-first, image-based
-                                            UX
-                                        </li>
-                                        <li>✅ 94% task success rate after usability improvements</li>
-                                        <li>📈 500+ success stories, adopted state-wide and noticed by other state
-                                            govts
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="relative block pt-20 pb-24 overflow-hidden text-left bg-white">
-        <div class="w-full px-20 mx-auto text-left md:px-10 max-w-7xl xl:px-16">
+        <div class="w-full px-8 mx-auto text-left md:px-10 max-w-7xl xl:px-16">
             <div class="box-border flex flex-col flex-wrap justify-center -mx-4">
                 <div class="relative w-full mb-24 leading-6 text-left xl:flex-grow-0 space-y-5 xl:flex-shrink-0">
                     <h2 class="text-4xl font-bold sm:text-5xl text-center ">
@@ -915,7 +1065,7 @@
                         <img src="assets/images/testimonials/bhakti.jpeg" class="w-20 h-20 rounded-full" />
                     </div>
                     <div class="relative px-4 mb-16 leading-6 text-left">
-                        <div class="box-border text-lg font-medium text-gray-600">
+                        <div class="box-border text-sm md:text-lg font-medium text-gray-600">
                             Lekha Deshmukh is a powerhouse in UX design. Beyond her skills, Lekha is a collaborative
                             team player who always seeks to uplift those around her. She brings both creativity and
                             practicality to the table.
@@ -935,7 +1085,7 @@
                         <img src="assets/images/testimonials/madhu.jpeg" class="w-20 h-20 rounded-full" />
                     </div>
                     <div class="relative px-4 mb-16 leading-6 text-left">
-                        <div class="box-border text-lg font-medium text-gray-600">
+                        <div class="box-border text-sm md:text-lg font-medium text-gray-600">
                             As a Design Leader, Lekha has the capability to sift through mountains of data points,
                             problem statements and find the paths that connect all of them elegantly. Her ability to
                             focus on what the customer truly needs and design elements accordingly is something to
@@ -957,7 +1107,7 @@
                         <img src="assets/images/testimonials/prajkt.jpeg" class="w-20 h-20 rounded-full" />
                     </div>
                     <div class="relative px-4 mb-5 leading-6 text-left">
-                        <div class="box-border text-lg font-medium text-gray-600">
+                        <div class="box-border text-sm md:text-lg font-medium text-gray-600">
                             Her exceptional UX design skills consistently transform complex challenges into elegant,
                             user-friendly solutions. What Lekha brings both amazing talent and great vibes to every
                             project.
@@ -977,7 +1127,7 @@
 
                     </div>
                     <div class="relative px-4 mb-5 leading-6 text-left">
-                        <div class="box-border text-lg font-medium text-gray-600">
+                        <div class="box-border text-sm md:text-lg font-medium text-gray-600">
                             She has got an innate feel for compelling user experiences with psychological and
                             scientific
                             processes at heart. She constantly endeavours to understand user behavior and is highly
@@ -1011,17 +1161,25 @@
     <section
         class="flex items-center justify-center py-0 bg-white bg-gradient-to-br from-indigo-600 via-indigo-500 to-teal-400 min-w-screen">
         <div
-            class="relative flex flex-col items-center w-full max-w-7xl px-4 py-8 mx-auto text-center lg:text-left lg:block sm:px-6 md:pb-0 md:pt-12 lg:px-8 lg:py-12">
+            class="relative flex flex-col items-center w-full max-w-7xl px-4 py-8 mx-auto   lg:block sm:px-6 md:pb-0 md:pt-12 lg:px-8 lg:py-12">
             <h2
                 class="my-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl   lg:my-0 xl:text-4xl sm:leading-tight">
                 Let’s Create Exceptional Experiences
                 <span class="block text-indigo-200 xl:inline"> Together</span>
             </h2>
-            <p class="mt-1 mb-10 text-sm font-medium text-indigo-200 uppercase xl:text-base xl:tracking-wider lg:mb-0">
-                I'm always excited to collaborate, innovate, & design solutions that make a difference. <br /> Get
+            <p class="mt-1 mb-10 text-sm font-medium max-w-3xl text-indigo-200  xl:text-base xl:tracking-wider lg:mb-0">
+                <!-- I'm always excited to collaborate, innovate, & design solutions that make a difference. <br /> Get
                 in
                 touch I'd love
-                to hear from you!
+                to hear from you! -->
+                I'm an energetic and driven designer who excels at fostering team alignment. I achieve this by
+                facilitating impactful workshops, delivering compelling vision pitches through engaging storytelling,
+                and proactively building strong, lasting relationships with collaborators.
+
+                My next career goal is to grow as a design leader and craft end-to-end consumer experiences that
+                resonate deeply and create lasting memories. I thrive in environments defined by ambition, passionate
+                curiosity, humility, and joy. I'm seeking a brave team where we can collectively make a meaningful and
+                lasting impact on people's lives and the world, all while having a great time doing it!
             </p>
             <div class="flex mb-8 lg:mt-6 lg:mb-0">
                 <div class="inline-flex">
@@ -1039,7 +1197,7 @@
     </section>
     <section id="i4i90k" class="w-full bg-blue-600">
         <div class="px-8 py-12 mx-auto max-w-7xl">
-            <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+            <div class="grid sm:grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
                 <div class="col-span-3">
                     <a href="index.html" class="text-xl font-black leading-none text-white select-none logo">Lekha
                         Deshmukh</a>
@@ -1050,9 +1208,10 @@
                 <nav class="col-span-1 md:col-span-2 lg:col-span-6">
                     <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Case Studies
                     </p>
-                    <a href="landingpages.html"
-                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Creating
-                        AI Prompts - Google Ads Landing Pages</a>
+                    <a href="inclassroom.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Redesigning
+                        the In-Classroom Experience for Teachers</a>
+
                     <a href="dashboard.html"
                         class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Customer
                         Dashboard - Reduced support time by 95%
@@ -1065,6 +1224,12 @@
                         Users -
                         Access
                         to Government Schemes </a>
+                    <a href="timetable.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Designing
+                        the Timetable Module in LearniCo Product</a>
+                    <a href="landingpages.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Creating
+                        AI Prompts - Google Ads Landing Pages</a>
 
                 </nav>
                 <!-- <nav class="col-span-1 md:col-span-1 lg:col-span-2">
