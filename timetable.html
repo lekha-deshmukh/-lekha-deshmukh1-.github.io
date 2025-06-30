@@ -4,443 +4,593 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/scss/template.css">
+    <!-- <link rel="stylesheet" href="styles/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/scss/template.css"> -->
     <link rel="stylesheet" href="styles/plugins/lightbox/ekko-lightbox.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Lekha Deshmukh</title>
-    <style>
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Italic.woff') format('woff');
-            font-weight: normal;
-            font-weight: 400;
-            font-style: italic;
 
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Bold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            src: url('assets/fonts/PTSans-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-weight: 400;
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="navigation">
-        <a class="" href="index.html">Home</a>
-        <a class="active" href="work.html">Work</a>
-        <a class="" href="visuals.html">Experiments</a>
-        <a class="" href="about.html">About</a>
-    </nav>
-    <div class="logo"> <a href="index.html">ld.in.design</a></div>
-    <div class="container">
-        <!-- <div class="row"> -->
-        <div class="sidebar">
+    <header id="ijkj" class="fixed top-0 left-0  backdrop-blur-xl w-full px-8 text-gray-700  body-font">
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <a href="index.html"
+                class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black">Lekha
+                Deshmukh</a>
+            <nav
+                class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+                <a href="index.html"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Home</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#about" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">About</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <a href="index.html#casestudies" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Case Studies</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a>
+                <!-- <a href="#_" x-data="{ hover: false }" x-on:mouseenter="hover = true" x-on:mouseleave="hover = false"
+                    class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"><span
+                        class="block">Visual Design</span><span
+                        class="absolute bottom-0 left-0 inline-block w-full h-0-5 -mb-1 overflow-hidden"><span
+                            x-show="hover" x-transition:enter="transition ease duration-200"
+                            x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                            x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100"
+                            x-transition:leave-end="scale-0"
+                            class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"></span></span></a> -->
+            </nav>
+            <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+                <a href="assets/images/LekhaLeadUXResume.pdf"
+                    class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 gap-2 focus:outline-none focus:shadow-none">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        id="Download--Streamline-Radix" height="20" width="20">
+                        <desc>Download Streamline Icon: https://streamlinehq.com</desc>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.000066666666665 1.3999866666666665c0.3313733333333333 0 0.6 0.2686266666666667 0.6 0.6v9.218133333333332l2.9758 -2.975733333333333c0.23426666666666665 -0.23432 0.6141333333333333 -0.23432 0.8483999999999999 0 0.2344 0.23432 0.2344 0.6142133333333333 0 0.8485333333333333l-3.9999333333333333 4c-0.23432 0.23430666666666666 -0.6142133333333333 0.23430666666666666 -0.8485333333333333 0l-4 -4c-0.23432 -0.23432 -0.23432 -0.6142133333333333 0 -0.8485333333333333 0.23432 -0.23432 0.6142133333333333 -0.23432 0.8485333333333333 0l2.975733333333333 2.975733333333333v-9.218133333333332c0 -0.3313733333333333 0.2686266666666667 -0.6 0.6 -0.6ZM3.333333333333333 13.333333333333332c0.36818666666666666 0 0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 0.7385333333333333 0.5942 1.3333333333333333 1.3284666666666665 1.3333333333333333h9.3398c0.7355999999999999 0 1.3317333333333332 -0.5962666666666666 1.3317333333333332 -1.3333333333333333v-2c0 -0.3681333333333333 0.2985333333333333 -0.6666666666666666 0.6666666666666666 -0.6666666666666666s0.6666666666666666 0.2985333333333333 0.6666666666666666 0.6666666666666666V16c0 1.4721333333333333 -1.1917333333333333 2.6666666666666665 -2.6650666666666663 2.6666666666666665H5.3284666666666665C3.8535866666666667 18.666666666666664 2.6666666666666665 17.470666666666666 2.6666666666666665 16v-2c0 -0.3681333333333333 0.29847999999999997 -0.6666666666666666 0.6666666666666666 -0.6666666666666666Z"
+                            fill="#a2a2a2" stroke-width="1.3333"></path>
+                    </svg> Download Resume
+                </a>
 
-            <a href="index.html">
-                <div class="menu-item ">Home</div>
-            </a>
-            <a href="work.html">
-                <div class="menu-item active">Work</div>
-            </a>
-            <a href="visuals.html">
-                <div class="menu-item">Experiments</div>
-            </a>
-            <a href="about.html">
-                <div class="menu-item">About</div>
-            </a>
+            </div>
         </div>
-        <div class="content">
-            <div class="row">
+    </header>
 
-                <div class="col-md-11">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 my-28 lg:px-8">
+        <div class="ml-42 mt-16 p-5">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-11/12">
+                    <div class="space-y-8">
 
-                    <div class="case-study">
-                        <div class="case-name">
+
+                        <!-- Case Study Title -->
+                        <h1 class="text-4xl font-bold leading-tight">
                             Develop Timetable module in LearniCo
-                        </div>
-                        <div class="case-sub-title">
-                            Goal
-                        </div>
-                        <div class="case-content">
-                            The goal was to verify & identify the need for developing timetable module. If need exists,
-                            we were going to develop the timetable feature that allowed teachers to schedule lectures
-                            and enabled students to attend it from their LearniCo Student mobile app.
+                        </h1>
+
+                        <!-- Goal -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Goal</h2>
+                            <p class="text-gray-600 mt-4">
+                                The goal was to verify & identify the need for developing timetable module. If need
+                                exists,
+                                we were going to develop the timetable feature that allowed teachers to schedule
+                                lectures
+                                and enabled students to attend it from their LearniCo Student mobile app.
+                            </p>
                         </div>
 
-                        <div class="case-title">
-                            RESEARCH
+                        <!-- Research -->
+                        <div>
+                            <h2 class="text-3xl font-bold mt-16 mb-8">RESEARCH</h2>
+                            <p class="text-gray-600">
+                                We (The project manager and myself) conducted qualitative research with 6 teachers & 5
+                                students from various educational institutions to empathise with their current situation
+                                and
+                                problems related to scheduling & maintenance of timetable.
+                            </p>
                         </div>
-                        <div class="case-content">
-                            We (The project manager and myself) conducted qualitative research with 6 teachers & 5
-                            students from various educational institutions to empathise with their current situation and
-                            problems related to scheduling & maintenance of timetable.
-                        </div>
-                        <div class="case-sub-title">
-                            Research questions asked to Teachers
-                        </div>
-                        <div class="case-content">
-                            <ul>
+
+                        <!-- Research Questions - Teachers -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Research questions asked to Teachers</h2>
+                            <ul class="list-disc list-inside text-gray-600 mt-4 space-y-2">
                                 <li>How many lectures do you conduct on a daily basis?</li>
                                 <li>How do you schedule lectures/ which tool do you use often?</li>
                                 <li>In what way do you share lecture timings with students?</li>
                                 <li>How do you come to know about modifications in lectures and how do you go about
                                     managing them?</li>
                                 <li>What is the frequency of changes in timetable in a semester?</li>
-                                <li>Do all students come to know about the modification; do they join classes timely?
+                                <li>Walk me through a time when a class was modified. How did you pass on the
+                                    information to students, and what steps did you take to make sure you were in class
+                                    at the right time?
                                 </li>
                                 <li>Can you explain the last time when you had difficulty managing timetable of a class,
                                     if you can recall the scenario</li>
                                 <li>How often do you see the lecture slots of a class/ how often do you feel the need?
                                 </li>
-                                <li>How much time does it take to modify timetable if it is changed</li>
+                                <li>How much time does it take to modify timetable if it is changed?</li>
                             </ul>
                         </div>
-                        <div class="case-sub-title">
-                            Research questions asked to Students
-                        </div>
-                        <div class="case-content">
-                            <ul>
+
+                        <!-- Research Questions - Students -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Research questions asked to Students</h2>
+                            <ul class="list-disc list-inside text-gray-600 mt-4 space-y-2">
                                 <li>Tell us about your current learning routine</li>
                                 <li>In what manner do you get updates on lecture/ which tool do you use?</li>
                                 <li>How do you come to know about modifications in lectures</li>
                                 <li>What is the frequency of changes in timetable?</li>
-                                <li>Do all students come to know about the modification; do they join classes timely ?
+                                <li>Walk me through a time when a class was modified. How did you get the information,
+                                    and what steps did you take to make sure you were in class at the right time?
                                 </li>
                                 <li>Can you explain the last time when you had difficulty regarding updates with
                                     timetable?</li>
                                 <li>What is the 1 thing you would like to change/ not change, in the current way of
                                     timetables</li>
-
-
                             </ul>
                         </div>
-                        <div class="case-sub-title">
-                            Teacher Persona
-                        </div>
-                        <a href="assets/images/timetable/docs/TeacherPersona1.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/timetable/docs/TeacherPersona1.png" /></a>
-                        <a href="assets/images/timetable/docs/TeacherPersona2.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/timetable/docs/TeacherPersona2.png" /></a>
-                        <div class="case-sub-title">
-                            Student Persona
-                        </div>
-                        <a href="assets/images/timetable/docs/StudentPersona1.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/timetable/docs/StudentPersona1.png" /></a>
-                        <a href="assets/images/timetable/docs/StudentPersona2.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/timetable/docs/StudentPersona2.png" /></a>
 
-                        <div class="case-sub-title">
-                            Empathy Maps
-                        </div>
-                        <a href="assets/images/timetable/docs/EmpathyStudents.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/timetable/docs/EmpathyStudents.png" /></a>
-                        <a href="assets/images/timetable/docs/EmpathyTeachers.png" data-toggle="lightbox">
-                            <img class="info-img" src="assets/images/timetable/docs/EmpathyTeachers.png" /></a>
-
-
-                        <div class="case-title">
-                            RESEARCH INSIGHTS
+                        <!-- Teacher Persona -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Teacher Persona</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                                <a href="assets/images/timetable/docs/TeacherPersona1.png" data-toggle="lightbox">
+                                    <img src="assets/images/timetable/docs/TeacherPersona1.png" class="rounded-lg"
+                                        alt="Teacher Persona 1">
+                                </a>
+                                <a href="assets/images/timetable/docs/TeacherPersona2.png" data-toggle="lightbox">
+                                    <img src="assets/images/timetable/docs/TeacherPersona2.png" class="rounded-lg"
+                                        alt="Teacher Persona 2">
+                                </a>
+                            </div>
                         </div>
 
-
-                        <div class="case-title">
-                            Teacher Insights
+                        <!-- Student Persona -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Student Persona</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                                <a href="assets/images/timetable/docs/StudentPersona1.png" data-toggle="lightbox">
+                                    <img src="assets/images/timetable/docs/StudentPersona1.png" class="rounded-lg"
+                                        alt="Student Persona 1">
+                                </a>
+                                <a href="assets/images/timetable/docs/StudentPersona2.png" data-toggle="lightbox">
+                                    <img src="assets/images/timetable/docs/StudentPersona2.png" class="rounded-lg"
+                                        alt="Student Persona 2">
+                                </a>
+                            </div>
                         </div>
-                        <div class="case-content">
-                            <strong>Frequent changes in lecture timings</strong> - Teachers said that there is < 5%
-                                modification in timetable. What we came to know is the time table of the class was fixed
-                                but the individual lecture timings kept changing. For teachers who taught from home,
-                                there were cases of power failure/ low network/ at times teacher taught in a class for
-                                more time to cleared student’s doubts and hence teachers had to reschedule lectures,
-                                about which they informed students on various platforms like whatsApp/ email/ Microsoft
-                                Teams /Google classroom. </div><br>
-                                <div class="case-content">
-                                    <strong>Informing students about rescheduling lecture</strong> - Teachers are aware
-                                    that not all students see all platforms everytime. To make sure that students are
-                                    informed about the lecture timings and that they don’t miss out on any lecture,
-                                    teachers make it a point to convey the information of lecture timings on 2-3
-                                    different platforms. Most frequently used medium is WhatsApp & Google classroom,
-                                    other notification arises due to the notification settings in software tools like
-                                    Microsoft teams, Google meet, Goto Webinar.
-                                </div>
-                                <div class="case-title">
-                                    Student Insights
-                                </div>
-                                <div class="case-content">
-                                    <strong>Uneven lecture timings causing difficulty for students to adjust their
-                                        routine</strong> - Students raised concerns that their timetable changes every 2
-                                    weeks or sometimes every week. Because of uneven lecture timings they miss the
-                                    beginning of the lecture if they miss to read out the notification updated on
-                                    WhatsApp/email which is sent 10-15 mins before the rescheduled lecture . In this
-                                    case they are not able to understand topic properly as they join the lecture 10 mins
-                                    late.
-                                </div><br>
-                                <div class="case-content">
-                                    <strong>Too many notifications for lectures, late joining of class and not
-                                        understanding topic </strong> - Students have to check notifications for
-                                    lectures on 2-3 different platforms. In case the rescheduled lecture timing is
-                                    shared 10-15 mins before the lecture, most students join the class late. Students
-                                    get lots of doubts as they miss the beginning of lecture in this scenario.
-                                </div>
-                                <br />
-                                <div class="case-content">
-                                    <strong>Referring recorded and offline content</strong> - Teachers share recorded
-                                    youtube video lectures for final year students, these students see the entire
-                                    content but they are not able to ask doubts to teacher, they call their friends and
-                                    ask doubts.
-                                </div>
+
+                        <!-- Empathy Maps -->
+                        <div>
+                            <h2 class="text-2xl font-semibold mt-10">Empathy Maps</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                                <a href="assets/images/timetable/docs/EmpathyStudents.png" data-toggle="lightbox">
+                                    <img src="assets/images/timetable/docs/EmpathyStudents.png" class="rounded-lg"
+                                        alt="Empathy Students">
+                                </a>
+                                <a href="assets/images/timetable/docs/EmpathyTeachers.png" data-toggle="lightbox">
+                                    <img src="assets/images/timetable/docs/EmpathyTeachers.png" class="rounded-lg"
+                                        alt="Empathy Teachers">
+                                </a>
+                            </div>
+                        </div>
 
 
-                                <div class="case-title">
-                                    5 WHYs
-                                </div>
-                                <div class="case-content">
-                                    <strong>Why do students feel that there are too many changes in
-                                        timetable?</strong><br>Because when student makes themselves available for
-                                    lecture and keeps it on priority, the lecture is not conducted at given time<br><br>
-                                    <strong>Why?</strong><br />
-                                    Because teachers get busy with the previous class/ they have network issue/ power
-                                    cut issues
-                                    <br />
-                                    <br />
-                                    <strong>Why?</strong><br />
-                                    Because teachers need to solve doubts of students
+                        <!-- RESEARCH INSIGHTS -->
+                        <div>
+                            <h2 class="text-3xl font-bold mt-16 mb-8">RESEARCH INSIGHTS</h2>
 
-                                    <strong>Why?</strong><br />
-                                    So that students can get good marks
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <strong> Why do students come late for lecture?</strong><br />
-                                    Because student did not read notification posted on different platforms
-                                    <br />
-                                    <br />
-                                    <strong>Why?</strong><br />
-                                    Because there are too many notification that student has to go through
-                                    <br />
-                                    <br />
-                                    <strong>Why?</strong><br />
-                                    Because teachers update lecture timings on different applications and automated
-                                    notification emails are generated by tools
-                                    <br />
-                                    <br />
-                                    <strong>Why?</strong><br />
-                                    Because teacher doesn’t want student to miss out on any lecture
-                                    <br />
-                                    <br />
-                                    <strong>Why?</strong><br />
-                                    Because teacher wants student to score good marks, teacher’s performance report will
-                                    be good. <br />
-                                </div>
-                                <br><br>
-                                <div class="case-title">
-                                    IDEATION
-                                </div>
-                                <div class="case-title">
-                                    Solving student's issues
-                                </div>
-                                <div class="case-content">
-                                    We realised that if students get to attend the entire lecture and if their doubts
-                                    are cleared the cycle of rescheduling the lectures will reduce.
-                                </div><br />
-                                <div class="case-content">
-                                    There is need to <strong>develop a new module which can show RECORDED lectures to
-                                        students</strong>, the recorded lectures can have <strong>provision to ask
-                                        doubts to entire class and get the doubts cleared.</strong>
-                                </div><br />
-                                <div class="case-content">
-                                    Another major issue that needed to be resolved was that of <strong>too many
-                                        notifications</strong>, to solve this we thought of creating a <strong>central
-                                        place for student where they can see all their live classes and recorded
-                                        lectures along with the upcoming lectures</strong>, with this student will have
-                                    to refer only 1 application and get update about all their lectures.
-                                </div>
-                                <div class="case-title">
-                                    Solving teacher's issues
-                                </div>
-                                <div class="case-content">
-                                    Teacher can see all their lectures at one place and it will appear every time in the
-                                    dashboard so that<strong>teacher will be primed with the lecture timings
-                                    </strong>and accordingly conduct classes resulting in no delay.
-                                </div>
-                                <div class="case-content">
-                                    We decide to create timetable module where in teacher can
-                                    <strong>bulk upload lectures of all the classes or create single lectures
-                                        instances.</strong> This timetable module will also have filters for viewing
-                                    ongoing lectures in all classes that the teacher teaches. The provision for
-                                    rescheduling is also provided, as soon as
-                                    <strong>teacher reschedules or schedules a class, a notification will be shared with
-                                        the student, thus delaying the time for informing about the lecture or lecture
-                                        change</strong>. Teacher will get an alert count on the number of times a
-                                    lecture is rescheduled in a week. Along with this there will be alert given to the
-                                    teacher 10 mins before the start of next class so that teacher if teacher is already
-                                    in a class.
-                                </div>
-                                <div class="case-content">
-                                    Teachers are also given an option to <strong>record lectures</strong>
-                                    in advance or record an ongoing lecture and share it with all students.
-                                    <strong>Students can view the lecture based on their feasibility and ask doubts.
-                                    </strong>
-                                </div>
+                            <!-- Teacher Insights -->
+                            <h3 class="text-2xl font-semibold mt-10">Teacher Insights</h3>
+                            <div class="text-gray-600 space-y-4 mt-4">
+                                <p><strong class="text-black">Frequent changes in lecture timings</strong> – Teachers
+                                    said that there is < 5% modification in timetable. The class timetable was fixed but
+                                        individual lectures changed frequently due to issues like power failure, low
+                                        network, or extended class time. Teachers updated students via WhatsApp, email,
+                                        Microsoft Teams, and Google Classroom.</p>
 
-                                <div class="case-title">
-                                    PROTOTYPES
-                                </div>
-                                <div class="case-sub-title">
-                                    Teacher cloud platform
-                                </div>
-                                <div class="case-content">
-                                    Teacher’s dashboard where teacher can see the details of their upcoming lecture
-                                    timings
-                                </div>
+                                        <p><strong class="text-black">Informing students about rescheduling
+                                                lecture</strong> – Teachers use 2–3 platforms to inform students, most
+                                            commonly WhatsApp and Google Classroom, to ensure all students are aware of
+                                            lecture changes.</p>
+                            </div>
 
+                            <!-- Student Insights -->
+                            <h3 class="text-2xl font-semibold mt-10">Student Insights</h3>
+                            <div class="text-gray-600 space-y-4 mt-4">
+                                <p><strong class="text-black">Uneven lecture timings causing difficulty for students to
+                                        adjust their routine</strong> – Students often missed the beginning of
+                                    rescheduled lectures due to last-minute notifications, impacting their
+                                    understanding.</p>
+
+                                <p><strong class="text-black">Too many notifications, late joining of class and not
+                                        understanding topic</strong> – Students reported receiving notifications across
+                                    platforms, leading to confusion and missed content.</p>
+
+                                <p><strong class="text-black">Referring recorded and offline content</strong> – Teachers
+                                    often share recorded lectures, but students can’t ask questions. They rely on peers
+                                    for doubts.</p>
+                            </div>
+                        </div>
+
+                        <!-- 5 WHYs -->
+                        <div>
+                            <h2 class="text-3xl font-bold mt-16 mb-8">5 WHYs</h2>
+                            <div class="text-gray-600 space-y-4">
+                                <p><strong class="text-black">Why do students feel there are too many changes in
+                                        timetable?</strong><br>Because when students prioritize attending a lecture, it
+                                    often gets rescheduled.</p>
+                                <p><strong>Why?</strong><br>Because teachers face network issues, power cuts, or get
+                                    delayed in earlier classes.</p>
+                                <p><strong>Why?</strong><br>Because teachers want to solve students' doubts thoroughly.
+                                </p>
+                                <p><strong>Why?</strong><br>So that students can get good marks.</p>
+
+                                <p><strong class="text-black">Why do students come late for
+                                        lectures?</strong><br>Because they miss reading the updates posted across
+                                    multiple platforms.</p>
+                                <p><strong>Why?</strong><br>Because there are too many notifications to check.</p>
+                                <p><strong>Why?</strong><br>Because lecture updates are scattered across WhatsApp,
+                                    email, Teams, etc.</p>
+                                <p><strong>Why?</strong><br>Because teachers don’t want students to miss lectures.</p>
+                                <p><strong>Why?</strong><br>Because teachers want students to succeed, which also
+                                    reflects well on their performance.</p>
+                            </div>
+                        </div>
+
+                        <!-- IDEATION -->
+                        <div>
+                            <h2 class="text-3xl font-bold mt-16 mb-8">IDEATION</h2>
+
+                            <!-- Student Side -->
+                            <h3 class="text-2xl font-semibold mt-6">Solving student's issues</h3>
+                            <div class="text-gray-600 space-y-4 mt-4">
+                                <p>We realized that attending the full lecture and resolving doubts reduces the cycle of
+                                    rescheduling.</p>
+                                <p>We proposed a <strong class="text-black">recorded lecture module</strong> with a
+                                    <strong class="text-black">doubt clarification system</strong>.
+                                </p>
+                                <p>We also envisioned a <strong class="text-black">central platform for live, recorded,
+                                        and upcoming lectures</strong> to reduce multi-platform confusion.</p>
+                            </div>
+
+                            <!-- Teacher Side -->
+                            <h3 class="text-2xl font-semibold mt-10">Solving teacher's issues</h3>
+                            <div class="text-gray-600 space-y-4 mt-4">
+                                <p>Teachers will see all lectures on their dashboard to stay primed for sessions and
+                                    avoid delays.</p>
+                                <p>A timetable module will support <strong class="text-black">bulk uploading and single
+                                        scheduling</strong>, filters for viewing class-wise lectures, and rescheduling
+                                    with instant notifications.</p>
+                                <p>Alerts will notify teachers before a class begins and track reschedule frequency.</p>
+                                <p>Teachers will also have the option to <strong class="text-black">record and share
+                                        lectures</strong>.</p>
+                            </div>
+                        </div>
+
+                        <!-- PROTOTYPES -->
+                        <div>
+                            <h2 class="text-3xl font-bold mt-16 mb-8">PROTOTYPES</h2>
+
+                            <!-- Teacher Cloud Platform -->
+                            <h3 class="text-2xl font-semibold mt-6">Teacher cloud platform</h3>
+                            <div class="text-gray-600 mt-4">Teacher’s dashboard where upcoming lectures are listed.
+                            </div>
+                            <div class="grid grid-cols-1 gap-8 mt-4">
                                 <a href="assets/images/timetable/prototypes/home.png" data-toggle="lightbox">
-                                    <img class="info-img" src="assets/images/timetable/prototypes/home.png" /></a>
+                                    <img src="assets/images/timetable/prototypes/home.png" class="rounded-lg"
+                                        alt="Teacher Dashboard">
+                                </a>
+                            </div>
 
-                                <div class="case-content">
-                                    On clicking lectures timetable view will be visible which will show option to
-                                    schedule lecture, print the timetable, apply filters to view teacher’s lecture in a
-                                    specific class or lectures of a class.
-                                </div>
-                                <a href="assets/images/timetable/prototypes/lectures.png" data-toggle="lightbox">
-                                    <img class="info-img" src="assets/images/timetable/prototypes/lectures.png" /></a>
-                                <div class="case-content">
-                                    Teacher can schedule individual lecture by clicking on the schedule lecture button
-                                </div>
-                                <a href="assets/images/timetable/prototypes/schedule.png" data-toggle="lightbox">
-                                    <img class="info-img" src="assets/images/timetable/prototypes/schedule.png" /></a>
-                                <div class="case-content">
-                                    Reschedule (red alert) feature is on hold as we are studying the emotions that this
-                                    feature might trigger in teachers, a separate research for this is being carried out
-                                    for this. This research includes if the reschedule event should be shown week
-                                    specific/ class specific/ frequency of changes in lecture occurrence week vs class
-                                    wise.
-                                </div>
-                                <a href="assets/images/timetable/prototypes/reschedule.png" data-toggle="lightbox">
-                                    <img class="info-img" src="assets/images/timetable/prototypes/reschedule.png" /></a>
-                                <div class="case-content">
-                                    Provision to view timetable at teaching plan page, this will open the default view
-                                    of timetable calendar prefilled with data specific to respective class.
-                                </div>
-                                <a href="assets/images/timetable/prototypes/teachingPlan.png" data-toggle="lightbox">
-                                    <img class="info-img"
-                                        src="assets/images/timetable/prototypes/teachingPlan.png" /></a>
-                                <div class="case-content">
-                                    New entry for timetable is added in the configuration page
-                                </div>
-                                <a href="assets/images/timetable/prototypes/Config.png" data-toggle="lightbox">
-                                    <img class="info-img" src="assets/images/timetable/prototypes/Config.png" /></a>
-                                <div class="case-content">
-                                    Provision for bulk uploading timetable for all classes. This view is created for
-                                    initial easy onboarding, and seamless onboarding for every time the timetable is
-                                    changed.
-                                </div>
-                                <a href="assets/images/timetable/prototypes/ImportTimetable.png" data-toggle="lightbox">
-                                    <img class="info-img"
-                                        src="assets/images/timetable/prototypes/ImportTimetable.png" /></a>
+                            <div class="text-gray-600 mt-6">
+                                Clicking "lectures" reveals options to schedule, filter, and print timetable.
+                            </div>
+                            <a href="assets/images/timetable/prototypes/lectures.png" data-toggle="lightbox">
+                                <img src="assets/images/timetable/prototypes/lectures.png" class="rounded-lg mt-4"
+                                    alt="Lecture Timetable">
+                            </a>
 
-                                <div class="case-sub-title">
-                                    Student mobile application
-                                </div>
-                                <div class="case-content">
-                                    Student mobile app will enable students to view all the current live classes being
-                                    conducted in college and the upcoming classes that they can attend.
-                                </div>
-                                <div class="case-content">
-                                    Later scope - In attendance module developed in LearniCo we have mapped students to
-                                    specific classrooms, so student will see only lectures and live classes specific to
-                                    their class.
-                                </div>
-                                <div class="text-center teachermobile-bg ">
-                                    <a href="assets/images/timetable/prototypes/studentHome.png" data-toggle="lightbox">
-                                        <img class="info-img mobile-img"
-                                            src="assets/images/timetable/prototypes/studentHome.png" /></a>
-                                </div>
+                            <div class="text-gray-600 mt-6">
+                                Teachers can schedule individual lectures.
+                            </div>
+                            <a href="assets/images/timetable/prototypes/schedule.png" data-toggle="lightbox">
+                                <img src="assets/images/timetable/prototypes/schedule.png" class="rounded-lg mt-4"
+                                    alt="Schedule Lecture">
+                            </a>
 
-                                <div class="case-content">
-                                    On clicking the timetable button, student sees the below view which informs them
-                                    about the day’s classes
-                                </div>
-                                <div class="text-center teachermobile-bg">
-                                    <div class="p-4">
-                                        <a href="assets/images/timetable/prototypes/StudentTimetable.png"
-                                            data-toggle="lightbox">
-                                            <img class="info-img mobile-img"
-                                                src="assets/images/timetable/prototypes/StudentTimetable.png" /></a>
-                                    </div>
-                                </div>
+                            <div class="text-gray-600 mt-6">
+                                Reschedule alerts are under research to avoid triggering negative emotions.
+                            </div>
+                            <a href="assets/images/timetable/prototypes/reschedule.png" data-toggle="lightbox">
+                                <img src="assets/images/timetable/prototypes/reschedule.png" class="rounded-lg mt-4"
+                                    alt="Reschedule Feature">
+                            </a>
 
-                                <div class="case-title">
-                                    FEEDBACK
+                            <div class="text-gray-600 mt-6">
+                                Teaching Plan view shows a prefilled calendar per class.
+                            </div>
+                            <a href="assets/images/timetable/prototypes/teachingPlan.png" data-toggle="lightbox">
+                                <img src="assets/images/timetable/prototypes/teachingPlan.png" class="rounded-lg mt-4"
+                                    alt="Teaching Plan">
+                            </a>
 
-                                </div>
-                                <div class="case-content">
-                                    The timetable module is kept on hold and we started developing recording feature as
-                                    it is more in need. The feedback for timetable module will be taken in May 2021 from
-                                    teachers and students.
-                                </div>
-                                <div class="case-title">
-                                    CONCLUSION
-                                </div>
-                                <div class="case-content">
-                                    Students were more in need of the timetable feature than teachers. We realised there
-                                    was a need for developing a new feature Recordings, with which students can easily
-                                    view the lectures that they’ve missed or were unable to attend.
+                            <div class="text-gray-600 mt-6">
+                                Timetable configuration entry shown below:
+                            </div>
+                            <a href="assets/images/timetable/prototypes/Config.png" data-toggle="lightbox">
+                                <img src="assets/images/timetable/prototypes/Config.png" class="rounded-lg mt-4"
+                                    alt="Configuration Page">
+                            </a>
 
-                                    The recording feature also proved to be helpful for teachers as they could share
-                                    their lectures during institute inspection & accreditation activities.
-                                </div>
+                            <div class="text-gray-600 mt-6">
+                                Bulk upload view for onboarding timetable data.
+                            </div>
+                            <a href="assets/images/timetable/prototypes/ImportTimetable.png" data-toggle="lightbox">
+                                <img src="assets/images/timetable/prototypes/ImportTimetable.png"
+                                    class="rounded-lg mt-4" alt="Bulk Upload Timetable">
+                            </a>
+
+                            <!-- Student Mobile App -->
+                            <h3 class="text-2xl font-semibold mt-10">Student mobile application</h3>
+                            <div class="text-gray-600 space-y-2 mt-4">
+                                <p>Students can view current and upcoming classes.</p>
+                                <p>Eventually, this will be mapped to each student’s class via the attendance module.
+                                </p>
+                            </div>
+
+                            <div class="text-center mt-6">
+                                <a href="assets/images/timetable/prototypes/ttstudent.png" data-toggle="lightbox">
+                                    <img src="assets/images/timetable/prototypes/ttstudent.png"
+                                        class="rounded-lg inline-block" alt="Student Home">
+                                </a>
+                            </div>
+
 
                         </div>
+                        <!-- FEEDBACK -->
+                        <div>
+                            <h2 class="text-3xl font-bold mt-16 mb-8">FEEDBACK</h2>
+                            <p class="text-gray-600">
+                                The timetable module is kept on hold and we started developing recording feature as it
+                                is more in need.
+                                The feedback for timetable module will be taken in May 2021 from teachers and students.
+                            </p>
+                        </div>
+
+                        <!-- CONCLUSION -->
+                        <div>
+                            <h2 class="text-3xl font-bold mt-16 mb-8">CONCLUSION</h2>
+                            <p class="text-gray-600">
+                                I discovered there was
+                                a need for developing a new feature - Recordings,
+                                with which students can easily view the lectures that they’ve missed or were unable to
+                                attend.
+                            </p>
+                            <p class="text-gray-600 mt-4">
+                                The recording feature also proved to be helpful for teachers as they could share their
+                                lectures during institute inspection & accreditation activities.
+                            </p>
+                            <p class="text-gray-600 mt-4">
+                                Note: This module was developed during Covid-19 lockdown.
+                            </p>
+                        </div>
+
+
+
 
                     </div>
-                </div>
-
-                <div class="row next-prev">
-                    <div class="col-md-5 text-left">
-                        <div class="next-prev-label">
-                            Previous
-                        </div>
-                        <div class="next-prev-name">
-                            <a href="attendance.html"> Designing Attendance Module in LearniCo</a>
-                        </div>
-                    </div>
-                    <div class="col-md-5 text-right">
-                        <div class="next-prev-label">
-                            Next
-                        </div>
-                        <div class="next-prev-name">
-                            <a href="inclassroom.html">Redefining the In-classroom experience</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
         </div>
-        <script src="styles/plugins/lightbox/ekko-lightbox.min.js" />
-        <script>
-            $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-        </script>
-        <div class="footer">
-            Crafted and created by <strong>Lekha Deshmukh</strong>
+    </div>
+
+
+
+    <div class="my-20 text-center text-[28px] font-semibold text-[#292929]">
+        Thank you for reading! <br />
+        <p class="text-sm">
+            Checkout more case studies below 👇
+        </p>
+    </div>
+
+
+    <section id="i4i90k" class="w-full bg-blue-600">
+        <div class="px-8 py-12 mx-auto max-w-7xl">
+            <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+                <div class="col-span-3">
+                    <a href="index.html" class="text-xl font-black leading-none text-white select-none logo">Lekha
+                        Deshmukh</a>
+                    <p class="my-4 text-xs leading-normal text-blue-100">
+                        Designed with passion.
+                    </p>
+                </div>
+                <nav class="col-span-1 md:col-span-2 lg:col-span-6">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Case Studies
+                    </p>
+
+                    <a href="dashboard.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Customer
+                        Dashboard - Reduced support time by 95%
+                    </a>
+                    <a href="adminconsole.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Faster
+                        Insights - Enterprise Admins</a>
+                    <a href="mahalabharti.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Rural
+                        Users -
+                        Access
+                        to Government Schemes </a>
+                    <a href="inclassroom.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Redesigning
+                        the In-Classroom Experience for Teachers</a>
+                    <a href="landingpages.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Creating
+                        AI Prompts - Google Ads Landing Pages</a>
+                    <a href="timetable.html"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Designing
+                        the Timetable Module in LearniCo Product</a>
+
+                </nav>
+
+                <div class="col-span-3">
+                    <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-end">
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/lekha.deshmukh.5" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 
+                                    1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ld.in.design/?hl=en" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 
+                                    4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 
+                                    2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 
+                                    01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 
+                                    0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 
+                                    01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 
+                                    4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 
+                                    1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 
+                                    1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 
+                                    1.15-.137.353-.3.882-.344 1.857-.047 
+                                    1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 
+                                    3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 
+                                    1.15.35.35.683.566 1.15.748.353.137.882.3 
+                                    1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 
+                                    2.917-.01 3.96-.058.976-.045 1.505-.207 
+                                    1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 
+                                    3.097 0 00-.748-1.15 3.098 3.098 0 
+                                    00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 
+                                    6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 
+                                    010-10.27zm0 1.802a3.333 3.333 0 100 6.666 
+                                    3.333 3.333 0 000-6.666zm5.338-3.205a1.2 
+                                    1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/deshmukh_lekha" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 
+                                    0-.178 0-.355-.012-.53A8.348 8.348 0 0022 
+                                    5.92a8.19 8.19 0 01-2.357.646 
+                                    4.118 4.118 0 001.804-2.27 
+                                    8.224 8.224 0 01-2.605.996 
+                                    4.107 4.107 0 00-6.993 3.743 
+                                    11.65 11.65 0 01-8.457-4.287 
+                                    4.106 4.106 0 001.27 5.477 
+                                    4.072 4.072 0 01-1.86-.514v.052 
+                                    a4.105 4.105 0 003.292 4.022 
+                                    4.095 4.095 0 01-1.853.07 
+                                    4.108 4.108 0 003.834 2.85 
+                                    A8.233 8.233 0 012 18.407 
+                                    a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/lekhadeshmukh" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">GitHub</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 
+                                    4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 
+                                    0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 
+                                    1.003.07 1.531 1.032 1.531 1.032.892 
+                                    1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 
+                                    0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 
+                                    0 0 .84-.27 2.75 1.026A9.564 9.564 0 
+                                    0112 6.844c.85.004 1.705.115 2.504.337 
+                                    1.909-1.296 2.747-1.027 2.747-1.027.546 
+                                    1.379.202 2.398.1 2.651.64.7 
+                                    1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 
+                                    4.943.359.309.678.92.678 1.855 
+                                    0 1.338-.012 2.419-.012 2.747 0 
+                                    .268.18.58.688.482A10.019 10.019 0 0022 
+                                    12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Dribbble -->
+                        <a href="https://dribbble.com/lekhad" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Dribbble</span>
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 
+                                    10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 
+                                    2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 
+                                    25.416 0 00-.564-1.236c3.145-1.28 
+                                    4.577-3.124 4.761-3.362zM12 
+                                    3.475c2.17 0 4.154.813 5.662 
+                                    2.148-.152.216-1.443 1.941-4.48 
+                                    3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 
+                                    8.687 0 0112 3.475zm-3.633.803a53.896 
+                                    53.896 0 013.167 4.935c-3.992 
+                                    1.063-7.517 1.04-7.896 1.04a8.581 
+                                    8.581 0 014.729-5.975zM3.453 
+                                    12.01v-.26c.37.01 4.512.065 
+                                    8.775-1.215.25.477.477.965.694 
+                                    1.453-.109.033-.228.065-.336.098-4.404 
+                                    1.42-6.747 5.303-6.942 
+                                    5.629a8.522 8.522 0 01-2.19-5.705zM12 
+                                    20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 
+                                    1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 
+                                    35.318 0 011.823 6.475 
+                                    8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 
+                                    2.679-.423 5.022.271 5.314.369a8.468 
+                                    8.468 0 01-3.655 5.715z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                    </span>
+
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-blue-500 md:flex-row md:items-center">
+                <p class="mb-6 text-sm text-left text-blue-200 md:mb-0"> 2015-2025 Lekha Deshmukh. All Rights
+                    Reserved.
+                </p>
+                <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+                    <a href="terms.html" class="text-sm text-blue-200 transition hover:text-white">Terms</a>
+                    <a href="privacy.html" class="text-sm text-blue-200 transition hover:text-white">Privacy</a>
+                </div>
+            </div>
         </div>
+    </section>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "rs20akpqd5");
+    </script>
 </body>
 
 </html>
